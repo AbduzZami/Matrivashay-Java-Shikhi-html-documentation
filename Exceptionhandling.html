@@ -185,31 +185,31 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts24">অনেক সময় প্রোগ্রামের কিছু জায়গায় কিছু exception/error এর জন্য প্রোগ্রাম ক্রাশ করে। Exception Handling এর মাধ্যমে সেইসব লাইনে exception/error আসলে কি করতে হবে বলে দেওয়া যায়। তাহলে প্রোগ্রামটি আর ক্রাশ করেনা।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">অনেক সময় প্রোগ্রামের কিছু জায়গায় কিছু exception/error এর জন্য প্রোগ্রাম ক্রাশ করে। Exception Handling এর মাধ্যমে সেইসব লাইনে exception/error আসলে কি করতে হবে বলে দেওয়া যায়। তাহলে প্রোগ্রামটি আর ক্রাশ করেনা।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">ধরি নিচের লাইন গুলি একটি প্রোগ্রাম।</span></p>
+<p class="rvps2"><span class="rvts22">ধরি নিচের লাইন গুলি একটি প্রোগ্রাম।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">A</span></p>
-<p class="rvps2"><span class="rvts24">B</span></p>
+<p class="rvps2"><span class="rvts22">A</span></p>
+<p class="rvps2"><span class="rvts22">B</span></p>
 <p class="rvps2"><span class="rvts59">C</span></p>
 <p class="rvps2"><span class="rvts59">D</span></p>
 <p class="rvps2"><span class="rvts59">E</span></p>
-<p class="rvps2"><span class="rvts24">F</span></p>
-<p class="rvps2"><span class="rvts24">G</span></p>
+<p class="rvps2"><span class="rvts22">F</span></p>
+<p class="rvps2"><span class="rvts22">G</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এখানে C D E এই তিনটি লাইনে error আসছে ধরে নেই। নরমালি প্রোগ্রাম এখানে ক্রাশ করবে। কিন্তু আমরা যদি এই তিন লাইনে exception handling করি তাহলে আর ক্রাশ করবেনা।</span></p>
+<p class="rvps2"><span class="rvts22">এখানে C D E এই তিনটি লাইনে error আসছে ধরে নেই। নরমালি প্রোগ্রাম এখানে ক্রাশ করবে। কিন্তু আমরা যদি এই তিন লাইনে exception handling করি তাহলে আর ক্রাশ করবেনা।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">A</span></p>
-<p class="rvps2"><span class="rvts24">B</span></p>
-<p class="rvps2"><span class="rvts24">try{</span></p>
+<p class="rvps2"><span class="rvts22">A</span></p>
+<p class="rvps2"><span class="rvts22">B</span></p>
+<p class="rvps2"><span class="rvts22">try{</span></p>
 <p class="rvps2"><span class="rvts60">C</span></p>
 <p class="rvps2"><span class="rvts60">D</span></p>
 <p class="rvps2"><span class="rvts60">E</span></p>
-<p class="rvps2"><span class="rvts24">}catch(){}</span></p>
-<p class="rvps2"><span class="rvts24">F</span></p>
-<p class="rvps2"><span class="rvts24">G</span></p>
+<p class="rvps2"><span class="rvts22">}catch(){}</span></p>
+<p class="rvps2"><span class="rvts22">F</span></p>
+<p class="rvps2"><span class="rvts22">G</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এবার দেখি এই try/catch ব্লক কি জিনিস।</span></p>
+<p class="rvps2"><span class="rvts22">এবার দেখি এই try/catch ব্লক কি জিনিস।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
@@ -221,12 +221,12 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">উপরের কোডটি রান করলে নিচের error টি পাওয়া যাবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">উপরের কোডটি রান করলে নিচের error টি পাওয়া যাবে।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts58">Exception in thread "main" java.lang.ArithmeticException: / by zero</span></p>
 <p class="rvps2"><span class="rvts58">at HojoBorolo.main(HojoBorolo.java:5)</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">অর্থাৎ কোন সংখ্যাকে ০ দিয়ে ভাগ করা যায়না। তাই error দিচ্ছে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">অর্থাৎ কোন সংখ্যাকে ০ দিয়ে ভাগ করা যায়না। তাই error দিচ্ছে।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
@@ -238,7 +238,7 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এবার সেই error সম্পন্ন লাইনটিতে আমরা try/catch ব্লক লাগিয়ে দেই। এরপর রান করি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এবার সেই error সম্পন্ন লাইনটিতে আমরা try/catch ব্লক লাগিয়ে দেই। এরপর রান করি।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
@@ -250,9 +250,9 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এবার কিন্তু আর error দেয়নি এবং প্রোগ্রাম ও শেষ পর্যন্ত রান করেছে। এখানে error ম্যাসেজটি আমরা প্রিন্ট করেছিলাম তাই সেটিও দেখাচ্ছে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এবার কিন্তু আর error দেয়নি এবং প্রোগ্রাম ও শেষ পর্যন্ত রান করেছে। এখানে error ম্যাসেজটি আমরা প্রিন্ট করেছিলাম তাই সেটিও দেখাচ্ছে।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">অর্থাৎ বোঝা গেল যে try এর ভিতরে প্রোগ্রাম এর যেই অংশে error দিতে পারে তাকে ঢুকিয়ে দিবো। আর catch ব্লকে error পেলে কি করতে হবে তা বলে দিবো। এখানে Exception দিয়ে সব ধরনের error কে নির্দেশ করে। আমরা চাইলে আলাদা আলাদা error এর জন্য আলাদা আলাদা instruction ও দিতে পারি। যেমন উপরের কোডের error/exception টি ছিল arithmatic exception। এখন আমরা arithmatic exception কেই শুধু handle করব।</span></p>
+<p class="rvps2"><span class="rvts22">অর্থাৎ বোঝা গেল যে try এর ভিতরে প্রোগ্রাম এর যেই অংশে error দিতে পারে তাকে ঢুকিয়ে দিবো। আর catch ব্লকে error পেলে কি করতে হবে তা বলে দিবো। এখানে Exception দিয়ে সব ধরনের error কে নির্দেশ করে। আমরা চাইলে আলাদা আলাদা error এর জন্য আলাদা আলাদা instruction ও দিতে পারি। যেমন উপরের কোডের error/exception টি ছিল arithmatic exception। এখন আমরা arithmatic exception কেই শুধু handle করব।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="1" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
@@ -273,7 +273,7 @@
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts24">এখানে বিভিন্ন ধরনের exception এর জন্য বিভিন্ন ধরনের instruction দেওয়া হয়েছে। exception টি যে ধরনের হবে তার উপর ভিত্তি করে ঠিক করবে কোন catch ব্লকে যাবে। আর সবার শেষে finally নামে একটি ব্লক দেওয়া হয়েছে। এর কাজ হচ্ছে exception পাক না না পাক সে execute হবেই। এর আউটপুটটি দেখলেই বুঝতে পারবো।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এখানে বিভিন্ন ধরনের exception এর জন্য বিভিন্ন ধরনের instruction দেওয়া হয়েছে। exception টি যে ধরনের হবে তার উপর ভিত্তি করে ঠিক করবে কোন catch ব্লকে যাবে। আর সবার শেষে finally নামে একটি ব্লক দেওয়া হয়েছে। এর কাজ হচ্ছে exception পাক না না পাক সে execute হবেই। এর আউটপুটটি দেখলেই বুঝতে পারবো।&nbsp;</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
@@ -283,9 +283,9 @@
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts24">আরেকটি বিষয় হচ্ছে যে এটি কোন ধরনের exception তা প্রিন্ট করার জন্য আমরা getMessage() বা toString() মেথড ব্যবহার করতে পারি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">আরেকটি বিষয় হচ্ছে যে এটি কোন ধরনের exception তা প্রিন্ট করার জন্য আমরা getMessage() বা toString() মেথড ব্যবহার করতে পারি।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">আমরা একটি ফাংশনও ব্যবহার করতে পারতাম।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">আমরা একটি ফাংশনও ব্যবহার করতে পারতাম।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
@@ -297,9 +297,9 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">কোন ফাংশন যদি exception দেওয়ার সম্ভাবনা থাকে তাহলে আমরা ফাংশনের সাথে throws EXCEPTION দিয়ে দিতে পারি। যেমনটা উপরের কোডে divide() মেথডে করা হয়েছে। এটি কিন্তু কোন exception handle করে না।&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">কোন ফাংশন যদি exception দেওয়ার সম্ভাবনা থাকে তাহলে আমরা ফাংশনের সাথে throws EXCEPTION দিয়ে দিতে পারি। যেমনটা উপরের কোডে divide() মেথডে করা হয়েছে। এটি কিন্তু কোন exception handle করে না।&nbsp;&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">আমরা নিজেদের ইচ্ছা মত exception ও throw করতে পারি।</span></p>
+<p class="rvps2"><span class="rvts22">আমরা নিজেদের ইচ্ছা মত exception ও throw করতে পারি।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
@@ -311,18 +311,18 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">আমরা নিজেদের জন্য কাস্টম exception তৈরিও করতে পারি। সেজন্য একটি ক্লাস খুলতে হবে যা Exception কে ইনহেরিট করবে।</span></p>
+<p class="rvps2"><span class="rvts22">আমরা নিজেদের জন্য কাস্টম exception তৈরিও করতে পারি। সেজন্য একটি ক্লাস খুলতে হবে যা Exception কে ইনহেরিট করবে।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts24">class HabiJabi extends Exception{</span><br/><span class="rvts24">&nbsp; @Override</span><br/><span class="rvts24">&nbsp; public String getMessage() {</span><br/><span class="rvts24">&nbsp; &nbsp; &nbsp; return "HabiJabi Exception";</span><br/><span class="rvts24">&nbsp; }</span><br/><span class="rvts24"></span><br/><span class="rvts24">&nbsp; @Override</span><br/><span class="rvts24">&nbsp; public String toString() {</span><br/><span class="rvts24">&nbsp; &nbsp; &nbsp; return "HabiJabi Exception";</span><br/><span class="rvts24">&nbsp; }</span><br/><span class="rvts24">}</span><br/><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts22">class HabiJabi extends Exception{</span><br/><span class="rvts22">&nbsp; @Override</span><br/><span class="rvts22">&nbsp; public String getMessage() {</span><br/><span class="rvts22">&nbsp; &nbsp; &nbsp; return "HabiJabi Exception";</span><br/><span class="rvts22">&nbsp; }</span><br/><span class="rvts22"></span><br/><span class="rvts22">&nbsp; @Override</span><br/><span class="rvts22">&nbsp; public String toString() {</span><br/><span class="rvts22">&nbsp; &nbsp; &nbsp; return "HabiJabi Exception";</span><br/><span class="rvts22">&nbsp; }</span><br/><span class="rvts22">}</span><br/><span class="rvts29"><br/></span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts24">এখন এটিকে আমরা যেকোনো জায়গা থেকে throw করতে পারি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এখন এটিকে আমরা যেকোনো জায়গা থেকে throw করতে পারি।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="1" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">

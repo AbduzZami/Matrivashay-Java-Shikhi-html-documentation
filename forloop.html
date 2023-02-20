@@ -185,60 +185,60 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts24">উপরের ১ থেকে ১০ পর্যন্ত প্রিন্ট করা যদি for লুপের সাহায্যে করতাম আমরা তাহলে এমন হত।</span></p>
+<p class="rvps2"><span class="rvts22">উপরের ১ থেকে ১০ পর্যন্ত প্রিন্ট করা যদি for লুপের সাহায্যে করতাম আমরা তাহলে এমন হত।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">booktest.java</span></p>
-<p class="rvps2"><span class="rvts24">public class booktest {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 1; i &lt;= 10; i++) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i);</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts22">public class booktest {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 1; i &lt;= 10; i++) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i);</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">}</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">অনেক সহজ হয়ে গেছে। তাই না?&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">অনেক সহজ হয়ে গেছে। তাই না?&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">For loop এ কি হয় সেটা এবার জানব আমরা। শুরুতে যেকোনো একটি চলকের প্রারম্ভিক মান ধরে নিতে হবে। এখানে i=0 ধরেছি। এই চলকের মান প্রথমে চেক হবে। দেখবে মানটি শর্ত মানে কিনা। যদি শর্ত মানে তবেই লুপ ঘুরবে। অন্যথায় থেমে যাবে। এখানে শর্তটি হচ্ছে i&lt;=10। অর্থাৎ i এর মান ১০ থেকে ছোট হলে লুপ টি ঘুরবে। প্রত্যেকবার লুপটি ঘুরলে চলকটির মান ও বারতে থাকে। আমরা বলে দিতে পারি চলকটির মান কি হারে বারবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">For loop এ কি হয় সেটা এবার জানব আমরা। শুরুতে যেকোনো একটি চলকের প্রারম্ভিক মান ধরে নিতে হবে। এখানে i=0 ধরেছি। এই চলকের মান প্রথমে চেক হবে। দেখবে মানটি শর্ত মানে কিনা। যদি শর্ত মানে তবেই লুপ ঘুরবে। অন্যথায় থেমে যাবে। এখানে শর্তটি হচ্ছে i&lt;=10। অর্থাৎ i এর মান ১০ থেকে ছোট হলে লুপ টি ঘুরবে। প্রত্যেকবার লুপটি ঘুরলে চলকটির মান ও বারতে থাকে। আমরা বলে দিতে পারি চলকটির মান কি হারে বারবে।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">ধরি এবারর একটি সমান্তর ধারা প্রিন্ট করতে হবে।</span></p>
-<p class="rvps2"><span class="rvts24">১ ৩ ৫ ৬ ৭ ৯</span></p>
-<p class="rvps2"><span class="rvts24">দেখে বুঝা যাচ্ছে এখানে চলকের মান ২ করে বারাতে হবে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">booktest.java</span></p>
-<p class="rvps2"><span class="rvts24">public class booktest {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 1; i &lt;= 10; i+=2) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i);</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">}</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এবার একটি গুনত্তর ধারা প্রিন্ট করতে হবে।</span></p>
-<p class="rvps2"><span class="rvts24">১ ২ ৪ ৮ ১৬ ৩২</span></p>
-<p class="rvps2"><span class="rvts24">দেখা যাচ্ছে ধারাতির সাধারণ অনুপাত ২। অর্থাৎ চলকের মান দিগুণ হারে বারাতে হবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">ধরি এবারর একটি সমান্তর ধারা প্রিন্ট করতে হবে।</span></p>
+<p class="rvps2"><span class="rvts22">১ ৩ ৫ ৬ ৭ ৯</span></p>
+<p class="rvps2"><span class="rvts22">দেখে বুঝা যাচ্ছে এখানে চলকের মান ২ করে বারাতে হবে।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">booktest.java</span></p>
-<p class="rvps2"><span class="rvts24">public class booktest {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 1; i &lt;= 32; i*=2) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i);</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts22">public class booktest {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 1; i &lt;= 10; i+=2) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i);</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">}</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">প্রথম ধারাটি যদি উলটা প্রিন্ট করতে হয় তাহলে কি করতে হবে দেখি এবার।</span></p>
+<p class="rvps2"><span class="rvts22">এবার একটি গুনত্তর ধারা প্রিন্ট করতে হবে।</span></p>
+<p class="rvps2"><span class="rvts22">১ ২ ৪ ৮ ১৬ ৩২</span></p>
+<p class="rvps2"><span class="rvts22">দেখা যাচ্ছে ধারাতির সাধারণ অনুপাত ২। অর্থাৎ চলকের মান দিগুণ হারে বারাতে হবে।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">booktest.java</span></p>
-<p class="rvps2"><span class="rvts24">public class booktest {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 10; i &gt; 0; i--) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i);</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts22">public class booktest {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 1; i &lt;= 32; i*=2) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i);</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">}</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এখানে চলকের মান এক করে কমানো হয়েছে। i&gt;0 এর মানে i&gt;=1। সুতরাং, i এর মান দশ থেকে এক করে কমতে কমতে যখন শুন্য হয়ে যাবে তখন লুপটি থেকে যাবে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts24">অনেকের প্রশ্ন আসতে পারে চলকের মান শুন্য হলে প্রিন্ট হল না কেন। এর&nbsp; কারন এই যে যখন i এর মান শুন্য হল তখন আর লুপের ভিতরে ঢুকতেই পারেনি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">প্রথম ধারাটি যদি উলটা প্রিন্ট করতে হয় তাহলে কি করতে হবে দেখি এবার।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">booktest.java</span></p>
+<p class="rvps2"><span class="rvts22">public class booktest {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 10; i &gt; 0; i--) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i);</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22">এখানে চলকের মান এক করে কমানো হয়েছে। i&gt;0 এর মানে i&gt;=1। সুতরাং, i এর মান দশ থেকে এক করে কমতে কমতে যখন শুন্য হয়ে যাবে তখন লুপটি থেকে যাবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">অনেকের প্রশ্ন আসতে পারে চলকের মান শুন্য হলে প্রিন্ট হল না কেন। এর&nbsp; কারন এই যে যখন i এর মান শুন্য হল তখন আর লুপের ভিতরে ঢুকতেই পারেনি।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/step-by-step-guides/how-to-generate-an-encrypted-password-protected-pdf-document/">Maximize Your PDF Protection with These Simple Steps</a></p>
 

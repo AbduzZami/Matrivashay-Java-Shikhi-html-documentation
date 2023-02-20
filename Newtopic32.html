@@ -185,38 +185,38 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts24">Array বহুল ব্যবহৃত একটি ডাটা টাইপ। এটি একটি রেফারেন্স টাইপ ডাটা টাইপ। Array তে আমরা একই টাইপের অনেক গুলো ডাটা রাখতে পারি। যেমন ধরি ইউজার ১ এর কাছে দশটি কলম আছে, ইউজার ২ এর কাছে আছে ৫ টি, ইউজার ৩ এর কাছে আছে ৭ টি। তিন জন ইউজারের ডাটা আমরা একটি array তে রাখতে পারি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">Array বহুল ব্যবহৃত একটি ডাটা টাইপ। এটি একটি রেফারেন্স টাইপ ডাটা টাইপ। Array তে আমরা একই টাইপের অনেক গুলো ডাটা রাখতে পারি। যেমন ধরি ইউজার ১ এর কাছে দশটি কলম আছে, ইউজার ২ এর কাছে আছে ৫ টি, ইউজার ৩ এর কাছে আছে ৭ টি। তিন জন ইউজারের ডাটা আমরা একটি array তে রাখতে পারি।&nbsp;</span></p>
 <p class="rvps2"><img width="396" height="97" alt="" src="lib/NewItem125.png"></p>
-<p class="rvps2"><span class="rvts24">ডাটা গুলোর ইনডেক্সিং ও আছে। Array তে ইন্ডেক্সিং শুরু হয় ০ থেকে। ইনডেক্স এর সাহায্যে আমরা ডাটা গুলো পেতে পারি। যেমনঃ ধরি Array টির নাম User। User array এর ০ ইনডেক্স এ আমরা ইউজার ১ এর ডাটা পাবো। অর্থাৎ ১০। এভাবে ইনডেক্স ১ এ ৫ এবং ইনডেক্স ২ তে ৭ পাবো। উল্লেখ্য, ইনডেক্সিং শুরু হয় শুন্য থেকে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts24">এখন কোড এ চলে যাই।</span></p>
+<p class="rvps2"><span class="rvts22">ডাটা গুলোর ইনডেক্সিং ও আছে। Array তে ইন্ডেক্সিং শুরু হয় ০ থেকে। ইনডেক্স এর সাহায্যে আমরা ডাটা গুলো পেতে পারি। যেমনঃ ধরি Array টির নাম User। User array এর ০ ইনডেক্স এ আমরা ইউজার ১ এর ডাটা পাবো। অর্থাৎ ১০। এভাবে ইনডেক্স ১ এ ৫ এবং ইনডেক্স ২ তে ৭ পাবো। উল্লেখ্য, ইনডেক্সিং শুরু হয় শুন্য থেকে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এখন কোড এ চলে যাই।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">একটি Array এর ডিক্লেয়ারেশন এরকমঃ</span></p>
+<p class="rvps2"><span class="rvts22">একটি Array এর ডিক্লেয়ারেশন এরকমঃ</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts27">Data-type[]&nbsp; &nbsp; Array-name &nbsp; = &nbsp; new &nbsp; Data-type[Array-size];</span></p>
+<p class="rvps2"><span class="rvts26">Data-type[]&nbsp; &nbsp; Array-name &nbsp; = &nbsp; new &nbsp; Data-type[Array-size];</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">Data-type যেকোনো তাই হতে পারে। int. float , double, Integer, Float, Double etc। রেফারেন্স টাইপ, প্রিমিটিভ টাইপ যেকোনো টাইপ ই হতে পারে। হতে পারে User-Defined data-type অর্থাৎ class বা interface। int type এর একটি array declaration দেখি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">Data-type যেকোনো তাই হতে পারে। int. float , double, Integer, Float, Double etc। রেফারেন্স টাইপ, প্রিমিটিভ টাইপ যেকোনো টাইপ ই হতে পারে। হতে পারে User-Defined data-type অর্থাৎ class বা interface। int type এর একটি array declaration দেখি।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">int[] arr = new int[5];</span></p>
+<p class="rvps2"><span class="rvts22">int[] arr = new int[5];</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এভাবে একটি array declare করতে হয়।</span></p>
+<p class="rvps2"><span class="rvts22">এভাবে একটি array declare করতে হয়।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এবার দেখি array তে ডাটা রাখতে হয় কিভাবে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts24">আমি যেই array টি নিয়েছি তার সাইজ হচ্ছে ৫। সুতরাং array টিতে ইনডেক্সিং আছে ০ থেকে ৪ পর্যন্ত। যেহেতু ইনডেক্সিং শুরু হয় শুন্য থেকে। এবার array এর বিভিন্ন ইনডেক্স এ ডাটা রাখি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এবার দেখি array তে ডাটা রাখতে হয় কিভাবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">আমি যেই array টি নিয়েছি তার সাইজ হচ্ছে ৫। সুতরাং array টিতে ইনডেক্সিং আছে ০ থেকে ৪ পর্যন্ত। যেহেতু ইনডেক্সিং শুরু হয় শুন্য থেকে। এবার array এর বিভিন্ন ইনডেক্স এ ডাটা রাখি।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">arr[0] = 5;</span></p>
-<p class="rvps2"><span class="rvts24">arr[1] = 6;</span></p>
-<p class="rvps2"><span class="rvts24">arr[2] = 7;</span></p>
-<p class="rvps2"><span class="rvts24">arr[3] = 8;</span></p>
-<p class="rvps2"><span class="rvts24">arr[4] = 9;</span></p>
+<p class="rvps2"><span class="rvts22">arr[0] = 5;</span></p>
+<p class="rvps2"><span class="rvts22">arr[1] = 6;</span></p>
+<p class="rvps2"><span class="rvts22">arr[2] = 7;</span></p>
+<p class="rvps2"><span class="rvts22">arr[3] = 8;</span></p>
+<p class="rvps2"><span class="rvts22">arr[4] = 9;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এভাবে array টির বিভিন্ন ইনডেক্স এ ডাটা রাখতে পারি। array এর ডাটা টাইপ int হওয়াতে আমি = চিহ্নের ডান পাশে ইন্তিজার রেখেছি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এভাবে array টির বিভিন্ন ইনডেক্স এ ডাটা রাখতে পারি। array এর ডাটা টাইপ int হওয়াতে আমি = চিহ্নের ডান পাশে ইন্তিজার রেখেছি।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এবার দেখি ইনসার্ট করা ডাটা গুলো কিভাবে পাওয়া যায়। এর জন্য একটি for লুপ চালাতে পারি।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts24">for (int i = 0; i &lt; 5; i++) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;System.out.println(arr[i]+" ");</span></p>
-<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts22">এবার দেখি ইনসার্ট করা ডাটা গুলো কিভাবে পাওয়া যায়। এর জন্য একটি for লুপ চালাতে পারি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">for (int i = 0; i &lt; 5; i++) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;System.out.println(arr[i]+" ");</span></p>
+<p class="rvps2"><span class="rvts22">}</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">সম্পূর্ণ কোডটি একেবারে দেখব এবার।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">সম্পূর্ণ কোডটি একেবারে দেখব এবার।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">Array.java</span></p>
 <div class="rvps2">
@@ -228,7 +228,7 @@
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts24">Array এর length দেখার জন্য একটি উপায় আছে। এর জন্য যেই array এর length দেখতে চাই সেই array এর নাম লিখে (.) দিয়ে length লিখতে হবে।</span></p>
+<p class="rvps2"><span class="rvts22">Array এর length দেখার জন্য একটি উপায় আছে। এর জন্য যেই array এর length দেখতে চাই সেই array এর নাম লিখে (.) দিয়ে length লিখতে হবে।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts41">test1.java</span></p>
 <div class="rvps2">
@@ -241,8 +241,8 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">আউটপুট আসবে 5।</span></p>
-<p class="rvps2"><span class="rvts24">এখন array কে সর্ট করার একটি বিল্ট ইন মেথড দেখি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">আউটপুট আসবে 5।</span></p>
+<p class="rvps2"><span class="rvts22">এখন array কে সর্ট করার একটি বিল্ট ইন মেথড দেখি।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">test1.java</span></p>
 <div class="rvps2">
@@ -255,25 +255,25 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এই বিল্ট ইন Arrays ক্লাসের sort() মেথডটির সাহায্যে আমরা খুব সহজেই একটি array কে ascending ক্রমে সাজাতে পারি। Descending ক্রমে সাজাতে আমাদের নিজেদের কোড করতে হবে। আমরা যখন ArrayList শিখব তখন ArrayList এর descending sort করার বিল্ট ইন মেথড শিখব। Array তে descending sort এর বিল্ট ইন মেথড নেই।</span></p>
+<p class="rvps2"><span class="rvts22">এই বিল্ট ইন Arrays ক্লাসের sort() মেথডটির সাহায্যে আমরা খুব সহজেই একটি array কে ascending ক্রমে সাজাতে পারি। Descending ক্রমে সাজাতে আমাদের নিজেদের কোড করতে হবে। আমরা যখন ArrayList শিখব তখন ArrayList এর descending sort করার বিল্ট ইন মেথড শিখব। Array তে descending sort এর বিল্ট ইন মেথড নেই।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এতক্ষণ আমরা one dimensional array দেখলাম। এর পর দেখব multi dimensional array । Array one, two, three, four … other dimensional হতে পারে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এতক্ষণ আমরা one dimensional array দেখলাম। এর পর দেখব multi dimensional array । Array one, two, three, four … other dimensional হতে পারে।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এখন two dimensional array দেখি।</span></p>
+<p class="rvps2"><span class="rvts22">এখন two dimensional array দেখি।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">Two dimensional array এর declaration এরকম।</span></p>
+<p class="rvps2"><span class="rvts22">Two dimensional array এর declaration এরকম।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">booktest.java</span></p>
-<p class="rvps2"><span class="rvts24">public class booktest {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[][] twodarr = new int[5][4];</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts22">public class booktest {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[][] twodarr = new int[5][4];</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">}</span></p>
 <p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">নিচের চিত্রতি দেখলে 2-D array আর স্পষ্ট হবে। চিত্রে দেখা যাচ্ছে, পাঁচটি ঘরের প্রতিটি ঘরের জন্য চারটি করে ঘর রয়েছে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">নিচের চিত্রতি দেখলে 2-D array আর স্পষ্ট হবে। চিত্রে দেখা যাচ্ছে, পাঁচটি ঘরের প্রতিটি ঘরের জন্য চারটি করে ঘর রয়েছে।&nbsp;</span></p>
 <p class="rvps2"><img width="463" height="220" alt="" src="lib/NewItem124.png"></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">নিচের উপায়ে ডাটা রাখতে পারি এবং উদ্ধার ও করতে পারি।</span></p>
+<p class="rvps2"><span class="rvts22">নিচের উপায়ে ডাটা রাখতে পারি এবং উদ্ধার ও করতে পারি।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">booktest.java</span></p>
 <div class="rvps2">
@@ -286,7 +286,7 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">যেহেতু অনেক বড় array। তাই আমরা for লুপ চালিয়ে data insert করব।</span></p>
+<p class="rvps2"><span class="rvts22">যেহেতু অনেক বড় array। তাই আমরা for লুপ চালিয়ে data insert করব।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">booktest.java</span></p>
 <div class="rvps2">
@@ -299,7 +299,7 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">আমরা চাইলে array এর সাইজ পরেও দিতে পারতাম।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">আমরা চাইলে array এর সাইজ পরেও দিতে পারতাম।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">booktest.java</span></p>
 <div class="rvps2">
@@ -312,17 +312,17 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এখানে আসলে যা ঘটছে তা হল। twodarr এর [n] index পর্যন্ত যাওয়ার পর আমরা কিন্তু একটি single dimensional array কে assign করতে পারি অই index এ। আর [n][n] index পর্যন্ত গেলে আমরা একটি int assign করতে পারি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এখানে আসলে যা ঘটছে তা হল। twodarr এর [n] index পর্যন্ত যাওয়ার পর আমরা কিন্তু একটি single dimensional array কে assign করতে পারি অই index এ। আর [n][n] index পর্যন্ত গেলে আমরা একটি int assign করতে পারি।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><img width="441" height="216" alt="" src="lib/NewItem123.png"></p>
-<p class="rvps2"><span class="rvts24">চিত্রে যদি আমি x অবস্থানে আসি তবে আমি y অবস্থানে যা আছে অর্থাৎ একটি signle dimensional array কে বসাতে পারি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">চিত্রে যদি আমি x অবস্থানে আসি তবে আমি y অবস্থানে যা আছে অর্থাৎ একটি signle dimensional array কে বসাতে পারি।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><img width="438" height="201" alt="" src="lib/NewItem122.png"></p>
-<p class="rvps2"><span class="rvts24">কিন্তু z অবস্থানে একটি int রাখতে পারি। এর কারন হচ্ছে এটি একটি two dimensional array তাই এর পর আর জায়গা নেই।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">কিন্তু z অবস্থানে একটি int রাখতে পারি। এর কারন হচ্ছে এটি একটি two dimensional array তাই এর পর আর জায়গা নেই।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এবার আসি three dimensional array তে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এবার আসি three dimensional array তে।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">3-D array এর declaration এবং data insertion&nbsp; নিচে দেওয়া হল ।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">3-D array এর declaration এবং data insertion&nbsp; নিচে দেওয়া হল ।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">booktest.java</span></p>
 <div class="rvps2">
@@ -335,7 +335,7 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">যেহেতু array টি বেশ বড়। তাই loop ব্যবহার করে data insert করি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">যেহেতু array টি বেশ বড়। তাই loop ব্যবহার করে data insert করি।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">booktest.java</span></p>
 <div class="rvps2">
@@ -348,19 +348,19 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">3-D array তেও আমরা পরে সাইজ declare করতে পারি। ধরি একটি 3-D array নিম্নরুপ।</span></p>
+<p class="rvps2"><span class="rvts22">3-D array তেও আমরা পরে সাইজ declare করতে পারি। ধরি একটি 3-D array নিম্নরুপ।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">int[][][] arr = new int[5][][];</span></p>
+<p class="rvps2"><span class="rvts22">int[][][] arr = new int[5][][];</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এখন আমরা যদি arr[n] এই index এ যাই তাহলে একটি 2-D array রাখতে পারব। যদি arr[n][n] এই index পর্যন্ত যাই তাহলে একটি single dimensional array রাখতে পারব। আর যদি arr[n][n][n] এই index পর্যন্ত যাই তবে একটি int রাখতে পারব। নিচে উদাহরন দেওয়া হল।</span></p>
+<p class="rvps2"><span class="rvts22">এখন আমরা যদি arr[n] এই index এ যাই তাহলে একটি 2-D array রাখতে পারব। যদি arr[n][n] এই index পর্যন্ত যাই তাহলে একটি single dimensional array রাখতে পারব। আর যদি arr[n][n][n] এই index পর্যন্ত যাই তবে একটি int রাখতে পারব। নিচে উদাহরন দেওয়া হল।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">arr[3] = new int[2][3]; এখানে আমরা সাইজ 3 না দিয়ে ওই index এ পরবর্তীতে সাইজ দিতে পারতাম।</span></p>
-<p class="rvps2"><span class="rvts24">যেমন:&nbsp; arr[3] = new int[2][];</span></p>
+<p class="rvps2"><span class="rvts22">arr[3] = new int[2][3]; এখানে আমরা সাইজ 3 না দিয়ে ওই index এ পরবর্তীতে সাইজ দিতে পারতাম।</span></p>
+<p class="rvps2"><span class="rvts22">যেমন:&nbsp; arr[3] = new int[2][];</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">arr[4][2] = new int[5]; এখানে 4,2 index&nbsp; 5 সাইজের একটি array রাখলাম।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">arr[4][2] = new int[5]; এখানে 4,2 index&nbsp; 5 সাইজের একটি array রাখলাম।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">arr[2][1][0] = 5; এখানে একটি int value রাখলাম।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts24">নিচে চিত্রের মাধ্যমে 3D array দেখানো হল।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">arr[2][1][0] = 5; এখানে একটি int value রাখলাম।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">নিচে চিত্রের মাধ্যমে 3D array দেখানো হল।&nbsp;</span></p>
 <p class="rvps2"><img width="463" height="140" alt="" src="lib/NewItem121.png"></p>
 <p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle">Full-featured Kindle eBooks generator</a></p>

@@ -198,8 +198,8 @@
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><img width="267" height="86" alt="" src="lib/NewItem137.png"></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এভাবে যদি int ইনপুট নেওয়ার পর nextLine() দিয়ে String ইনপুট নিতে যাই তাহলে String এ null value assign হবে। কারন nextInt() এ আমরা enter প্রেস করেছিলাম। nextInt() int ছাড়া অন্য কিছু পেলে ব্রেক করে। তাই new line বা enter টি stream এ থেকে যায়। যা পরের nextLine() গ্রহন করে। এই new line এর আগে যেহেতু কোন কিছু নেই সেহেতু String টি তে null value assign হয়। এখন আবার যদি nextLine এর পরে nextInt বা অন্য কোন মেথড নেই nextLine বাদে তাহলে error পেতে পারি।</span></p>
-<p class="rvps2"><span class="rvts24">যেমন যদি নিচের কোডটি দেখি।</span></p>
+<p class="rvps2"><span class="rvts22">এভাবে যদি int ইনপুট নেওয়ার পর nextLine() দিয়ে String ইনপুট নিতে যাই তাহলে String এ null value assign হবে। কারন nextInt() এ আমরা enter প্রেস করেছিলাম। nextInt() int ছাড়া অন্য কিছু পেলে ব্রেক করে। তাই new line বা enter টি stream এ থেকে যায়। যা পরের nextLine() গ্রহন করে। এই new line এর আগে যেহেতু কোন কিছু নেই সেহেতু String টি তে null value assign হয়। এখন আবার যদি nextLine এর পরে nextInt বা অন্য কোন মেথড নেই nextLine বাদে তাহলে error পেতে পারি।</span></p>
+<p class="rvps2"><span class="rvts22">যেমন যদি নিচের কোডটি দেখি।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">Main.java</span></p>
 <div class="rvps2">
@@ -214,12 +214,12 @@
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><img width="475" height="173" alt="" src="lib/NewItem136.png"></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এখানে exception দেখানোর কারন হল। 12 ইনপুট দেওয়ার সময় যে অতিরিক্ত new line বা enter stream এ রয়ে গিয়েছিল সেটি nextLine() কর্তৃক গৃহীত হয়েছে। যার কারনে ইউজার প্রদত্ত String abdys কে nextFloat() দিয়ে ইনপুট নেওয়া যাচ্ছে না। কারন abdys একটি String, float নয়।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এখানে exception দেখানোর কারন হল। 12 ইনপুট দেওয়ার সময় যে অতিরিক্ত new line বা enter stream এ রয়ে গিয়েছিল সেটি nextLine() কর্তৃক গৃহীত হয়েছে। যার কারনে ইউজার প্রদত্ত String abdys কে nextFloat() দিয়ে ইনপুট নেওয়া যাচ্ছে না। কারন abdys একটি String, float নয়।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এটা শুধু nextInt বা nextFloat এর জন্য প্রযোজ্য নয়। nextLine বাদে অন্য যেকোনো Scanner method এর জন্য প্রযোজ্য।</span></p>
+<p class="rvps2"><span class="rvts22">এটা শুধু nextInt বা nextFloat এর জন্য প্রযোজ্য নয়। nextLine বাদে অন্য যেকোনো Scanner method এর জন্য প্রযোজ্য।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এর থেকে রক্ষা পাওয়ার উপায় দেখি আমরা।</span></p>
-<p class="rvps2"><span class="rvts24">খুব বেশি কিছু নয়। nextInt() nextFloat() next() এসবের পরে একটি nextLine() দিয়ে দিলেই অতিরিক্ত new line বা enter টি vanish হয়ে যাবে।</span></p>
+<p class="rvps2"><span class="rvts22">এর থেকে রক্ষা পাওয়ার উপায় দেখি আমরা।</span></p>
+<p class="rvps2"><span class="rvts22">খুব বেশি কিছু নয়। nextInt() nextFloat() next() এসবের পরে একটি nextLine() দিয়ে দিলেই অতিরিক্ত new line বা enter টি vanish হয়ে যাবে।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">Main.java</span></p>
 <div class="rvps2">
@@ -232,10 +232,10 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এর output যদি দেখি।</span></p>
+<p class="rvps2"><span class="rvts22">এর output যদি দেখি।</span></p>
 <p class="rvps2"><img width="300" height="212" alt="" src="lib/NewItem135.png"></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">আমরা নিচের কাজ টিও করতে পারতাম।</span></p>
+<p class="rvps2"><span class="rvts22">আমরা নিচের কাজ টিও করতে পারতাম।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">Main.java</span></p>
 <div class="rvps2">
@@ -248,7 +248,7 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">Integer.parseInt এর কাজ হচ্ছে String কে int এ রুপান্তর করা। আর Integer.parseFloat এর কাজ হচ্ছে String কে float এ রুপান্তর করা।</span></p>
+<p class="rvps2"><span class="rvts22">Integer.parseInt এর কাজ হচ্ছে String কে int এ রুপান্তর করা। আর Integer.parseFloat এর কাজ হচ্ছে String কে float এ রুপান্তর করা।</span></p>
 <p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework">Create help files for the Qt Help Framework</a></p>
 

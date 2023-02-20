@@ -185,29 +185,29 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts24">প্যাকেজ এর কাজ হচ্ছে কোডের readibility বাড়ানো। অনেক সময় একটি প্রোজেক্ট একাধিক কোডার এর সমন্নয়ে করতে হয়। একটি প্যাকেজের ভিতর যদি মোটামুটি এক ক্যাটাগরির ক্লাস গুলো রাখা হয় বা যদি কত গুলো ক্লাস একই কাজের জন্য বাবহার হয় সেক্ষেত্রে ওই ক্লাস গুলোকে একই প্যাকেজের ভিতরে রাখলে পরবর্তীতে আপগ্রেড করতে বা বাগ ফিক্স করতে সুবিধা হয়।</span></p>
+<p class="rvps2"><span class="rvts22">প্যাকেজ এর কাজ হচ্ছে কোডের readibility বাড়ানো। অনেক সময় একটি প্রোজেক্ট একাধিক কোডার এর সমন্নয়ে করতে হয়। একটি প্যাকেজের ভিতর যদি মোটামুটি এক ক্যাটাগরির ক্লাস গুলো রাখা হয় বা যদি কত গুলো ক্লাস একই কাজের জন্য বাবহার হয় সেক্ষেত্রে ওই ক্লাস গুলোকে একই প্যাকেজের ভিতরে রাখলে পরবর্তীতে আপগ্রেড করতে বা বাগ ফিক্স করতে সুবিধা হয়।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">প্যাকেজের ভিতরে যদি কোন ক্লাস তৈরি করা হয় তবে একদম উপরে package এর নাম লিখে দিতে হয়। যেমন যদি Cat ক্লাস টি package2 এর অন্তর্ভুক্ত হয় তবে কোডটি হবে নিম্নরুপ।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Cat.java</span></p>
-<p class="rvps2"><span class="rvts24">package package2; //এই লাইনটির অর্থ হল এই যে এটি package2 এর অন্তর্ভুক্ত</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">public class Cat {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">}</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">যদি এমন হতো।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">প্যাকেজের ভিতরে যদি কোন ক্লাস তৈরি করা হয় তবে একদম উপরে package এর নাম লিখে দিতে হয়। যেমন যদি Cat ক্লাস টি package2 এর অন্তর্ভুক্ত হয় তবে কোডটি হবে নিম্নরুপ।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">Cat.java</span></p>
-<p class="rvps2"><span class="rvts24">package package1.package2; //এই লাইনটির অর্থ হল এই যে এটি package1 এর package2 এর অন্তর্ভুক্ত অর্থাৎ একটি প্যাকেজ এর ভিতরে অন্য একটি প্যাকেজ । এভাবে nested প্যাকেজ ও তৈরি করা যায়।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">package package2; //এই লাইনটির অর্থ হল এই যে এটি package2 এর অন্তর্ভুক্ত</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">public class Cat {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts22">public class Cat {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22">যদি এমন হতো।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Cat.java</span></p>
+<p class="rvps2"><span class="rvts22">package package1.package2; //এই লাইনটির অর্থ হল এই যে এটি package1 এর package2 এর অন্তর্ভুক্ত অর্থাৎ একটি প্যাকেজ এর ভিতরে অন্য একটি প্যাকেজ । এভাবে nested প্যাকেজ ও তৈরি করা যায়।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22">public class Cat {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">}</span></p>
 <p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/step-by-step-guides/how-to-generate-an-encrypted-password-protected-pdf-document/">Maximize Your PDF Protection with These Simple Steps</a></p>
 

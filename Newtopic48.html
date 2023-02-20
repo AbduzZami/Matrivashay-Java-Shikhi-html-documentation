@@ -185,55 +185,55 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts24">আমরা যদি রেফারেন্স টাইপ এর ক্ষেত্রে মেমোরি allocation দেখতে চাই।</span></p>
-<p class="rvps2"><span class="rvts24">একটি নন-প্রিমিটিভ বা রেফারেন্স টাইপ&nbsp; variable ডিক্লেয়ার করি,</span></p>
+<p class="rvps2"><span class="rvts22">আমরা যদি রেফারেন্স টাইপ এর ক্ষেত্রে মেমোরি allocation দেখতে চাই।</span></p>
+<p class="rvps2"><span class="rvts22">একটি নন-প্রিমিটিভ বা রেফারেন্স টাইপ&nbsp; variable ডিক্লেয়ার করি,</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">Flower x = new Flower(5);&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">Flower x = new Flower(5);&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এখন আমরা জানি কিভাবে একটি ক্লাসের অবজেক্ট declare করতে হয়।</span></p>
-<p class="rvps2"><span class="rvts24">এখানে x হচ্ছে Flower ক্লাসের এর একটি রেফারেন্স variable। new দিয়ে Flower ক্লাসের একটি অবজেক্ট তৈরি করা হয়েছে যেখানে 5 হচ্ছে Flower ক্লাসের কোন একটি int টাইপ variable এর value এবং এই অবজেক্ট টির জন্য একটি মেমোরি allocate করা হয়েছে । এবং এই allocated লোকেশান কে রেফার করা হয়েছে x এর মাধ্যমে।</span></p>
+<p class="rvps2"><span class="rvts22">এখন আমরা জানি কিভাবে একটি ক্লাসের অবজেক্ট declare করতে হয়।</span></p>
+<p class="rvps2"><span class="rvts22">এখানে x হচ্ছে Flower ক্লাসের এর একটি রেফারেন্স variable। new দিয়ে Flower ক্লাসের একটি অবজেক্ট তৈরি করা হয়েছে যেখানে 5 হচ্ছে Flower ক্লাসের কোন একটি int টাইপ variable এর value এবং এই অবজেক্ট টির জন্য একটি মেমোরি allocate করা হয়েছে । এবং এই allocated লোকেশান কে রেফার করা হয়েছে x এর মাধ্যমে।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">তাহলে মেমরি তে এর representation হবে অনেকটা এরকম,</span></p>
+<p class="rvps2"><span class="rvts22">তাহলে মেমরি তে এর representation হবে অনেকটা এরকম,</span></p>
 <p class="rvps3"><img width="405" height="127" alt="" src="lib/NewItem107.png"></p>
-<p class="rvps2"><span class="rvts24">এই চিত্র লক্ষ্য করলে আমরা দেখতে পারবো যে 61A4FF এই মেমরি এড্রেস এ x এর মান যেই লোকেশন এ রাখা আছে সেই লোকেশন টি রাখা আছে। তার মানে প্রথম লোকেশান টি অন্য একটি লোকেশন কে রেফার করে। এই জন্য এই ধরনের ডাটা টাইপ কে আমরা বলছি রেফারেন্স টাইপ।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এই চিত্র লক্ষ্য করলে আমরা দেখতে পারবো যে 61A4FF এই মেমরি এড্রেস এ x এর মান যেই লোকেশন এ রাখা আছে সেই লোকেশন টি রাখা আছে। তার মানে প্রথম লোকেশান টি অন্য একটি লোকেশন কে রেফার করে। এই জন্য এই ধরনের ডাটা টাইপ কে আমরা বলছি রেফারেন্স টাইপ।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">তবে প্রকৃতপক্ষে memory allocation আরও জটিল একটি বিষয়। একটি মেমোরি অ্যাড্রেস এ একটি int কে রাখা সম্ভব নয়। কারন একটি মেমোরি অ্যাড্রেস এ ১ বাইট জায়গা থাকে। int যেহেতু ৪ বাইট জায়গা দখল করে সেহেতু int এর 4 টি মেমোরি অ্যাড্রেস লাগবে। যে অ্যাড্রেস টি আমি উদাহরণ স্বরূপ দিয়েছি সেটিকে আমরা starting address বলতে পারি। রেফারেন্স টাইপ বোঝানোর জন্য এই উদাহরণ টি দেওয়া।</span></p>
+<p class="rvps2"><span class="rvts22">তবে প্রকৃতপক্ষে memory allocation আরও জটিল একটি বিষয়। একটি মেমোরি অ্যাড্রেস এ একটি int কে রাখা সম্ভব নয়। কারন একটি মেমোরি অ্যাড্রেস এ ১ বাইট জায়গা থাকে। int যেহেতু ৪ বাইট জায়গা দখল করে সেহেতু int এর 4 টি মেমোরি অ্যাড্রেস লাগবে। যে অ্যাড্রেস টি আমি উদাহরণ স্বরূপ দিয়েছি সেটিকে আমরা starting address বলতে পারি। রেফারেন্স টাইপ বোঝানোর জন্য এই উদাহরণ টি দেওয়া।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এবার আরও বড় একটি উদাহরণ দেই,</span></p>
-<p class="rvps2"><span class="rvts24">একটি ক্লাস তৈরি করি,</span></p>
+<p class="rvps2"><span class="rvts22">এবার আরও বড় একটি উদাহরণ দেই,</span></p>
+<p class="rvps2"><span class="rvts22">একটি ক্লাস তৈরি করি,</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">Vehicle.java</span></p>
-<p class="rvps2"><span class="rvts24">Class Vehicle{</span></p>
-<p class="rvps2"><span class="rvts24">Int wheels;</span></p>
-<p class="rvps2"><span class="rvts24">Int windows;</span></p>
-<p class="rvps2"><span class="rvts24">Int weight;</span></p>
-<p class="rvps2"><span class="rvts24">Vehicle(){} // Constructor</span></p>
-<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts22">Class Vehicle{</span></p>
+<p class="rvps2"><span class="rvts22">Int wheels;</span></p>
+<p class="rvps2"><span class="rvts22">Int windows;</span></p>
+<p class="rvps2"><span class="rvts22">Int weight;</span></p>
+<p class="rvps2"><span class="rvts22">Vehicle(){} // Constructor</span></p>
+<p class="rvps2"><span class="rvts22">}</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">Constructor এর সাহায্যেই অবজেক্ট তৈরি করতে হয়। Constructor নিয়ে একটু পরেই বিস্তারিত আলোচনা করব।</span></p>
+<p class="rvps2"><span class="rvts22">Constructor এর সাহায্যেই অবজেক্ট তৈরি করতে হয়। Constructor নিয়ে একটু পরেই বিস্তারিত আলোচনা করব।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">ক্লাসটি তৈরি করার পর main ক্লাসের main মেথড এ একটি অবজেক্ট তৈরি করি।</span></p>
+<p class="rvps2"><span class="rvts22">ক্লাসটি তৈরি করার পর main ক্লাসের main মেথড এ একটি অবজেক্ট তৈরি করি।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">Main.java</span></p>
-<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts22">public class Main {</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
-<p class="rvps2"><span class="rvts24">Vehicle v = new Vehicle();</span></p>
-<p class="rvps2"><span class="rvts24">}</span></p>
-<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts22">Vehicle v = new Vehicle();</span></p>
+<p class="rvps2"><span class="rvts22">}</span></p>
+<p class="rvps2"><span class="rvts22">}</span></p>
 <p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">নিচের চিত্রটি লক্ষ করি।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts24">এখানে দুটো জিনিস দেখতে পারছি। একটি Stack memory অন্যটি Heap memory.</span></p>
+<p class="rvps2"><span class="rvts22">নিচের চিত্রটি লক্ষ করি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এখানে দুটো জিনিস দেখতে পারছি। একটি Stack memory অন্যটি Heap memory.</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><img width="450" height="275" alt="" src="lib/NewItem106.png"></p>
 <p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts42">স্ট্যাক স্পেস মূলত method execution এবং local ভেরিয়েবলের ক্রম সংরক্ষণের জন্য ব্যবহৃত হয়। এটি সর্বদা স্টোর কৃত ব্লকগুলি LIFO(Last in first out) ক্রমে স্ট্যাক করে।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts42">অন্যদিকে হিপ মেমরি dynamic memory allocation ব্যবহার করে মেমরি ব্লকগুলি বরাদ্দকরণ এবং ডিলিট করার জন্য নিয়োজিত।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এখন যদি Vehicle ক্লাসের অবজেক্ট দিয়ে চিত্রটি বোঝাতে চাই,</span></p>
-<p class="rvps2"><span class="rvts24">এখানে v হচ্ছে Vehicle এর একটি রেফারেন্স variable যা Vehicle এর অবজেক্ট কে রেফার করছে।</span></p>
-<p class="rvps2"><span class="rvts24">Vehicle class এর object এর জন্য কি পরিমান মেমোরি দরকার তা heap মেমরিতে allocate করে সেই মেমোরি ব্লক এর প্রথম অ্যাড্রেসটি stack স্পেস এ অবস্থানরত v এর কাছে সংরক্ষিত থাকে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts24">এসব না জানলেও কোডিং করতে সমস্যা হবে না। তবে ধারণা থাকা ভাল।</span></p>
+<p class="rvps2"><span class="rvts22">এখন যদি Vehicle ক্লাসের অবজেক্ট দিয়ে চিত্রটি বোঝাতে চাই,</span></p>
+<p class="rvps2"><span class="rvts22">এখানে v হচ্ছে Vehicle এর একটি রেফারেন্স variable যা Vehicle এর অবজেক্ট কে রেফার করছে।</span></p>
+<p class="rvps2"><span class="rvts22">Vehicle class এর object এর জন্য কি পরিমান মেমোরি দরকার তা heap মেমরিতে allocate করে সেই মেমোরি ব্লক এর প্রথম অ্যাড্রেসটি stack স্পেস এ অবস্থানরত v এর কাছে সংরক্ষিত থাকে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এসব না জানলেও কোডিং করতে সমস্যা হবে না। তবে ধারণা থাকা ভাল।</span></p>
 <p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/feature-tour/create-chm-help-files/">Revolutionize Your CHM Help File Output with HelpNDoc</a></p>
 

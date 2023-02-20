@@ -185,7 +185,7 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts24">সুইচ if-else এর একটি বিকল্প হতে পারে। তবে সবক্ষেত্রে নয়। if-else আমাদের অনেক বেশি flexibitiy দেয়। নিচে সুইচের কিছু উদাহরণ দিয়ে আলোচনা করা হল।</span></p>
+<p class="rvps2"><span class="rvts22">সুইচ if-else এর একটি বিকল্প হতে পারে। তবে সবক্ষেত্রে নয়। if-else আমাদের অনেক বেশি flexibitiy দেয়। নিচে সুইচের কিছু উদাহরণ দিয়ে আলোচনা করা হল।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">javabook.java&nbsp;</span></p>
 <div class="rvps2">
@@ -198,7 +198,7 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">উপরের কোডে n হদি 1 হয় তবে This is 1 প্রিন্ট হবে। মনে রাখতে হবে সুইচে প্রতিটি কেইস এর শেষে ব্রেক দিতে হবে। default এর বেলায় লাগবেনা। কারণ এর পর আর কোন কেস থাকবেনা। ব্রেক না দিলে কি সমস্যা হয় সেটা দেখি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">উপরের কোডে n হদি 1 হয় তবে This is 1 প্রিন্ট হবে। মনে রাখতে হবে সুইচে প্রতিটি কেইস এর শেষে ব্রেক দিতে হবে। default এর বেলায় লাগবেনা। কারণ এর পর আর কোন কেস থাকবেনা। ব্রেক না দিলে কি সমস্যা হয় সেটা দেখি।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">javabook.java&nbsp;</span></p>
 <div class="rvps2">
@@ -212,54 +212,54 @@
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">Output:</span></p>
-<p class="rvps2"><span class="rvts24">This is 1</span></p>
-<p class="rvps2"><span class="rvts24">This is 2</span></p>
-<p class="rvps2"><span class="rvts24">This is 3</span></p>
+<p class="rvps2"><span class="rvts22">This is 1</span></p>
+<p class="rvps2"><span class="rvts22">This is 2</span></p>
+<p class="rvps2"><span class="rvts22">This is 3</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এরকম টা কেন হল? এরকম টা হয়ার কারণ হচ্ছে ব্রেক না দেওয়া। বেক না দেওয়ার জন্য ওই কেস থেকে শুরু করে অন্য কোন কেস এর ব্রেক বা একদম শেষ পর্যন্ত চলে যাচ্ছে। তাই আমাদের সুইচের বেলায় ব্রেক এর বেপারে সতর্ক থাকতে হবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এরকম টা কেন হল? এরকম টা হয়ার কারণ হচ্ছে ব্রেক না দেওয়া। বেক না দেওয়ার জন্য ওই কেস থেকে শুরু করে অন্য কোন কেস এর ব্রেক বা একদম শেষ পর্যন্ত চলে যাচ্ছে। তাই আমাদের সুইচের বেলায় ব্রেক এর বেপারে সতর্ক থাকতে হবে।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">আরেকটি গুরুত্বপূর্ণ কথা। সুইচে float বা double দিয়ে কেস তৈরি করা যায়না।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">আরেকটি গুরুত্বপূর্ণ কথা। সুইচে float বা double দিয়ে কেস তৈরি করা যায়না।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এবার character দিয়ে দেখি।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">javabook.java&nbsp;</span></p>
-<p class="rvps2"><span class="rvts24">public class javabook {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char ch = 'a';</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch (ch){</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 'a':</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("This is an A");</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 'b':</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("This is a B");</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default:</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Invalid");</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">}</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">আমরা চাইলে কতগুলো কেস একসাথে লিখতে পারি যদি তাদের কাজ একরকম হয়।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এবার character দিয়ে দেখি।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <p class="rvps2"><span class="rvts31">javabook.java&nbsp;</span></p>
-<p class="rvps2"><span class="rvts24">public class javabook {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char ch = 'f';</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch (ch){</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 'a':</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 'f':</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 'g':</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("This is an A");</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 'b':</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("This is a B");</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default:</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Invalid");</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">}</span></p>
-<p class="rvps2"><span class="rvts24">এখানে a,f,g কেস এর কাজ একই। তাই এদেরকে একসাথে লেখা হয়েছে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">public class javabook {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char ch = 'a';</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch (ch){</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 'a':</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("This is an A");</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 'b':</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("This is a B");</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default:</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Invalid");</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22">আমরা চাইলে কতগুলো কেস একসাথে লিখতে পারি যদি তাদের কাজ একরকম হয়।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">javabook.java&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">public class javabook {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char ch = 'f';</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch (ch){</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 'a':</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 'f':</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 'g':</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("This is an A");</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case 'b':</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("This is a B");</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default:</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Invalid");</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">}</span></p>
+<p class="rvps2"><span class="rvts22">এখানে a,f,g কেস এর কাজ একই। তাই এদেরকে একসাথে লেখা হয়েছে।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework">Qt Help documentation made easy</a></p>
 

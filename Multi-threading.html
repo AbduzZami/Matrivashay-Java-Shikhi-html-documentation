@@ -185,21 +185,21 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts26"><br/></span></p>
-<p class="rvps2"><span class="rvts24">কম্পিউটার এর সিপিইউ একসাথে একাধিক কাজ করতে পারেনা। একটি কাজ শেষ হওয়ার পর আরেকটি কাজ হয়। থ্রেড একই সাথে একাধিক কাজ করতে সাহায্য করে। একসাথে বলতে একটি কাজ কিছুক্ষন করে তার পর অন্য একটি কাজ করে। তার কিছুক্ষন পর আবার আরেকটি কাজ করে। তারপর আবার ধরে নেও যে আগের কাজে ফিরে যায় এভাবে চলতে থাকে।</span></p>
-<p class="rvps2"><span class="rvts23"></span><br/><img alt="" style="padding : 1px;" src="lib/NewItem81.png"><span class="rvts24">যেমন এখানে এক একটি কাজ এক এক সময়ে চলেছে। কিন্তু কখনই একাধিক কাজ একই সময়ে চলেনি। এতাকেই বলে থ্রেডিং।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts24"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts22">কম্পিউটার এর সিপিইউ একসাথে একাধিক কাজ করতে পারেনা। একটি কাজ শেষ হওয়ার পর আরেকটি কাজ হয়। থ্রেড একই সাথে একাধিক কাজ করতে সাহায্য করে। একসাথে বলতে একটি কাজ কিছুক্ষন করে তার পর অন্য একটি কাজ করে। তার কিছুক্ষন পর আবার আরেকটি কাজ করে। তারপর আবার ধরে নেও যে আগের কাজে ফিরে যায় এভাবে চলতে থাকে।</span></p>
+<p class="rvps2"><span class="rvts23"></span><br/><img alt="" style="padding : 1px;" src="lib/NewItem81.png"><span class="rvts22">যেমন এখানে এক একটি কাজ এক এক সময়ে চলেছে। কিন্তু কখনই একাধিক কাজ একই সময়ে চলেনি। এতাকেই বলে থ্রেডিং।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">Thread এর একটি life-cycle আছে।</span></p>
-<p class="rvps2"><span class="rvts24">অর্থাৎ একটি থ্রেড তৈরি হওয়ার পর Runnable-&gt;Running-&gt;Non Runnable-&gt;Runnable এর লুপের ভেতর চলতে থাকে যতক্ষণ না থ্রেড এর কাজ শেষ হয়।</span></p>
+<p class="rvps2"><span class="rvts22">Thread এর একটি life-cycle আছে।</span></p>
+<p class="rvps2"><span class="rvts22">অর্থাৎ একটি থ্রেড তৈরি হওয়ার পর Runnable-&gt;Running-&gt;Non Runnable-&gt;Runnable এর লুপের ভেতর চলতে থাকে যতক্ষণ না থ্রেড এর কাজ শেষ হয়।</span></p>
 <p class="rvps2"><span class="rvts23"></span><br/><img alt="" style="padding : 1px;" src="lib/NewItem82.png"><br/><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">থ্রেডিং কয়েকভাবে করা যায়। আমরা তিন ভাবে থ্রেডিং শিখব।</span></p>
-<p class="rvps2"><span class="rvts24">১। Extending Thread Class</span></p>
-<p class="rvps2"><span class="rvts24">২। Implementing Runnable Interface</span></p>
-<p class="rvps2"><span class="rvts24">৩। Creating thread by passing runnable object</span></p>
+<p class="rvps2"><span class="rvts22">থ্রেডিং কয়েকভাবে করা যায়। আমরা তিন ভাবে থ্রেডিং শিখব।</span></p>
+<p class="rvps2"><span class="rvts22">১। Extending Thread Class</span></p>
+<p class="rvps2"><span class="rvts22">২। Implementing Runnable Interface</span></p>
+<p class="rvps2"><span class="rvts22">৩। Creating thread by passing runnable object</span></p>
 <p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
-<p class="rvps21"><span class="rvts48">Extending Thread Class</span></p>
-<p class="rvps2"><span class="rvts24">নিচে একটি ক্লাস ABC কে দিয়ে Thread কে ইনহেরিট করা হয়েছে।&nbsp; Thread এ একটি মেথড আছে run()। এই run() মেথডকে override করে যা লিখা হবে তাই thread টি running থাকলে run হবে।&nbsp;&nbsp;</span></p>
+<p class="rvps16"><span class="rvts48">Extending Thread Class</span></p>
+<p class="rvps2"><span class="rvts22">নিচে একটি ক্লাস ABC কে দিয়ে Thread কে ইনহেরিট করা হয়েছে।&nbsp; Thread এ একটি মেথড আছে run()। এই run() মেথডকে override করে যা লিখা হবে তাই thread টি running থাকলে run হবে।&nbsp;&nbsp;</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="1" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
@@ -219,10 +219,10 @@
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts24"></span><br/><span class="rvts24">এখানে x.join() মেথড যতক্ষণ x এর কাজ শেষ না হচ্ছে ততক্ষন অন্যান্য থ্রেড গুলোকে terminate হতে বাঁধা দেয়।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"></span><br/><span class="rvts22">এখানে x.join() মেথড যতক্ষণ x এর কাজ শেষ না হচ্ছে ততক্ষন অন্যান্য থ্রেড গুলোকে terminate হতে বাঁধা দেয়।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
-<p class="rvps21"><span class="rvts48">Implementing Runnable Interface</span></p>
-<p class="rvps2"><span class="rvts24">নিচের কোডে একটি ক্লাস ABC কে দিয়ে Runnable interface কে ইনহেরিট করা হয়েছে। তারপর মেইন মেথডে Thread এর অবজেক্টে ABC এর অবজেক্ট পাঠানো হয়েছে।</span></p>
+<p class="rvps16"><span class="rvts48">Implementing Runnable Interface</span></p>
+<p class="rvps2"><span class="rvts22">নিচের কোডে একটি ক্লাস ABC কে দিয়ে Runnable interface কে ইনহেরিট করা হয়েছে। তারপর মেইন মেথডে Thread এর অবজেক্টে ABC এর অবজেক্ট পাঠানো হয়েছে।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
@@ -234,8 +234,8 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps21"><span class="rvts48">Creating thread by passing runnable object</span></p>
-<p class="rvps21"><span class="rvts24">এখানে আলাদা ভাবে ক্লাস তৈরি না করে anonymous class এর সাহায্যে Thread তৈরি করা হয়েছে।</span></p>
+<p class="rvps16"><span class="rvts48">Creating thread by passing runnable object</span></p>
+<p class="rvps16"><span class="rvts22">এখানে আলাদা ভাবে ক্লাস তৈরি না করে anonymous class এর সাহায্যে Thread তৈরি করা হয়েছে।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
@@ -248,9 +248,9 @@
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts24">এতক্ষন এক এক মেথড এক এক সময় চলছিল। এখন আমরা যদি এরকম করতে চাই যে যতক্ষণ না একটি থ্রেড শেষ না হচ্ছে ততক্ষন অন্য থ্রেড চলবেনা তাহলে কি করবো? উত্তর হচ্ছে ঐ মেথডটা কে synchronized করে দিবো। তাহলে একটি মেথড শেষ না হওয়া পর্যন্ত বাকি থ্রেড গুলো অপেক্ষা করবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এতক্ষন এক এক মেথড এক এক সময় চলছিল। এখন আমরা যদি এরকম করতে চাই যে যতক্ষণ না একটি থ্রেড শেষ না হচ্ছে ততক্ষন অন্য থ্রেড চলবেনা তাহলে কি করবো? উত্তর হচ্ছে ঐ মেথডটা কে synchronized করে দিবো। তাহলে একটি মেথড শেষ না হওয়া পর্যন্ত বাকি থ্রেড গুলো অপেক্ষা করবে।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">নিচে একটি কোডের মাধ্যমে বোঝার চেষ্টা করি। কোডটি রান করে দেখতে হবে। তাহলেই আউটপুট থেকে বোঝা যাবে একটি থ্রেড সম্পূর্ণ হওয়ার পরই অন্য থ্রেড execute হচ্ছে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">নিচে একটি কোডের মাধ্যমে বোঝার চেষ্টা করি। কোডটি রান করে দেখতে হবে। তাহলেই আউটপুট থেকে বোঝা যাবে একটি থ্রেড সম্পূর্ণ হওয়ার পরই অন্য থ্রেড execute হচ্ছে।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
@@ -262,11 +262,11 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এর আউটপুট দেখলেই বোঝা যাবে যে আগে count বাড়তে বাড়তে সর্বোচ্চ হয়েছে তার পরে কমতে শুরু করেছে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এর আউটপুট দেখলেই বোঝা যাবে যে আগে count বাড়তে বাড়তে সর্বোচ্চ হয়েছে তার পরে কমতে শুরু করেছে।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">আরেকটি সহজ Threading এর উদাহরণ দিয়ে শেষ করবো।</span></p>
+<p class="rvps2"><span class="rvts22">আরেকটি সহজ Threading এর উদাহরণ দিয়ে শেষ করবো।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">আমরা চাইলে একটি নির্দিষ্ট সময়ের জন্য কোন টাস্ক কে থামিয়ে রাখতে পারি।</span></p>
+<p class="rvps2"><span class="rvts22">আমরা চাইলে একটি নির্দিষ্ট সময়ের জন্য কোন টাস্ক কে থামিয়ে রাখতে পারি।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
@@ -278,7 +278,7 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এখানে start প্রিন্ট হওয়ার ৫ সেকেন্ড পর stop প্রিন্ট হচ্ছে।</span></p>
+<p class="rvps2"><span class="rvts22">এখানে start প্রিন্ট হওয়ার ৫ সেকেন্ড পর stop প্রিন্ট হচ্ছে।</span></p>
 <p class="rvps3"><span class="rvts31">***সমাপ্ত***</span></p>
 <p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/step-by-step-guides/how-to-convert-a-word-docx-file-to-an-epub-or-kindle-ebook/">Effortlessly Convert Your Word Doc to an eBook: A Step-by-Step Guide</a></p>

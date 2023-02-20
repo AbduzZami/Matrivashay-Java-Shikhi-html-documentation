@@ -185,39 +185,39 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts24">break এর সাহায্যে আমরা লুপ থামাতে পারি। তবে ব্রেক হয় যে লুপের ভেতরে break আছে সেইটাই। Nested লুপ এর বেলায় যদি একেবারে বাহিরের লুপ বা একদম ভিতরের লুপ ছাড়া অন্য যেকোনো লুপ থামাতে হয় তাহলে কিন্তু আমরা সাধারণ break দিয়ে তা করতে পারি না।</span></p>
+<p class="rvps2"><span class="rvts22">break এর সাহায্যে আমরা লুপ থামাতে পারি। তবে ব্রেক হয় যে লুপের ভেতরে break আছে সেইটাই। Nested লুপ এর বেলায় যদি একেবারে বাহিরের লুপ বা একদম ভিতরের লুপ ছাড়া অন্য যেকোনো লুপ থামাতে হয় তাহলে কিন্তু আমরা সাধারণ break দিয়ে তা করতে পারি না।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">first: for (int i = 0; i &lt; 10; i++) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;second: for (int j = 0; j &lt; 10; j++) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;third: for (int k = 0; k &lt; 10; k++) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (k==5){</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break second;</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (k==8){</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break first;</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i);</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts22">first: for (int i = 0; i &lt; 10; i++) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;second: for (int j = 0; j &lt; 10; j++) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;third: for (int k = 0; k &lt; 10; k++) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (k==5){</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break second;</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (k==8){</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break first;</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i);</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">}</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">এখানে break second এবং break first যথাক্রমে first এবং second লুপকে থামিয়ে দিবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22">এখানে break second এবং break first যথাক্রমে first এবং second লুপকে থামিয়ে দিবে।&nbsp;</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">একই কথা continue এর জন্য ও প্রযোজ্য।</span></p>
+<p class="rvps2"><span class="rvts22">একই কথা continue এর জন্য ও প্রযোজ্য।</span></p>
 <p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts24">first: for (int i = 0; i &lt; 10; i++) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;second: for (int j = 0; j &lt; 10; j++) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;third: for (int k = 0; k &lt; 10; k++) {</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (k==5){</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue first;</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (k==8){</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue first;</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i);</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts22">first: for (int i = 0; i &lt; 10; i++) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;second: for (int j = 0; j &lt; 10; j++) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;third: for (int k = 0; k &lt; 10; k++) {</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (k==5){</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue first;</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (k==8){</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue first;</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i);</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts22">}</span></p>
 <p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/create-epub-ebooks">Full-featured EPub generator</a></p>
 
