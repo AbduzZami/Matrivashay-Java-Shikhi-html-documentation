@@ -1,0 +1,810 @@
+
+
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.4.0.372">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>ফরমেট স্পেসিফায়ার</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="ফরমেট স্পেসিফায়ার">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ফরমেট স্পেসিফায়ার">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="ফরমেট স্পেসিফায়ার" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Matrivashay Java Shikhi" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Matrivashay Java Shikhi</h1>
+    <img src="_logo.png" alt="logo" class="logo"/>
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Newtopic16"
+		  data-hnd-context="34"
+		  data-hnd-title="ফরমেট স্পেসিফায়ার"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Newtopic15.html" title="অনুশীলনী" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Newtopic17.html" title="একাধিক ফরম্যাট স্পেসিফায়ার একসাথে" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>ফরমেট স্পেসিফায়ার</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts24">ফরমেট স্পেসিফায়ার হচ্ছে কোন ডাটা টাইপের নির্দেশক।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">জাভায় বহুল ব্যবহৃত কয়েকটি ফরমেট স্পেসিফায়ার নিয়ে আলোচনা করছি।</span></p>
+<p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
+<div class="rvps2">
+<table width="579" border="1" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px; background-color: #cfe2f3;">
+   <p class="rvps2"><span class="rvts37">Format Specifier</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px; background-color: #cfe2f3;">
+   <p class="rvps2"><span class="rvts37">What it means</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%d</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">Int, byte, short, long</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%f</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">Float, double</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%c</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">char</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%C</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">char (capitalized)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%s</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">String</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%S</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">String capitalized</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%b</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">boolean (true/false)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%B</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">boolean capitalized (TRUE/FALSE)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%e</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">Scientific notation (e)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%E</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">Scientific notation (E)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%g</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">Either decimal or scientific (e) is small</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%G</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">Either decimal or scientific (E) is capital</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%h</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">Hashcode of argument not memory address</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%H</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">Hashcode (capitalized)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%x</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">Hexadecimal Value</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%X&nbsp;</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">Hexadecimal Value (capitalized)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%a</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">Floating point hexadecimal</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">%A</span></p>
+  </td>
+  <td valign="top" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 6px;">
+   <p class="rvps2"><span class="rvts24">Floating point hexadecimal (capitalized)</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts24">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts24">এদের ব্যবহার দেখি আমরা।</span></p>
+<p class="rvps2"><span class="rvts24">এদের কে printf এর সাহায্যে ব্যাবহার করা যায়। আবার Formatter এর সাহায্যেও ব্যাবহার করা যায়। আমরা দুটোই দেখব। শুরুতে printf এর সাহায্যে দেখি।</span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%d</span></span></h2>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%d",1000000);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">1000000</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">এখানে “ “ এর ভিতরের %d , এর পরের সংখ্যাটিকে নির্দেশ করছে। আমরা সরাসরি সংখ্যা না দিয়ে variable ও দিতে পারি।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int x = 1000000;</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%d",x);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">1000000</span></p>
+<p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Byte, short, long এর জন্য একই ফরম্যাট স্পেসিফায়ার ব্যাবহার করা হয়।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byte x = 125;</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%d",x);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">125</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;short x = 12564;</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%d",x);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">12564</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%d",1256245445224542441L);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">1256245445224542441</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long x = 1256245445224542441L;</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%d",x);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">1256245445224542441</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%f</span></span></h2>
+<p class="rvps2"><span class="rvts24">float আর double এর ফরম্যাট স্পেসিফায়ার একই %f।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float x = 12.35f;</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%f",x);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">12.350000</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">আমরা চাইলে দশমিকের পর কত ঘর প্রিন্ট হবে ঠিক করে দিতে পারি। এর জন্য f এর আগে . দিয়ে কত ঘর প্রিন্ট করব বলে দিতে হবে।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float x = 12.35f;</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%.2f",x);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">12.35</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double x = 12.35;</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%f",x);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">12.350000</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double x = 12.35;</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%.2f",x);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">12.35</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%c</span></span></h2>
+<p class="rvps2"><span class="rvts24">char এর ফরম্যাট স্পেসিফায়ার হচ্ছে %c।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char x = 'a';</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%c",x);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">a</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Capital C ব্যাবহার করলে char variable টি capitalized হয়ে যাবে।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%C</span></span></h2>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char x = 'a';</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%C",x);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">A</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%s</span></span></h2>
+<p class="rvps2"><span class="rvts24">String এর ফরম্যাট স্পেসিফায়ার হচ্ছে %s&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String x = "Abduz Zami";</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%s",x);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">Abduz Zam</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%S</span></span></h2>
+<p class="rvps2"><span class="rvts24">Capital %S ব্যাবহার করলে String টি capitalized হয়ে যাবে।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String x = "Abduz Zami";</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%S",x);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">ABDUZ ZAMI</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%b</span></span></h2>
+<p class="rvps2"><span class="rvts24">Boolean এর format specifier %b</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;boolean x = false;</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%b",x);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">false</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;boolean x = true;</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%b",x);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">true</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">আমরা চাইলে , এর পরে কোন condition যাচাই করে সত্য না মিথ্যা দেখতে পারি।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%b",5&gt;6);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">false</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%b",5&lt;6);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">true</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%B</span></span></h2>
+<p class="rvps2"><span class="rvts24">%B ব্যাবহার করলে TRUE / FALSE capitalized হয়ে প্রিন্ট হবে।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%B",5&lt;6);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">TRUE</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%e</span></span></h2>
+<p class="rvps2"><span class="rvts24">%e দিয়ে সাইন্টিফিক ভাবে প্রিন্ট করা যায়।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%e",102.26);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">1.022600e+02</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%E</span></span></h2>
+<p class="rvps2"><span class="rvts24">%E ব্যাবহার করলে e টা E হয়ে যাবে,</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%E",102.26);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">1.022600E+02</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%g</span></span></h2>
+<p class="rvps2"><span class="rvts24">%g দশমিক বাঁ সাইন্টিফিক যেকোনো একটি পদ্ধতি তে প্রিন্ট করে। সংখ্যাটি যদি 10^6 এর থেকে ছোট হয়ে তাহলে দশমিল পদ্ধতিতে প্রিন্ট করে। অন্যথায় সাইন্টিফিক পদ্ধতিতে।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%g",10256.2657);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">10256.3</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%g",1025646.2657);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">1.02565e+06</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%G</span></span></h2>
+<p class="rvps2"><span class="rvts24">%G শুধু E কে capitalized করে।</span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%G",1025646.2657);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">1.02565E+06</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%h</span></span></h2>
+<p class="rvps2"><span class="rvts24">%h শুধু মাত্র hashcode প্রিন্ট করে। এটি কোন address নয়। বার বার রান করলেও দেখা যাবে একই value আসছে।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%h",1025646.2657);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">c9269849</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%h",1025646);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">fa66e</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%H</span></span></h2>
+<p class="rvps2"><span class="rvts24">%H শুধু capitalize করে দিবে character গুলো।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%H",1025646);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">FA66E</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%x</span></span></h2>
+<p class="rvps2"><span class="rvts24">%x দিয়ে ইন্টিজারের hexadecimal value প্রিন্ট করে।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main{</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main (String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%x",154165201);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">9305fd1</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%X</span></span></h2>
+<p class="rvps2"><span class="rvts24">%X দিলে character গুলো capitalized হয়ে যাবে।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main{</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main (String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%X",154165201);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">9305FD1</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%a</span></span></h2>
+<p class="rvps2"><span class="rvts24">%a floating point hexadecimal প্রিন্ট করে। 0x দিয়ে এটা যে একটি হেক্সা ডেসিমাল সংখ্যা টা বোঝায়।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%a",1025.1274445);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">0x1.0048280cf9e38p10</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<h2 class="rvps16"><span class="rvts0"><span class="rvts38">%A</span></span></h2>
+<p class="rvps2"><span class="rvts24">%A শুধু character গুলো capitalize হবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts24">public class Main {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.printf("%A",1025.1274445);</span></p>
+<p class="rvps2"><span class="rvts24">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts24">}</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Output:</span></p>
+<p class="rvps2"><span class="rvts24">0X1.0048280CF9E38P10</span></p>
+<p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle">Write eBooks for the Kindle</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright 2022 @ Abduz Zami all rights reserved</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

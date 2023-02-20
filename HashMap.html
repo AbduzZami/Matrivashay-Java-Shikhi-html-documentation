@@ -1,0 +1,497 @@
+
+
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.4.0.372">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>HashMap</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="HashMap">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HashMap">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="HashMap" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Matrivashay Java Shikhi" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Matrivashay Java Shikhi</h1>
+    <img src="_logo.png" alt="logo" class="logo"/>
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="HashMap"
+		  data-hnd-context="128"
+		  data-hnd-title="HashMap"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ArrayListsorting.html" title="ArrayList sorting" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="HashSet.html" title="HashSet" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>HashMap</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts24">HashMap একটি ডাটা টাইপ যাতে key-value pair থাকে। Array তে যেমন আমরা index এর মাধ্যমে তার value পেয়ে থাকি। HashMap এ key এর মাধ্যমে ঐ key এর against এ রাখা value পেতে পারি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.</span><span class="rvts28">HashMap</span><span class="rvts29">;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> class TestFile {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> main(</span><span class="rvts28">String</span><span class="rvts29">[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">HashMap</span><span class="rvts29">&lt;</span><span class="rvts28">String</span><span class="rvts29">,</span><span class="rvts28">String</span><span class="rvts29">&gt; hashMap = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts28">HashMap</span><span class="rvts29">&lt;&gt;();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; hashMap.put(</span><span class="rvts30">"king"</span><span class="rvts29">,</span><span class="rvts30">"Ertugrul"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; hashMap.put(</span><span class="rvts30">"minister"</span><span class="rvts29">,</span><span class="rvts30">"Artuk"</span><span class="rvts29">);</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts29">(hashMap.</span><span class="rvts28">get</span><span class="rvts29">(</span><span class="rvts30">"king"</span><span class="rvts29">));</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts29">(hashMap.</span><span class="rvts28">get</span><span class="rvts29">(</span><span class="rvts30">"minister"</span><span class="rvts29">));</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">আউটপুট</span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts30">Ertugrul</span><br/><span class="rvts30">Artuk</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Key-value pair টি String, String ছাড়াও Integer, String অথবা Integer, Integer অথবা যেকোনো ধরনের pair হতে পারে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">HashMap এ ব্যবহারযোগ্য কিছু মেথড নিচে দেওয়া হল। এই মেথড গুলো HashMap এর যেকোনো অবজেক্ট এর জন্য ব্যবহার করা যাবে। উদাহরণসরূপঃ&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">HashMap &lt; Type &gt; hashmap = new HashMap &lt;&gt;();</span></p>
+<p class="rvps2"><span class="rvts24">hashmap .put(key,Value);</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<div class="rvps2">
+<table border="0" cellpadding="12" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #d9d2e9;">
+   <p class="rvps3"><span class="rvts31">মেথড</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #d9d2e9;">
+   <p class="rvps3"><span class="rvts31">বর্ণনা</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">clear()</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">সম্পূর্ণ ম্যাপ খালি করে</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">clone()</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">ম্যাপ এর একটি shalow copy রিটার্ন করে&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">containsValue(Object value)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">যদি কোন key তে ঐ value থাকে তাহলে true রিটার্ন করে&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">entrySet()</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">সবগুলি entries এর একটি Set view রিটার্ন করে যা ম্যাপকে iterate করতে ব্যবহার হয়। নিচে iteration করার পদ্ধতি দেখার সময় বিস্তারিত দেখব।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">get(Object key)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">কোন key এর জন্য সেই value রিটার্ন করে। যদি কোন key না পায় তাহলে null রিটার্ন করে।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">isEmpty()</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">ম্যাপ খালি কিনা চেক করে&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">keySet()</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">Key এর set view রিটার্ন করে। এটিও iterate করতে সাহায্য করে। নিচে iteration করার পদ্ধতি দেখার সময় বিস্তারিত দেখব।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">put(K key, V value)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">ম্যাপে নতুন ডাটা ইন্সারট করে।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">putAll(Map&lt;? extends K,? extends V&gt; m)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">একটি ম্যাপে আরেকটি ম্যাপকে ইন্সারট করে&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">remove(Object key)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">কোন একটি key এর value মুছে দেয়&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">size()</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">মাপের element সংখ্যা রিটার্ন করে&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">values()</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">Value গুলোর collection view রিটার্ন করে। এটিও iteration এ ব্যবহার হয়। নিচে iteration করার পদ্ধতি দেখার সময় বিস্তারিত দেখব।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">getOrDefault(Object key, V defaultValue)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">কোন key এর জন্য value খুঁজতে গেলে যদি null পায় অর্থাৎ কিছু না পায় সেক্ষেত্রে by default কি রিটার্ন করবে সেটি এই মেথডের সাহায্যে বলে দেওয়া যায়।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">putIfAbsent(K key, V value)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">যদি নির্দিষ্ট key ইতিমধ্যে একটি মানের সাথে যুক্ত না থাকে (অথবা নাল থাকে) তাহলে প্রদত্ত মানের সাথে এটি সংযুক্ত করে এবং নাল ফেরত দেয়, অন্যথায় বর্তমান value প্রদান করে।</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">remove(Object key, Object value)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">নির্দিষ্ট কী-র জন্য এন্ট্রিটি সরিয়ে দেয় শুধুমাত্র যদি এটি বর্তমানে নির্দিষ্ট মানের সাথে ম্যাপ করা থাকে।</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">replace(K key, V value)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">নির্দিষ্ট কী এর জন্য এন্ট্রি প্রতিস্থাপন করে শুধুমাত্র যদি এটি বর্তমানে কিছু মান ম্যাপ করা হয়।</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">replace(K key, V oldValue, V newValue)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">নির্দিষ্ট কী-এর জন্য এন্ট্রি প্রতিস্থাপন করে শুধুমাত্র যদি বর্তমানে নির্দিষ্ট মানের সাথে ম্যাপ করা হয়।</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">HashMap iteration এর কতগুলো উপায় নিচে দেওয়া হল।</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 32px; list-style-position: outside;">
+ <li class="rvps2"><span class="rvts24">HashMap EntrySet বরাবর Iterator এর সাহায্যে</span></li>
+ <li class="rvps2"><span class="rvts24">HashMap KeySet বরাবর Iterator সাহায্যে</span></li>
+ <li class="rvps2"><span class="rvts24">for-each loop এর সাহায্যে</span></li>
+ <li class="rvps2"><span class="rvts24">Lambda Expressions এর সাহায্যে.</span></li>
+</ol>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps21"><span class="rvts48">HashMap EntrySet বরাবর Iterator এর সাহায্যে</span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.HashMap;</span><br/><span class="rvts28">import</span><span class="rvts29"> java.util.Map;</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Class for iterating HashMap using for loop</span><br/><span class="rvts28">public</span><span class="rvts29"> class HOJO {</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Main driver method</span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> main(</span><span class="rvts28">String</span><span class="rvts29">[] args)</span><br/><span class="rvts29">{</span><br/><span class="rvts32">// Creating a HashMap</span><br/><span class="rvts29">Map&lt;</span><span class="rvts28">String</span><span class="rvts29">, </span><span class="rvts28">String</span><span class="rvts29">&gt; foodTable</span><br/><span class="rvts29">= </span><span class="rvts28">new</span><span class="rvts29"> HashMap&lt;</span><span class="rvts28">String</span><span class="rvts29">, </span><span class="rvts28">String</span><span class="rvts29">&gt;();</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Inserting elements to the adobe HashMap</span><br/><span class="rvts32">// Elements- Key value pairs using put() method</span><br/><span class="rvts29">foodTable.</span><span class="rvts28">put</span><span class="rvts29">(</span><span class="rvts30">"A"</span><span class="rvts29">, </span><span class="rvts30">"Angular"</span><span class="rvts29">);</span><br/><span class="rvts29">foodTable.</span><span class="rvts28">put</span><span class="rvts29">(</span><span class="rvts30">"J"</span><span class="rvts29">, </span><span class="rvts30">"Java"</span><span class="rvts29">);</span><br/><span class="rvts29">foodTable.</span><span class="rvts28">put</span><span class="rvts29">(</span><span class="rvts30">"P"</span><span class="rvts29">, </span><span class="rvts30">"Python"</span><span class="rvts29">);</span><br/><span class="rvts29">foodTable.</span><span class="rvts28">put</span><span class="rvts29">(</span><span class="rvts30">"H"</span><span class="rvts29">, </span><span class="rvts30">"Hibernate"</span><span class="rvts29">);</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Iterating HashMap through for loop</span><br/><span class="rvts28">for</span><span class="rvts29"> (Map.Entry&lt;</span><span class="rvts28">String</span><span class="rvts29">, </span><span class="rvts28">String</span><span class="rvts29">&gt; set :</span><br/><span class="rvts29">foodTable.entrySet()) {</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Printing all elements of a Map</span><br/><span class="rvts29">System.out.</span><span class="rvts28">println</span><span class="rvts29">(set.</span><span class="rvts28">getKey</span><span class="rvts29">() + </span><span class="rvts30">" = "</span><br/><span class="rvts29">+ set.getValue());</span><br/><span class="rvts29">}</span><br/><span class="rvts29">}</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps21"><span class="rvts48">HashMap KeySet বরাবর Iterator সাহায্যে</span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.HashMap;</span><br/><span class="rvts28">import</span><span class="rvts29"> java.util.Map;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> class HOJO {</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Main driver method</span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> main(</span><span class="rvts28">String</span><span class="rvts29">[] args)</span><br/><span class="rvts29">{</span><br/><span class="rvts32">// Creating hash map</span><br/><span class="rvts29">Map&lt;Character, </span><span class="rvts28">String</span><span class="rvts29">&gt; charType</span><br/><span class="rvts29">= </span><span class="rvts28">new</span><span class="rvts29"> HashMap&lt;Character, </span><span class="rvts28">String</span><span class="rvts29">&gt;();</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Inserting data in the hash map.</span><br/><span class="rvts29">charType.</span><span class="rvts28">put</span><span class="rvts29">(</span><span class="rvts30">'J'</span><span class="rvts29">, </span><span class="rvts30">"Java"</span><span class="rvts29">);</span><br/><span class="rvts29">charType.</span><span class="rvts28">put</span><span class="rvts29">(</span><span class="rvts30">'H'</span><span class="rvts29">, </span><span class="rvts30">"Hibernate"</span><span class="rvts29">);</span><br/><span class="rvts29">charType.</span><span class="rvts28">put</span><span class="rvts29">(</span><span class="rvts30">'P'</span><span class="rvts29">, </span><span class="rvts30">"Python"</span><span class="rvts29">);</span><br/><span class="rvts29">charType.</span><span class="rvts28">put</span><span class="rvts29">(</span><span class="rvts30">'A'</span><span class="rvts29">, </span><span class="rvts30">"Angular"</span><span class="rvts29">);</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Iterating HashMap through forEach and</span><br/><span class="rvts32">// Printing all. elements in a Map</span><br/><span class="rvts29">charType.forEach(</span><br/><span class="rvts29">(key, value)</span><br/><span class="rvts29">-&gt; System.out.</span><span class="rvts28">println</span><span class="rvts29">(key + </span><span class="rvts30">" = "</span><span class="rvts29"> + value));</span><br/><span class="rvts29">}</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps21"><span class="rvts48">for-each loop এর সাহায্যে</span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.HashMap;</span><br/><span class="rvts28">import</span><span class="rvts29"> java.util.Iterator;</span><br/><span class="rvts28">import</span><span class="rvts29"> java.util.Map;</span><br/><span class="rvts28">import</span><span class="rvts29"> java.util.Map.Entry;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">HOJO</span><span class="rvts29"> {</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Main driver method</span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> void main(</span><span class="rvts28">String</span><span class="rvts29">[] arguments)</span><br/><span class="rvts29">{</span><br/><span class="rvts32">// Creating Hash map</span><br/><span class="rvts29">Map&lt;Integer, </span><span class="rvts28">String</span><span class="rvts29">&gt; intType</span><br/><span class="rvts29">= </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">HashMap</span><span class="rvts29">&lt;Integer, </span><span class="rvts28">String</span><span class="rvts29">&gt;();</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Inserting data(Key-value pairs) in hashmap</span><br/><span class="rvts29">intType.put(1, </span><span class="rvts30">"First"</span><span class="rvts29">);</span><br/><span class="rvts29">intType.put(2, </span><span class="rvts30">"Second"</span><span class="rvts29">);</span><br/><span class="rvts29">intType.put(3, </span><span class="rvts30">"Third"</span><span class="rvts29">);</span><br/><span class="rvts29">intType.put(4, </span><span class="rvts30">"Fourth"</span><span class="rvts29">);</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Iterator</span><br/><span class="rvts29">Iterator&lt;Entry&lt;Integer, </span><span class="rvts28">String</span><span class="rvts29">&gt; &gt; </span><span class="rvts28">new</span><span class="rvts30">_Iterator</span><br/><span class="rvts29">= intType.entrySet().iterator();</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Iterating every set of entry in the HashMap</span><br/><span class="rvts28">while</span><span class="rvts29"> (</span><span class="rvts28">new</span><span class="rvts30">_Iterator</span><span class="rvts29">.hasNext()) {</span><br/><span class="rvts29">Map.Entry&lt;Integer, </span><span class="rvts28">String</span><span class="rvts29">&gt; </span><span class="rvts28">new</span><span class="rvts30">_Map</span><br/><span class="rvts29">= (Map.Entry&lt;Integer, </span><span class="rvts28">String</span><span class="rvts29">&gt;)</span><br/><span class="rvts28">new</span><span class="rvts30">_Iterator</span><span class="rvts29">.next();</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Displaying HashMap</span><br/><span class="rvts29">System.out.println(</span><span class="rvts28">new</span><span class="rvts30">_Map</span><span class="rvts29">.getKey() + </span><span class="rvts30">" = "</span><br/><span class="rvts29">+ </span><span class="rvts28">new</span><span class="rvts30">_Map</span><span class="rvts29">.getValue());</span><br/><span class="rvts29">}</span><br/><span class="rvts29">}</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps21"><span class="rvts48">Lambda Expressions এর সাহায্যে</span></p>
+<p class="rvps21"><span class="rvts24">Lambda Expressions আমরা এখন পর্যন্ত শিখিনি। এখন দেখে রাখ তাহলে পরবর্তীতে বুঝে নিতে পারবে।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.HashMap;</span><br/><span class="rvts28">import</span><span class="rvts29"> java.util.Map;</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Class</span><br/><span class="rvts28">public</span><span class="rvts29"> class HOJO {</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Main driver method</span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> main(</span><span class="rvts28">String</span><span class="rvts29">[] args)</span><br/><span class="rvts29">{</span><br/><span class="rvts32">// Creating hash map</span><br/><span class="rvts29">Map&lt;Character, </span><span class="rvts28">String</span><span class="rvts29">&gt; charType</span><br/><span class="rvts29">= </span><span class="rvts28">new</span><span class="rvts29"> HashMap&lt;Character, </span><span class="rvts28">String</span><span class="rvts29">&gt;();</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Inserting elements(key-value pairs)</span><br/><span class="rvts32">// in the hash map ( Custom inputs)</span><br/><span class="rvts29">charType.</span><span class="rvts28">put</span><span class="rvts29">(</span><span class="rvts30">'A'</span><span class="rvts29">, </span><span class="rvts30">"Apple"</span><span class="rvts29">);</span><br/><span class="rvts29">charType.</span><span class="rvts28">put</span><span class="rvts29">(</span><span class="rvts30">'B'</span><span class="rvts29">, </span><span class="rvts30">"Basketball"</span><span class="rvts29">);</span><br/><span class="rvts29">charType.</span><span class="rvts28">put</span><span class="rvts29">(</span><span class="rvts30">'C'</span><span class="rvts29">, </span><span class="rvts30">"Cat"</span><span class="rvts29">);</span><br/><span class="rvts29">charType.</span><span class="rvts28">put</span><span class="rvts29">(</span><span class="rvts30">'D'</span><span class="rvts29">, </span><span class="rvts30">"Dog"</span><span class="rvts29">);</span><br/><span class="rvts29"></span><br/><span class="rvts32">// Iterating through forEach and</span><br/><span class="rvts32">// printing the elements</span><br/><span class="rvts29">charType.forEach(</span><br/><span class="rvts29">(key, value)</span><br/><span class="rvts29">-&gt; System.out.</span><span class="rvts28">println</span><span class="rvts29">(key + </span><span class="rvts30">" = "</span><span class="rvts29"> + value));</span><br/><span class="rvts29">}</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/feature-tour/produce-html-websites/">Transform your help documentation into a stunning website</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright 2022 @ Abduz Zami all rights reserved</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

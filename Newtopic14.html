@@ -1,0 +1,409 @@
+
+
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.4.0.372">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>ইউজার থেকে ইনপুট নেওয়া</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="ইউজার ইনপুট">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ইউজার থেকে ইনপুট নেওয়া">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="ইউজার থেকে ইনপুট নেওয়া" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Matrivashay Java Shikhi" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Matrivashay Java Shikhi</h1>
+    <img src="_logo.png" alt="logo" class="logo"/>
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Newtopic14"
+		  data-hnd-context="31"
+		  data-hnd-title="ইউজার থেকে ইনপুট নেওয়া"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Newtopic13.html" title="অনুশীলনী" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ScannernextLine.html" title="Scanner.nextLine() ব্যাবহারের সতর্কতা" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>ইউজার থেকে ইনপুট নেওয়া</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts24">ইউজার ইনপুট নেওয়ার জন্য আমাদের Scanner ক্লাসের একটি অবজেক্ট declare করতে হবে।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.Scanner;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29">{</span><br/><span class="rvts29">&nbsp;&nbsp;</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29"> (String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Scanner scanner = </span><span class="rvts28">new</span><span class="rvts29"> Scanner(System.in);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">এখানে import java.util.Scanner এর মাধ্যমে java প্যাকেজ এর util প্যাকেজ এর Scanner ক্লাস কে import করা হয়েছে। এভাবেই java তে কোন ক্লাসকে import করতে হয়। একই প্যাকেজ হলে import এর প্রয়োজন নেই। ভিন্ন প্যাকেজ হলে import করতে হবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">আমরা এখন Scanner এর অবজেক্ট scanner দিয়ে টারমিনাল থেকে ইনপুট নিব।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">আলাদা আলাদা টাইপের ডাটা ইনপুট নেওয়ার জন্য আলাদা আলাদা মেথড ব্যবহার করতে হবে।</span></p>
+<p class="rvps2"><span class="rvts24">আমরা int দিয়ে শুরু করি।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.Scanner;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29">{</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29"> (String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Scanner scanner = </span><span class="rvts28">new</span><span class="rvts29"> Scanner(System.in);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">int</span><span class="rvts29"> x ;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; x = scanner.nextInt();</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">এক লাইনেও করতে পারতাম।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.Scanner;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29">{</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29"> (String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Scanner scanner = </span><span class="rvts28">new</span><span class="rvts29"> Scanner(System.in);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">int</span><span class="rvts29"> x = scanner.nextInt();</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">এই x এর মান প্রিন্ট করে দেখতে পারি আমরা।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.Scanner;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29">{</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29"> (String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Scanner scanner = </span><span class="rvts28">new</span><span class="rvts29"> Scanner(System.in);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">int</span><span class="rvts29"> x = scanner.nextInt();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(x);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">কোডটি রান করলে নিচের আউটপুট পাবো।</span></p>
+<p class="rvps2"><img width="249" height="98" alt="" src="lib/NewItem134.png"></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">এখন বাকি গুলোর দেখি।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.Scanner;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29">{</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29"> (String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Scanner scanner = </span><span class="rvts28">new</span><span class="rvts29"> Scanner(System.in);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">int</span><span class="rvts29"> i = scanner.nextInt();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">float</span><span class="rvts29"> f = scanner.nextFloat();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">double</span><span class="rvts29"> d = scanner.nextDouble();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">byte</span><span class="rvts29"> b = scanner.nextByte();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">boolean</span><span class="rvts29"> boo = scanner.nextBoolean();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(i);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(f);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(f);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(d);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(b);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(boo);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">উপরের সব গুলোই প্রায় এক রকম।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">এখন char এর ইনপুট নেওয়া দেখি। char এর ইনপুট নেওয়াটা কিছুটা জটিল। কারন সরাসরি কোনো মেথড নেই। next() দিয়ে করতে হয়, যা আসলে String ইনপুট নেওয়ার মেথড।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">কোড দেখি আমরা।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.Scanner;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29">{</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29"> (String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Scanner scanner = </span><span class="rvts28">new</span><span class="rvts29"> Scanner(System.in);</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">char</span><span class="rvts29"> c = scanner.next().charAt(0);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(c);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">ইউজার প্রদত্ত String এর প্রথম character টি c তে যাবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts24">nextLine() দিয়েও করা যায়।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.Scanner;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29">{</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29"> (String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Scanner scanner = </span><span class="rvts28">new</span><span class="rvts29"> Scanner(System.in);</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">char</span><span class="rvts29"> c = scanner.nextLine().charAt(0);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(c);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">এবার দেখব String ইনপুট নেওয়া।</span></p>
+<p class="rvps2"><span class="rvts24">String ইনপুট নেওয়ার দুইটি মেথড আছে - nextLine() এবং next() ।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">শুরুতে nextLine() এর ব্যবহার দেখি। nextLine() new line অথবা line break অথবা enter এর আগ পর্যন্ত গ্রহন করে। এর সাহায্যে space&nbsp; ও ইনপুট নেওয়া যায়।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">আমরা কোড করে দেখি।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.Scanner;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29">{</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29"> (String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Scanner scanner = </span><span class="rvts28">new</span><span class="rvts29"> Scanner(System.in);</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; String str = scanner.nextLine();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(str);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">এর output:</span></p>
+<p class="rvps2"><img width="294" height="120" alt="" src="lib/NewItem133.png"></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">এবার next() দিয়ে দেখি। next() space, new line, line break, enter এর আগ পর্যন্ত গ্রহন করে। এর সাহায্যে space ইনপুট নেওয়া যায়না। কারন এটি space পেলে break করে।</span></p>
+<p class="rvps2"><span class="rvts24">আমরা কোড করে ফেলি।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.Scanner;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29">{</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29"> (String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; Scanner scanner = </span><span class="rvts28">new</span><span class="rvts29"> Scanner(System.in);</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; String str = scanner.next();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; System.out.println(str);</span><br/><span class="rvts29">&nbsp; &nbsp; }</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">এর output:</span></p>
+<p class="rvps2"><img width="269" height="108" alt="" src="lib/NewItem132.png"></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">এখানে যদি abduz zami ইনপুট দিতাম তাহলে শুধু abduz ই গ্রহণ করত।</span></p>
+<p class="rvps2"><img width="269" height="100" alt="" src="lib/NewItem131.png"></p>
+<p class="rvps2"><span class="rvts24">কারন next() space পেলে ব্রেক হয়।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/feature-tour/stunning-user-interface/">Maximize Your Productivity with HelpNDoc's Efficient User Interface</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright 2022 @ Abduz Zami all rights reserved</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,462 @@
+
+
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.4.0.372">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>ArrayList</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="ArrayList">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ArrayList">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="ArrayList" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Matrivashay Java Shikhi" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Matrivashay Java Shikhi</h1>
+    <img src="_logo.png" alt="logo" class="logo"/>
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="ArrayList"
+		  data-hnd-context="126"
+		  data-hnd-title="ArrayList"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Newtopic67.html" title="স্ট্রিং বাফার এবং স্ট্রিং বিল্ডার এর পার্থক্য" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ArrayListsorting.html" title="ArrayList sorting" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>ArrayList</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts24">প্রথম খণ্ডে আমরা array শিখেছি। ArrayList কে dynamic array বলতে পারি। Array পড়ার সময় দেখেছি Array এর একটি ফিক্সড সাইজ থাকে, যা পরে আর পরিবর্তন করা যায়না। ArrayList এর সাইজ নির্দিষ্ট নয় এবং যখন ইচ্ছা তখন পরিবর্তন করা যায়। অর্থাৎ dynamically এর সাইজ পরিবর্তিত হয়। এছাড়া, ArrayList এ কিছু মেথড আছে যা আমাদের ArrayList এর ডাটাগুলোর উপরে বিভিন্ন অপারেশন করতে সাহায্য করে। নিচে ArrayList এর কিছু উদাহরণ দেখি।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.ArrayList;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">TestFile</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29">(String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; ArrayList&lt;Integer&gt; arrayList = </span><span class="rvts28">new</span><span class="rvts29"> ArrayList&lt;&gt;();</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// Appending new elements at</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// the end of the list</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">for</span><span class="rvts29"> (</span><span class="rvts28">int</span><span class="rvts29"> i = 0; i &lt; 10; i++) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; arrayList.add(i);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// Printing elements</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(arrayList);</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// Remove element at index 3</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; arrayList.remove(3);</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// Displaying the ArrayList</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// after deletion</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(arrayList);</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// Printing elements one by one</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">for</span><span class="rvts29"> (</span><span class="rvts28">int</span><span class="rvts29"> i = 0; i &lt; arrayList.size(); i++) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.print(arrayList.get(i) + </span><span class="rvts30">" "</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// Printing elements</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// Using for each loop</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">for</span><span class="rvts29"> (Integer integer : arrayList) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.print(integer + </span><span class="rvts30">" "</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">উপরের কোডটি অবশ্যই রান করে আউটপুট দেখতে হবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">ArrayList নিয়ে কিছু কথা বলি। যেহেতু ArrayList একটি dynamic array এবং এটি তৈরি করার সময় আমাদের সাইজ নির্দিষ্ট করতে হবে না, তাই যখন আমরা dynamically&nbsp; item যুক্ত করি এবং delete করি তখন ArrayList এর আকার স্বয়ংক্রিয়ভাবে বৃদ্ধি পায়। যদিও প্রকৃতপক্ষে আসল লাইব্রেরি বাস্তবায়ন আরও জটিল হতে পারে। জাভার ArrayList C++ এর vector এর মত। যদিও জাভায় vetor নামে আরেকটি ডাটা টাইপ আছে যার কাজ এবং ব্যাবহার ArrayList এর মতই।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">খুবই সাধারণভাবে বুঝানোর চেষ্টা করি। যখন ArrayList টি পূর্ণ হয়ে যায় এবং যদি আমরা একটি আইটেম যুক্ত করার চেষ্টা করি, তখন হিপ মেমরিতে একটি বড় আকারের মেমরি তৈরি হয় (সাইজের দ্বিগুণ আকারের)। এরপর বর্তমান মেমরির উপাদানগুলিকে নতুন মেমরিতে কপি করে। তারপর নতুন আইটেম যোগ করা হয়। কারণ এখন&nbsp; বড় মেমরি পাওয়া যাচ্ছে। সবশেষে পুরানো স্মৃতি মুছে ফেলে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">ArrayList এর ডিক্লারেশন এরকম।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts29">ArrayList&lt; Type &gt; arrayList&nbsp; = </span><span class="rvts28">new</span><span class="rvts29"> ArrayList&lt;&gt;();</span></p>
+   <p class="rvps2"><span class="rvts23"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts24">Type হচ্ছে ArrayList এর element গুলোর ডাটা টাইপ। Type অবশ্যই রেফারেন্স টাইপ হবে। অর্থাৎ, Integer, Double, Character, String অথবা user defined যেকোনো ক্লাস। কিন্তু, int, float, double, char এগুলো ArrayList এর Type হতে পারেনা।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">ArrayList এ ব্যবহারযোগ্য কিছু মেথড নিচে দেওয়া হল। এই মেথড গুলো ArrayList এর যেকোনো অবজেক্ট এর জন্য ব্যবহার করা যাবে। উদাহরণসরূপঃ&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">ArrayList&lt; Type &gt; arrayList&nbsp; = new ArrayList&lt;&gt;();</span></p>
+<p class="rvps2"><span class="rvts24">arrayList.add(Value);</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<div class="rvps2">
+<table border="0" cellpadding="12" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #d9d2e9;">
+   <p class="rvps3"><span class="rvts31">মেথড</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #d9d2e9;">
+   <p class="rvps3"><span class="rvts31">বর্ণনা</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">add(int index, Object element)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">এর সাহায্যে একটি element কে লিস্টে নির্দিষ্ট ইনডেক্সে যুক্ত করা যায়।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">add(Object o)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">এর সাহায্যে একটি element কে লিস্টে যুক্ত করা যায়।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">addAll(Collection C)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">একটি লিস্টকে আরেকটি লিস্টে যুক্ত করা যায়।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">addAll(int index, Collection C)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">একটি লিস্টকে আরেকটি লিস্টের একটি নির্দিষ্ট ইনডেক্সে যুক্ত করা যায়।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">clear()</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">লিস্টকে খালি করা যায়।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">clone()</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">এটি লিস্টের একটি shallow copy রিটার্ন করে।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">contains(Object o)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">ঐ element কে খুঁজে পেলে true রিটার্ন করে অন্নথায় false।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">get(int index)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">কোন ইনডেক্স এর element&nbsp; রিটার্ন করে।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">indexOf(Object O)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">কোন element এর ইনডেক্স রিটার্ন করে। যদি না পায় তাহলে -1 রিটার্ন করে।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">isEmpty()</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">লিস্ট খালি কিনা টা রিটার্ন করে।</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">lastIndexOf(Object O)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">কোন element এর শেষ ইনডেক্স রিটার্ন করে। যদি না পায় তাহলে -1 রিটার্ন করে।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">remove(int index)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">নির্দিষ্ট ইনডেক্স এর element মুছে ফেলে।</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">remove(Object o)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">কোন একটি নির্দিষ্ট&nbsp; element মুছে ফেলে।</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">removeAll?(Collection c)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">এখানে মুলত একটি লিস্ট পাস করতে হয়। যদি পাস করা লিস্ট মেইন লিস্টে থাকে তাহলে সেগুলো মুছে ফেলবে।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">removeRange(int fromIndex, int toIndex)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">একটি রেঞ্জের মধ্যের element মুছে।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">set?(int index, E element)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">এর সাহায্যে একটি element কে লিস্টে নির্দিষ্ট ইনডেক্সে replace করা যায়।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">size?()</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">লিস্টটির element সংখ্যা রিটার্ন করে।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">toArray()</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts24">লিস্ট কে array বানিয়ে সেই array রিটার্ন করে।</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts27">ArrayList iterate করা পদ্ধতি</span></p>
+<p class="rvps2"><span class="rvts24">১। For loop</span></p>
+<p class="rvps2"><span class="rvts24">২। For Each loop</span></p>
+<p class="rvps2"><span class="rvts24">এই দুটি পদ্ধতিই উপরের কোডে উদাহরণ হিসেবে দেখানো হয়েছে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/feature-tour">Easily create PDF Help documents</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright 2022 @ Abduz Zami all rights reserved</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

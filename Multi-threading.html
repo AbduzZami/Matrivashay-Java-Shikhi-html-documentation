@@ -1,0 +1,359 @@
+
+
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.4.0.372">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Multi-threading</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Thread">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Multi-threading">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Multi-threading" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Matrivashay Java Shikhi" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Matrivashay Java Shikhi</h1>
+    <img src="_logo.png" alt="logo" class="logo"/>
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Multi-threading"
+		  data-hnd-context="138"
+		  data-hnd-title="Multi-threading"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Newtopic68.html" title="ফাইল" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Multi-threading</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts26"><br/></span></p>
+<p class="rvps2"><span class="rvts24">কম্পিউটার এর সিপিইউ একসাথে একাধিক কাজ করতে পারেনা। একটি কাজ শেষ হওয়ার পর আরেকটি কাজ হয়। থ্রেড একই সাথে একাধিক কাজ করতে সাহায্য করে। একসাথে বলতে একটি কাজ কিছুক্ষন করে তার পর অন্য একটি কাজ করে। তার কিছুক্ষন পর আবার আরেকটি কাজ করে। তারপর আবার ধরে নেও যে আগের কাজে ফিরে যায় এভাবে চলতে থাকে।</span></p>
+<p class="rvps2"><span class="rvts23"></span><br/><img alt="" style="padding : 1px;" src="lib/NewItem81.png"><span class="rvts24">যেমন এখানে এক একটি কাজ এক এক সময়ে চলেছে। কিন্তু কখনই একাধিক কাজ একই সময়ে চলেনি। এতাকেই বলে থ্রেডিং।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts24"><br/></span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Thread এর একটি life-cycle আছে।</span></p>
+<p class="rvps2"><span class="rvts24">অর্থাৎ একটি থ্রেড তৈরি হওয়ার পর Runnable-&gt;Running-&gt;Non Runnable-&gt;Runnable এর লুপের ভেতর চলতে থাকে যতক্ষণ না থ্রেড এর কাজ শেষ হয়।</span></p>
+<p class="rvps2"><span class="rvts23"></span><br/><img alt="" style="padding : 1px;" src="lib/NewItem82.png"><br/><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">থ্রেডিং কয়েকভাবে করা যায়। আমরা তিন ভাবে থ্রেডিং শিখব।</span></p>
+<p class="rvps2"><span class="rvts24">১। Extending Thread Class</span></p>
+<p class="rvps2"><span class="rvts24">২। Implementing Runnable Interface</span></p>
+<p class="rvps2"><span class="rvts24">৩। Creating thread by passing runnable object</span></p>
+<p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
+<p class="rvps21"><span class="rvts48">Extending Thread Class</span></p>
+<p class="rvps2"><span class="rvts24">নিচে একটি ক্লাস ABC কে দিয়ে Thread কে ইনহেরিট করা হয়েছে।&nbsp; Thread এ একটি মেথড আছে run()। এই run() মেথডকে override করে যা লিখা হবে তাই thread টি running থাকলে run হবে।&nbsp;&nbsp;</span></p>
+<div class="rvps2">
+<table border="0" cellpadding="1" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td style="padding: 1px;">
+   <br/>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">ABC</span><span class="rvts29"> </span><span class="rvts28">extends</span><span class="rvts29"> </span><span class="rvts30">Thread</span><span class="rvts29">{</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">private</span><span class="rvts29"> </span><span class="rvts28">int</span><span class="rvts29"> a;</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">private</span><span class="rvts29"> </span><span class="rvts28">int</span><span class="rvts29"> b;</span><br/><span class="rvts29">&nbsp; ABC(</span><span class="rvts28">int</span><span class="rvts29"> j,</span><span class="rvts28">int</span><span class="rvts29"> k){</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; a = j;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; b = k;</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">run</span><span class="rvts29">(){</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">for</span><span class="rvts29">(</span><span class="rvts28">int</span><span class="rvts29"> i=b;i&gt;0;i--){</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.println(</span><span class="rvts30">"THREAD: "</span><span class="rvts29">+a+</span><span class="rvts30">" Prints: "</span><span class="rvts29">+i);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29">(String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; ABC obj1 = </span><span class="rvts28">new</span><span class="rvts29"> ABC(1,3000000);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; ABC obj2 = </span><span class="rvts28">new</span><span class="rvts29"> ABC(2,4000000);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; obj1.start();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; obj2.start();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">try</span><span class="rvts29">{</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; obj1.join();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; obj2.join();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; }</span><span class="rvts28">catch</span><span class="rvts29"> (Exception e){</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.println(e.getMessage());</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts24"></span><br/><span class="rvts24">এখানে x.join() মেথড যতক্ষণ x এর কাজ শেষ না হচ্ছে ততক্ষন অন্যান্য থ্রেড গুলোকে terminate হতে বাঁধা দেয়।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
+<p class="rvps21"><span class="rvts48">Implementing Runnable Interface</span></p>
+<p class="rvps2"><span class="rvts24">নিচের কোডে একটি ক্লাস ABC কে দিয়ে Runnable interface কে ইনহেরিট করা হয়েছে। তারপর মেইন মেথডে Thread এর অবজেক্টে ABC এর অবজেক্ট পাঠানো হয়েছে।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts61">class</span><span class="rvts62"> </span><span class="rvts63">ABC</span><span class="rvts62"> </span><span class="rvts61">implements</span><span class="rvts62"> </span><span class="rvts63">Runnable</span><span class="rvts62">{</span><br/><span class="rvts62">&nbsp; </span><span class="rvts61">private</span><span class="rvts62"> </span><span class="rvts61">int</span><span class="rvts62"> a;</span><br/><span class="rvts62">&nbsp; </span><span class="rvts61">private</span><span class="rvts62"> </span><span class="rvts61">int</span><span class="rvts62"> b;</span><br/><span class="rvts62">&nbsp; ABC(</span><span class="rvts61">int</span><span class="rvts62"> j,</span><span class="rvts61">int</span><span class="rvts62"> k){</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; a = j;</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; b = k;</span><br/><span class="rvts62">&nbsp; }</span><br/><span class="rvts62">&nbsp; </span><span class="rvts61">public</span><span class="rvts62"> </span><span class="rvts61">void</span><span class="rvts62"> </span><span class="rvts63">run</span><span class="rvts62">(){</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; </span><span class="rvts61">for</span><span class="rvts62">(</span><span class="rvts61">int</span><span class="rvts62"> i=b;i&gt;0;i--){</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.println(</span><span class="rvts63">"THREAD: "</span><span class="rvts62">+a+</span><span class="rvts63">" Prints: "</span><span class="rvts62">+i);</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts62">&nbsp; }</span><br/><span class="rvts62">}</span><br/><span class="rvts62"></span><br/><span class="rvts61">public</span><span class="rvts62"> </span><span class="rvts61">class</span><span class="rvts62"> </span><span class="rvts63">Main</span><span class="rvts62"> {</span><br/><span class="rvts62">&nbsp; </span><span class="rvts61">public</span><span class="rvts62"> </span><span class="rvts61">static</span><span class="rvts62"> </span><span class="rvts61">void</span><span class="rvts62"> </span><span class="rvts63">main</span><span class="rvts62">(String[] args) {</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; ABC a_obj1 = </span><span class="rvts61">new</span><span class="rvts62"> ABC(1,30);</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; ABC a_obj2 = </span><span class="rvts61">new</span><span class="rvts62"> ABC(2,40);</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; Thread ob1 = </span><span class="rvts61">new</span><span class="rvts62"> Thread(a_obj1) ;</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; Thread ob2 = </span><span class="rvts61">new</span><span class="rvts62"> Thread(a_obj2) ;</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; ob1.start();</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; ob2.start();</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; </span><span class="rvts61">try</span><span class="rvts62">{</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; obj1.join();</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; obj2.join();</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; }</span><span class="rvts61">catch</span><span class="rvts62"> (Exception e){</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.println(e.getMessage());</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts62">&nbsp; }</span><br/><span class="rvts62">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps21"><span class="rvts48">Creating thread by passing runnable object</span></p>
+<p class="rvps21"><span class="rvts24">এখানে আলাদা ভাবে ক্লাস তৈরি না করে anonymous class এর সাহায্যে Thread তৈরি করা হয়েছে।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">int</span><span class="rvts29"> count = 0;</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29">&nbsp; </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">increase</span><span class="rvts29">(){</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; count++;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(count);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29">&nbsp; </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">decrease</span><span class="rvts29">(){</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; count--;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(count);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29">(String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Thread t1 = </span><span class="rvts28">new</span><span class="rvts29"> Thread(</span><span class="rvts28">new</span><span class="rvts29"> Runnable() {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts46">@Override</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">run</span><span class="rvts29">() {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts28">for</span><span class="rvts29"> (</span><span class="rvts28">int</span><span class="rvts29"> i = 0; i &lt; 100000; i++) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; increase();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; });</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Thread t2 = </span><span class="rvts28">new</span><span class="rvts29"> Thread(</span><span class="rvts28">new</span><span class="rvts29"> Runnable() {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts46">@Override</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">run</span><span class="rvts29">() {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts28">for</span><span class="rvts29"> (</span><span class="rvts28">int</span><span class="rvts29"> i = 0; i &lt; 100000; i++) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; decrease();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; });</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; t1.start();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; t2.start();</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">try</span><span class="rvts29">{</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; t1.join();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; t2.join();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; }</span><span class="rvts28">catch</span><span class="rvts29"> (Exception e){</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.println(e.getMessage());</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(</span><span class="rvts30">"final: "</span><span class="rvts29">+count);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NewItem83.png"></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts24">এতক্ষন এক এক মেথড এক এক সময় চলছিল। এখন আমরা যদি এরকম করতে চাই যে যতক্ষণ না একটি থ্রেড শেষ না হচ্ছে ততক্ষন অন্য থ্রেড চলবেনা তাহলে কি করবো? উত্তর হচ্ছে ঐ মেথডটা কে synchronized করে দিবো। তাহলে একটি মেথড শেষ না হওয়া পর্যন্ত বাকি থ্রেড গুলো অপেক্ষা করবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">নিচে একটি কোডের মাধ্যমে বোঝার চেষ্টা করি। কোডটি রান করে দেখতে হবে। তাহলেই আউটপুট থেকে বোঝা যাবে একটি থ্রেড সম্পূর্ণ হওয়ার পরই অন্য থ্রেড execute হচ্ছে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">int</span><span class="rvts29"> count = 0;</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">synchronized</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29">&nbsp; </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">increase</span><span class="rvts29">(){</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; count++;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(count);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">synchronized</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29">&nbsp; </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">decrease</span><span class="rvts29">(){</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; count--;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(count);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29">(String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Thread t1 = </span><span class="rvts28">new</span><span class="rvts29"> Thread(</span><span class="rvts28">new</span><span class="rvts29"> Runnable() {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts46">@Override</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">run</span><span class="rvts29">() {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts28">for</span><span class="rvts29"> (</span><span class="rvts28">int</span><span class="rvts29"> i = 0; i &lt; 100000; i++) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; increase();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; });</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Thread t2 = </span><span class="rvts28">new</span><span class="rvts29"> Thread(</span><span class="rvts28">new</span><span class="rvts29"> Runnable() {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts46">@Override</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">run</span><span class="rvts29">() {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts28">for</span><span class="rvts29"> (</span><span class="rvts28">int</span><span class="rvts29"> i = 0; i &lt; 100000; i++) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; decrease();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; });</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; t1.start();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; t2.start();</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">try</span><span class="rvts29">{</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; t1.join();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; t2.join();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; }</span><span class="rvts28">catch</span><span class="rvts29"> (Exception e){</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.println(e.getMessage());</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(</span><span class="rvts30">"final: "</span><span class="rvts29">+count);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">এর আউটপুট দেখলেই বোঝা যাবে যে আগে count বাড়তে বাড়তে সর্বোচ্চ হয়েছে তার পরে কমতে শুরু করেছে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">আরেকটি সহজ Threading এর উদাহরণ দিয়ে শেষ করবো।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">আমরা চাইলে একটি নির্দিষ্ট সময়ের জন্য কোন টাস্ক কে থামিয়ে রাখতে পারি।</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<div class="rvps2">
+<table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="padding: 6px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts61">public</span><span class="rvts62"> </span><span class="rvts61">class</span><span class="rvts62"> </span><span class="rvts63">Main</span><span class="rvts62"> {</span><br/><span class="rvts62">&nbsp; </span><span class="rvts61">public</span><span class="rvts62"> </span><span class="rvts61">static</span><span class="rvts62"> </span><span class="rvts61">void</span><span class="rvts62"> </span><span class="rvts63">main</span><span class="rvts62">(String[] args) {</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; System.out.println(</span><span class="rvts63">"start"</span><span class="rvts62">);</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; </span><span class="rvts61">try</span><span class="rvts62">{</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Thread.sleep(5000);</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; }</span><span class="rvts61">catch</span><span class="rvts62"> (Exception e){</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.println(e.getMessage());</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts62">&nbsp; &nbsp; &nbsp; System.out.println(</span><span class="rvts63">"stop"</span><span class="rvts62">);</span><br/><span class="rvts62">&nbsp; }</span><br/><span class="rvts62">}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts24">এখানে start প্রিন্ট হওয়ার ৫ সেকেন্ড পর stop প্রিন্ট হচ্ছে।</span></p>
+<p class="rvps3"><span class="rvts31">***সমাপ্ত***</span></p>
+<p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/step-by-step-guides/how-to-convert-a-word-docx-file-to-an-epub-or-kindle-ebook/">Effortlessly Convert Your Word Doc to an eBook: A Step-by-Step Guide</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright 2022 @ Abduz Zami all rights reserved</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+
