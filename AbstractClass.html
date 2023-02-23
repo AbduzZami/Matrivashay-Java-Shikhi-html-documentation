@@ -185,57 +185,57 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts22">Abstract মানে হল ঝাপসা। এভাবে বলা যায় সব কিছু যেখানে বলা থাকেনা। Abstract Class এমন এক ধরনের ক্লাস যেখানে Abstract ও non-abstract দুই ধরনের মেথড ই থাকে। Abstract method এ কোন definition থাকেনা।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts22">নিচে একটি Abstract class এর উদাহরণ দেওয়া হল।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Abstract মানে হল ঝাপসা। এভাবে বলা যায় সব কিছু যেখানে বলা থাকেনা। Abstract Class এমন এক ধরনের ক্লাস যেখানে Abstract ও non-abstract দুই ধরনের মেথড ই থাকে। Abstract method এ কোন definition থাকেনা।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23">নিচে একটি Abstract class এর উদাহরণ দেওয়া হল।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">abstract</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Animal</span><span class="rvts29">{</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">printWho</span><span class="rvts29">(){</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts29">.println(</span><span class="rvts30">"Animal"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">abstract</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29">&nbsp; </span><span class="rvts30">printDetails</span><span class="rvts29">();</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">abstract</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Animal</span><span class="rvts26">{</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">printWho</span><span class="rvts26">(){</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts26">.println(</span><span class="rvts27">"Animal"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">abstract</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26">&nbsp; </span><span class="rvts27">printDetails</span><span class="rvts26">();</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">উপরের ক্লাসটিতে printWho() মেথডটি non-abstract। আর printDetails() মেথডটি abstract। printDetails() মেথডে কোন ডেফিনিশন নেই।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">উপরের ক্লাসটিতে printWho() মেথডটি non-abstract। আর printDetails() মেথডটি abstract। printDetails() মেথডে কোন ডেফিনিশন নেই।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Dog</span><span class="rvts29"> </span><span class="rvts28">extends</span><span class="rvts29"> </span><span class="rvts30">Animal</span><span class="rvts29">{</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts46">@Override</span><br/><span class="rvts29">&nbsp; void printDetails() {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts30">System</span><span class="rvts29">.out.println(</span><span class="rvts30">"Dog"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Dog</span><span class="rvts26"> </span><span class="rvts28">extends</span><span class="rvts26"> </span><span class="rvts27">Animal</span><span class="rvts26">{</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts38">@Override</span><br/><span class="rvts26">&nbsp; void printDetails() {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts27">System</span><span class="rvts26">.out.println(</span><span class="rvts27">"Dog"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এই Dog ক্লাস Animal ক্লাসকে inherit করেছে। সেখানে Animal ক্লাসের abstract মেথড printDetails() কে অভাররাইড করা হয়েছে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এই Dog ক্লাস Animal ক্লাসকে inherit করেছে। সেখানে Animal ক্লাসের abstract মেথড printDetails() কে অভাররাইড করা হয়েছে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts34">class</span><span class="rvts35"> </span><span class="rvts36">Cat</span><span class="rvts35"> </span><span class="rvts34">extends</span><span class="rvts35"> </span><span class="rvts36">Animal</span><span class="rvts35">{</span><br/><span class="rvts35"></span><br/><span class="rvts35">&nbsp; </span><span class="rvts54">@Override</span><br/><span class="rvts35">&nbsp; void printDetails() {</span><br/><span class="rvts35">&nbsp; &nbsp; &nbsp; </span><span class="rvts36">System</span><span class="rvts35">.out.println(</span><span class="rvts36">"Cat"</span><span class="rvts35">);</span><br/><span class="rvts35">&nbsp; }</span><br/><span class="rvts35">}</span></p>
+   <p class="rvps2"><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Cat</span><span class="rvts26"> </span><span class="rvts28">extends</span><span class="rvts26"> </span><span class="rvts27">Animal</span><span class="rvts26">{</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts38">@Override</span><br/><span class="rvts26">&nbsp; void printDetails() {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts27">System</span><span class="rvts26">.out.println(</span><span class="rvts27">"Cat"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Cat ক্লাসটি দিয়েও একই কাজ করা হয়েছে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Cat ক্লাসটি দিয়েও একই কাজ করা হয়েছে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">TestFile</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> void main(</span><span class="rvts28">String</span><span class="rvts29">[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Dog dog = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">Dog</span><span class="rvts29">();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; dog.printDetails();</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Cat cat = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">Cat</span><span class="rvts29">();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; cat.printDetails();</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">TestFile</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> void main(</span><span class="rvts28">String</span><span class="rvts26">[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; Dog dog = </span><span class="rvts28">new</span><span class="rvts26"> </span><span class="rvts27">Dog</span><span class="rvts26">();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; dog.printDetails();</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; Cat cat = </span><span class="rvts28">new</span><span class="rvts26"> </span><span class="rvts27">Cat</span><span class="rvts26">();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; cat.printDetails();</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">দেখা যাচ্ছে Animal ক্লাসকে Parent class ধরে আমরা তার abstract মেথড গুলো কে ইচ্ছা মত অভাররাইড করে বিভিন্ন ক্লাসের জন্য ব্যাবহার করতে পারছি।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
+<p class="rvps2"><span class="rvts22"></span><br/><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">দেখা যাচ্ছে Animal ক্লাসকে Parent class ধরে আমরা তার abstract মেথড গুলো কে ইচ্ছা মত অভাররাইড করে বিভিন্ন ক্লাসের জন্য ব্যাবহার করতে পারছি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/step-by-step-guides/how-to-convert-a-word-docx-file-to-an-epub-or-kindle-ebook/">Step-by-Step Guide: How to Turn Your Word Document into an eBook</a></p>
 
             </div>

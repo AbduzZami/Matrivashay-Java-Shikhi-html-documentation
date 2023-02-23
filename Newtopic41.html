@@ -185,102 +185,102 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts22">স্ট্রিং হচ্ছে ক্যারেক্টার এর অ্যারে। আমরা char আর Character এ মাত্র একটি অক্ষর রাখতে পারতাম। এখন যদি দরকার হয় একটি শব্দকে রাখার অথবা একটি বাক্যকে অথবা একটি প্যারাগ্রাফকে, তখন কি করবো? এর সমাধান হচ্ছে স্ট্রিং।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">স্ট্রিং কে double quotation (“ “) এর ভিতরে রাখতে হয়। স্ট্রিং এর ডিক্লারেশন দেখি। স্ট্রিং যেহেতু রেফারেন্স টাইপ ডাটা টাইপ সেহেতু এটিকে এভাবে ডিক্লেয়ার করার কথা।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">String str = new String("Abduz Zami");</span></p>
-<p class="rvps2"><span class="rvts22">System.out.println(str);</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এভাবে না করে আমরা আরও সহজে স্ট্রিং ডিক্লেয়ার করতে পারি। এটা প্রিমিটিভ টাইপের ডিক্লারেশনের মত।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">String str = "Abduz Zami";</span></p>
-<p class="rvps2"><span class="rvts22">System.out.println(str);</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">ইউজার এর কাছে থেকে স্ট্রিং ইনপুট নেওয়া দেখি এখন।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">String str;</span></p>
-<p class="rvps2"><span class="rvts22">Scanner scanner = new Scanner(System.in);</span></p>
-<p class="rvps2"><span class="rvts22">str = scanner.next();</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">next() মেথডটি স্পেস পাওয়ার আগ পর্যন্ত রিড করে।</span></p>
-<p class="rvps2"><span class="rvts22">আরও একটি মেথড আছে স্ট্রিং স্ক্যান করার।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">String str1;</span></p>
-<p class="rvps2"><span class="rvts22">str1 = scanner.nextLine();</span></p>
-<p class="rvps2"><span class="rvts22">System.out.println(str1);</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">nextLine() মেথডটি নতুন লাইন পাওয়ার আগ পর্যন্ত স্ক্যান করে।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">next() এবং nextLine() নিয়ে ইতঃপূর্বে বিস্তারিত আলোচনা করা হয়েছে। “ইউজার থেকে ইনপুট নেওয়া” অধ্যায়ে।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">আমরা স্ট্রিং এর ডিক্লেয়ারেশন এবং ইউজার ইনপুট নেওয়া শিখলাম। এখন স্ট্রিং সম্পর্কে একটি গুরুত্বপূর্ণ কথা বলব। সেটি হল স্ট্রিং কে বলা হয় ইম্মিউটএবল (Immutable) ডাটা টাইপ। এর কারণটি হল এই যে, স্ট্রিং ভেরিএবল একবার ইনিশিয়ালাইজ করলে পরবর্তীতে আর তার কোন পরিবর্তন করা যায় না। বিষয়টা কোডের মাধ্যমে দেখাই।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">test1.java</span></p>
+<p class="rvps2"><span class="rvts23">স্ট্রিং হচ্ছে ক্যারেক্টার এর অ্যারে। আমরা char আর Character এ মাত্র একটি অক্ষর রাখতে পারতাম। এখন যদি দরকার হয় একটি শব্দকে রাখার অথবা একটি বাক্যকে অথবা একটি প্যারাগ্রাফকে, তখন কি করবো? এর সমাধান হচ্ছে স্ট্রিং।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">স্ট্রিং কে double quotation (“ “) এর ভিতরে রাখতে হয়। স্ট্রিং এর ডিক্লারেশন দেখি। স্ট্রিং যেহেতু রেফারেন্স টাইপ ডাটা টাইপ সেহেতু এটিকে এভাবে ডিক্লেয়ার করার কথা।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">String str = new String("Abduz Zami");</span></p>
+<p class="rvps2"><span class="rvts23">System.out.println(str);</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এভাবে না করে আমরা আরও সহজে স্ট্রিং ডিক্লেয়ার করতে পারি। এটা প্রিমিটিভ টাইপের ডিক্লারেশনের মত।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">String str = "Abduz Zami";</span></p>
+<p class="rvps2"><span class="rvts23">System.out.println(str);</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">ইউজার এর কাছে থেকে স্ট্রিং ইনপুট নেওয়া দেখি এখন।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">String str;</span></p>
+<p class="rvps2"><span class="rvts23">Scanner scanner = new Scanner(System.in);</span></p>
+<p class="rvps2"><span class="rvts23">str = scanner.next();</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">next() মেথডটি স্পেস পাওয়ার আগ পর্যন্ত রিড করে।</span></p>
+<p class="rvps2"><span class="rvts23">আরও একটি মেথড আছে স্ট্রিং স্ক্যান করার।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">String str1;</span></p>
+<p class="rvps2"><span class="rvts23">str1 = scanner.nextLine();</span></p>
+<p class="rvps2"><span class="rvts23">System.out.println(str1);</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">nextLine() মেথডটি নতুন লাইন পাওয়ার আগ পর্যন্ত স্ক্যান করে।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">next() এবং nextLine() নিয়ে ইতঃপূর্বে বিস্তারিত আলোচনা করা হয়েছে। “ইউজার থেকে ইনপুট নেওয়া” অধ্যায়ে।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">আমরা স্ট্রিং এর ডিক্লেয়ারেশন এবং ইউজার ইনপুট নেওয়া শিখলাম। এখন স্ট্রিং সম্পর্কে একটি গুরুত্বপূর্ণ কথা বলব। সেটি হল স্ট্রিং কে বলা হয় ইম্মিউটএবল (Immutable) ডাটা টাইপ। এর কারণটি হল এই যে, স্ট্রিং ভেরিএবল একবার ইনিশিয়ালাইজ করলে পরবর্তীতে আর তার কোন পরিবর্তন করা যায় না। বিষয়টা কোডের মাধ্যমে দেখাই।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">test1.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.Scanner;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> class test1 {</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> main(</span><span class="rvts28">String</span><span class="rvts29">[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">String</span><span class="rvts29"> </span><span class="rvts28">str</span><span class="rvts29"> = </span><span class="rvts30">"Abduz Zami"</span><span class="rvts29">;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">str</span><span class="rvts29">.</span><span class="rvts28">concat</span><span class="rvts29">(</span><span class="rvts30">"Abdus Sami"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts29">(</span><span class="rvts28">str</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts26"> java.util.Scanner;</span><br/><span class="rvts26"></span><br/><span class="rvts28">public</span><span class="rvts26"> class test1 {</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> main(</span><span class="rvts28">String</span><span class="rvts26">[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">String</span><span class="rvts26"> </span><span class="rvts28">str</span><span class="rvts26"> = </span><span class="rvts27">"Abduz Zami"</span><span class="rvts26">;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">str</span><span class="rvts26">.</span><span class="rvts28">concat</span><span class="rvts26">(</span><span class="rvts27">"Abdus Sami"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts26">(</span><span class="rvts28">str</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এই কোডে concat নামে একটি ফাংশন ব্যাবহার করা হয়েছে। এর কাজ হল একটি স্ট্রিং এর সাথে অন্য একটি স্ট্রিং কে সংযুক্ত করা। তো আউটপুটে আসার কথা ছিল Abduz ZamiAbdusSami। কিন্তু আউটপুটে এসেছে এটি।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এই কোডে concat নামে একটি ফাংশন ব্যাবহার করা হয়েছে। এর কাজ হল একটি স্ট্রিং এর সাথে অন্য একটি স্ট্রিং কে সংযুক্ত করা। তো আউটপুটে আসার কথা ছিল Abduz ZamiAbdusSami। কিন্তু আউটপুটে এসেছে এটি।</span></p>
 <p class="rvps2"><img width="154" height="73" alt="" src="lib/NewItem118.png"></p>
-<p class="rvps2"><span class="rvts22">আরেকটি উদাহরণ দেখি।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Test1.java</span></p>
+<p class="rvps2"><span class="rvts23">আরেকটি উদাহরণ দেখি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"></span><br/><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Test1.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.Scanner;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> class test1 {</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> main(</span><span class="rvts28">String</span><span class="rvts29">[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">String</span><span class="rvts29"> </span><span class="rvts28">str</span><span class="rvts29"> = </span><span class="rvts30">"Abduz Zami"</span><span class="rvts29">;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">str</span><span class="rvts29">.toLowerCase();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts29">(</span><span class="rvts28">str</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts26"> java.util.Scanner;</span><br/><span class="rvts26"></span><br/><span class="rvts28">public</span><span class="rvts26"> class test1 {</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> main(</span><span class="rvts28">String</span><span class="rvts26">[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">String</span><span class="rvts26"> </span><span class="rvts28">str</span><span class="rvts26"> = </span><span class="rvts27">"Abduz Zami"</span><span class="rvts26">;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">str</span><span class="rvts26">.toLowerCase();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts26">(</span><span class="rvts28">str</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এখানে toLowerCase() মেথডটি ব্যাবহার করা হয়েছে যার কাজ স্ট্রিং এর সব character কে ছোট হাতের করে দেওয়া। এটার আউটপুট দেখলেও দেখব যে মুল স্ট্রিং এর কোন পরিবর্তন হয়নি।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এখানে toLowerCase() মেথডটি ব্যাবহার করা হয়েছে যার কাজ স্ট্রিং এর সব character কে ছোট হাতের করে দেওয়া। এটার আউটপুট দেখলেও দেখব যে মুল স্ট্রিং এর কোন পরিবর্তন হয়নি।</span></p>
 <p class="rvps2"><img width="163" height="47" alt="" src="lib/NewItem117.png"></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Immutable স্ট্রিং এর এই সমস্যার সমাধান কয়েকভাবে করা যায়। তার মধ্যে একটি হল বিকল্প ডাটা টাইপ এর ব্যাবহার - StringBuilder আর StringBuffer। এগুলো আমরা পরবর্তীতে শিখব। অন্য উপায়টি হল স্ট্রিংটিতে কোন পরিবর্তন আনার লাইনেই ওই স্ট্রিং এ অ্যাসাইন করে দেওয়া। কোডের মাধ্যমে দেখি।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">test1.java</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Immutable স্ট্রিং এর এই সমস্যার সমাধান কয়েকভাবে করা যায়। তার মধ্যে একটি হল বিকল্প ডাটা টাইপ এর ব্যাবহার - StringBuilder আর StringBuffer। এগুলো আমরা পরবর্তীতে শিখব। অন্য উপায়টি হল স্ট্রিংটিতে কোন পরিবর্তন আনার লাইনেই ওই স্ট্রিং এ অ্যাসাইন করে দেওয়া। কোডের মাধ্যমে দেখি।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">test1.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts34">import</span><span class="rvts35"> java.util.Scanner;</span><br/><span class="rvts35"></span><br/><span class="rvts34">public</span><span class="rvts35"> class test1 {</span><br/><span class="rvts35"></span><br/><span class="rvts35">&nbsp; </span><span class="rvts34">public</span><span class="rvts35"> </span><span class="rvts34">static</span><span class="rvts35"> </span><span class="rvts34">void</span><span class="rvts35"> main(</span><span class="rvts34">String</span><span class="rvts35">[] args) {</span><br/><span class="rvts35">&nbsp; &nbsp; &nbsp; </span><span class="rvts34">String</span><span class="rvts35"> </span><span class="rvts34">str</span><span class="rvts35"> = </span><span class="rvts36">"Abduz Zami"</span><span class="rvts35">;</span><br/><span class="rvts35">&nbsp; &nbsp; &nbsp; </span><span class="rvts34">str</span><span class="rvts35"> = </span><span class="rvts34">str</span><span class="rvts35">.toLowerCase();</span><br/><span class="rvts35">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts34">println</span><span class="rvts35">(</span><span class="rvts34">str</span><span class="rvts35">);</span><br/><span class="rvts35">&nbsp; }</span><br/><span class="rvts35">}</span></p>
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts26"> java.util.Scanner;</span><br/><span class="rvts26"></span><br/><span class="rvts28">public</span><span class="rvts26"> class test1 {</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> main(</span><span class="rvts28">String</span><span class="rvts26">[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">String</span><span class="rvts26"> </span><span class="rvts28">str</span><span class="rvts26"> = </span><span class="rvts27">"Abduz Zami"</span><span class="rvts26">;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">str</span><span class="rvts26"> = </span><span class="rvts28">str</span><span class="rvts26">.toLowerCase();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts26">(</span><span class="rvts28">str</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এর আউটপুট আসবে এটা।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এর আউটপুট আসবে এটা।</span></p>
 <p class="rvps2"><img width="149" height="55" alt="" src="lib/NewItem116.png"></p>
-<p class="rvps2"><span class="rvts22">এবার ঠিকঠাক আউটপুট এসেছে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">শুরুতে বলেছিলাম স্ট্রিং হচ্ছে character এর array। কিন্তু স্ট্রিং এ array এর মত ইনডেক্স ওয়াইজ value পরিবর্তন করা যায়না। তবে যেকোনো ইনডেক্স এর character টি পাওয়া যায়। অর্থাৎ read করতে কোন সমস্যা নেই। যত জটিলতা সব write করতে। আমাদের ইনডেক্স ওয়াইজ কাজ হরহামেশাই করতে হয় সেজন্য একটি কাজ করা যায়। সেটি হল স্ট্রিং কে শুরুতেই char এর array তে নিয়ে নেওয়া। কাজটি আমরা এভাবে করতে পারি।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">test1.java</span></p>
+<p class="rvps2"><span class="rvts23">এবার ঠিকঠাক আউটপুট এসেছে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">শুরুতে বলেছিলাম স্ট্রিং হচ্ছে character এর array। কিন্তু স্ট্রিং এ array এর মত ইনডেক্স ওয়াইজ value পরিবর্তন করা যায়না। তবে যেকোনো ইনডেক্স এর character টি পাওয়া যায়। অর্থাৎ read করতে কোন সমস্যা নেই। যত জটিলতা সব write করতে। আমাদের ইনডেক্স ওয়াইজ কাজ হরহামেশাই করতে হয় সেজন্য একটি কাজ করা যায়। সেটি হল স্ট্রিং কে শুরুতেই char এর array তে নিয়ে নেওয়া। কাজটি আমরা এভাবে করতে পারি।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">test1.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts34">import</span><span class="rvts35"> java.util.Scanner;</span><br/><span class="rvts35"></span><br/><span class="rvts34">public</span><span class="rvts35"> class test1 {</span><br/><span class="rvts35"></span><br/><span class="rvts35">&nbsp; </span><span class="rvts34">public</span><span class="rvts35"> </span><span class="rvts34">static</span><span class="rvts35"> </span><span class="rvts34">void</span><span class="rvts35"> main(</span><span class="rvts34">String</span><span class="rvts35">[] args) {</span><br/><span class="rvts35">&nbsp; &nbsp; &nbsp; </span><span class="rvts34">String</span><span class="rvts35"> </span><span class="rvts34">str</span><span class="rvts35"> = </span><span class="rvts36">"Abduz Zami"</span><span class="rvts35">;</span><br/><span class="rvts35">&nbsp; &nbsp; &nbsp; </span><span class="rvts34">char</span><span class="rvts35">[] carr = </span><span class="rvts34">str</span><span class="rvts35">.toCharArray();</span><br/><span class="rvts35"></span><br/><span class="rvts35">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts34">println</span><span class="rvts35">(carr[0]);</span><br/><span class="rvts35">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts34">println</span><span class="rvts35">(carr[1]);</span><br/><span class="rvts35"></span><br/><span class="rvts35">&nbsp; &nbsp; &nbsp; carr[0] = </span><span class="rvts36">'X'</span><span class="rvts35">;</span><br/><span class="rvts35">&nbsp; &nbsp; &nbsp; carr[1] = </span><span class="rvts36">'Y'</span><span class="rvts35">;</span><br/><span class="rvts35"></span><br/><span class="rvts35">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts34">println</span><span class="rvts35">(carr[0]);</span><br/><span class="rvts35">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts34">println</span><span class="rvts35">(carr[1]);</span><br/><span class="rvts35"></span><br/><span class="rvts35"></span><br/><span class="rvts35">&nbsp; }</span><br/><span class="rvts35">}</span></p>
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts26"> java.util.Scanner;</span><br/><span class="rvts26"></span><br/><span class="rvts28">public</span><span class="rvts26"> class test1 {</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> main(</span><span class="rvts28">String</span><span class="rvts26">[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">String</span><span class="rvts26"> </span><span class="rvts28">str</span><span class="rvts26"> = </span><span class="rvts27">"Abduz Zami"</span><span class="rvts26">;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">char</span><span class="rvts26">[] carr = </span><span class="rvts28">str</span><span class="rvts26">.toCharArray();</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts26">(carr[0]);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts26">(carr[1]);</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; carr[0] = </span><span class="rvts27">'X'</span><span class="rvts26">;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; carr[1] = </span><span class="rvts27">'Y'</span><span class="rvts26">;</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts26">(carr[0]);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts26">(carr[1]);</span><br/><span class="rvts26"></span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এর আউটপুটটি নিম্নরূপ।</span></p>
+<p class="rvps2"><span class="rvts22"></span><br/><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এর আউটপুটটি নিম্নরূপ।</span></p>
 <p class="rvps2"><img width="87" height="170" alt="" src="lib/NewItem115.png"></p>
-<p class="rvps2"><span class="rvts22">এখানে আমরা বিভিন্ন index এর value দেখতে পারছি এবং তা পরিবর্তন ও করতে পারছি। যেমন ০ এবং ১ নম্বর ইনডেক্স এ যথাক্রমে A , b ছিল যাকে পরিবর্তন করে আমরা X ও Y করেছি। Array নিয়ে আগের অধ্যায়ে বিস্তারিত আলোচনা করা হয়েছে।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">স্ট্রিং এর বেশ কয়েকটি মেথড বা ফাংশন আছে যা প্রচুর ব্যবহার হয়। তার কয়েকটি নিচে দেওয়া হল।</span></p>
-<p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
+<p class="rvps2"><span class="rvts23">এখানে আমরা বিভিন্ন index এর value দেখতে পারছি এবং তা পরিবর্তন ও করতে পারছি। যেমন ০ এবং ১ নম্বর ইনডেক্স এ যথাক্রমে A , b ছিল যাকে পরিবর্তন করে আমরা X ও Y করেছি। Array নিয়ে আগের অধ্যায়ে বিস্তারিত আলোচনা করা হয়েছে।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">স্ট্রিং এর বেশ কয়েকটি মেথড বা ফাংশন আছে যা প্রচুর ব্যবহার হয়। তার কয়েকটি নিচে দেওয়া হল।</span></p>
+<p class="rvps2"><span class="rvts22"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/feature-tour/markdown-import-export-using-helpndoc-help-authoring-tool/">Effortlessly Edit and Export Markdown Documents</a></p>
 
             </div>

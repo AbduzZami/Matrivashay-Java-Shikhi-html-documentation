@@ -185,106 +185,106 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts22">Wrapper class যে কাজ টি করে টা হল primitve type কে একটি অবজেক্ট এর ভিতরে রেখে দেয়।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts22">Wrapper class এর অবজেক্ট ডিক্লেয়ার করার সাধারণ নিয়ম:</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Type variable = Type(value);</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">তবে এদেরকে primitive টাইপের মত করেও ডিক্লেয়ার করা যায়। বার বার ডিক্লেয়ার করা হয় বলে প্রিমিটিভ টাইপের মত ডিক্লেয়ার এর সুযোগ দিয়েছে জাভা। যেমন :</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Type variable = value;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Wrapper class যে কাজ টি করে টা হল primitve type কে একটি অবজেক্ট এর ভিতরে রেখে দেয়।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Byte:</span></p>
-<p class="rvps2"><span class="rvts22">Byte b = new Byte(127);</span></p>
-<p class="rvps2"><span class="rvts22">এভাবে ডিক্লেয়ার করলে হয়ে যাওয়ার কথা তাই না? কিন্তু হবে না। কারন এখানে 127 কে কম্পাইলার int হিসেবে ধরে নিচ্ছে। এজন্য 127 কে type casting করতে হবে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts22">নিচে টাইপ কাস্টিং করে আগের কোডটি লিখা হল।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Byte b = new Byte((byte) 127);</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">টাইপ কাস্টিং নিয়ে কিছু কথা বলি।</span></p>
-<p class="rvps2"><span class="rvts22">টাইপ কাস্টিং এ এক টাইপের ডাটা কে অন্য টাইপে কনভার্ট করা হয়। যে টাইপে নিতে হবে সেই টাইপকে প্রথম বন্ধনীর ভিতরে উল্লেখ করতে হবে। তবে এক্ষেত্রে দুটো ডাটার সাইজ এক হতে হবে। যেমন এখানে 127 কে Byte এ নিতে পারছি কারন 127 এর যা সাইজ তা Byte ডাটা টাইপের সাইজ 1 byte এর সমান। সহজ কথায় = এর ডান পাশে যা দিব তা যে টাইপে cast করব তার range এর ভিতরে হতে হবে। যেমন নিচের উদাহরণটি যদি দেখি।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">double e = 10.012;</span></p>
-<p class="rvps2"><span class="rvts22">int h = (int) e;</span></p>
-<p class="rvps2"><span class="rvts22">System.out.println(h);</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এখানে double e কে int এ cast করা সম্ভব হয়েছে। কারন 10 int এর range -2,147,483,648 থেকে 2,147,483,647 এর ভিতরে রয়েছে। যদি এমন করি&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">double e = 100000000000000.122222222;</span></p>
-<p class="rvps2"><span class="rvts22">int h = (int) e;</span></p>
-<p class="rvps2"><span class="rvts22">System.out.println(h);</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এক্ষেত্রে output পাব তবে ভুল output। এখানে, = এর ডান পাশের সংখ্যার সাইজ int এর maximum সাইজ কে অতিক্রম করে ফেলেছে। তাই ভুল আউটপুট দেখাচ্ছে।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">অনেক ক্ষেত্রে এই type casting গুলো automatically হয়ে যায়। একে বলে implicit type casting।</span></p>
-<p class="rvps2"><span class="rvts22">আমরা কিন্তু উপরের Byte এর declaration এভাবেও করতে পারতাম।</span></p>
-<p class="rvps2"><span class="rvts22">Byte b = 127;</span></p>
-<p class="rvps2"><span class="rvts22">এখানে implicit type casting হয়ে যেত।</span></p>
-<p class="rvps2"><span class="rvts22">কিছু ডাটা টাইপ প্রচুর ব্যবহার হয় বলে জাভায় Byte এর মত কয়েকটা ডাটা টাইপ কে primitve টাইপের মত করে declear করার সুযোগ দিয়েছে। Boolean, Byte, Integer, Short, Long, Double, Float, Char, String এগুলোকে primitive টাইপ এর মত করে declare করা যায়।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">আরেকটি গুরুত্বপূর্ণ কথা বলি, জাভায় double x = 101.23 declare করার মানে এই না যে = এর ডান পাশে যা দেওয়া হবে তাকে double হিসেবে ধরা হবে। এমন টা নয়। জাভা কম্পাইলার ভগ্নাংশ পেলেই double হিসেবে ধরে নিবে। কিছু ক্ষেত্রে implicit casting হবে। short s = 10000 এখানে কম্পাইলার 10000 কে integer হিসেবেই ধরে নিচ্ছে, কিন্তু 10000 short এর range এর মধ্যে থাকায় type casting হয়ে যাচ্ছে। এখানে আমি এতাই বোঝাতে চেয়েছি যে জাভা কম্পাইলার ডাটা টাইপ দেখে ধরে নেয় না যে = এর ডান পাশে কি থাকবে।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Integer:</span></p>
-<p class="rvps2"><span class="rvts22">এবার আসি Integer এ।</span></p>
-<p class="rvps2"><span class="rvts22">Integer x = new Integer(5);</span></p>
-<p class="rvps2"><span class="rvts22">এখানে টাইপ কাস্টিং করার প্রয়োজন হয়নি। কারন 5 কে কম্পাইলার Integer হিসেবেই ধরে নিয়েছে।</span></p>
-<p class="rvps2"><span class="rvts22">এভাবে ডিক্লেয়ার করা যায়। তবে শর্টকাট আছে। যেহেতু Integer বার বার ডিক্লেয়ার করার দরকার পরে। তাই জাভায় এটিকেও প্রিমিটিভ টাইপের মত করে ডিক্লেয়ার করার সুযোগ দিয়েছে।</span></p>
-<p class="rvps2"><span class="rvts22">এভাবে ডিক্লেয়ার করতে পারি আমরা</span></p>
-<p class="rvps2"><span class="rvts22">Integer x = 5;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Short:</span></p>
-<p class="rvps2"><span class="rvts22">Short x = new Short((short) 5);</span></p>
-<p class="rvps2"><span class="rvts22">এভাবে ডিক্লেয়ার করলে টাইপ কাস্টিং করে নিতে হবে।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">অত ঝামেলার দরকার নেই। নিচের মত করে ডিক্লেয়ার করব।</span></p>
-<p class="rvps2"><span class="rvts22">Short x = 5;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Long:</span></p>
-<p class="rvps2"><span class="rvts22">Long lo = new Long(1000000000000000000L);</span></p>
-<p class="rvps2"><span class="rvts22">এভাবে ডিক্লেয়ার করা যায় তবে নিচের পদ্ধতিতে করাই বুদ্ধিমানের কাজ।</span></p>
-<p class="rvps2"><span class="rvts22">Long x = 1000000000000000000L;</span></p>
-<p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Double:</span></p>
-<p class="rvps2"><span class="rvts22">Double x = 1001.2345;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Float:</span></p>
-<p class="rvps2"><span class="rvts22">Float f = 1012.345F;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Char:</span></p>
-<p class="rvps2"><span class="rvts22">Char c = ‘A’;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Boolean:</span></p>
-<p class="rvps2"><span class="rvts22">Boolean b = false;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Double থেকে Boolean পর্যন্ত short declaration ই দেখালাম শুধু।</span></p>
-<p class="rvps2"><span class="rvts22">এতক্ষণ আমরা দেখলাম কিভাবে একটি প্রিমিটিভ টাইপ কে অবজেক্ট এ নিতে পারি wrapper class এর মাধ্যমে।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Wrapper ক্লাস গুলোর কিছু মেথড আছে যা আমাদের প্রোগ্রামিংকে সহজ করে দেয়। এর মধ্যে কতগুলো নিচে দেখানো হল।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Integer এর একটি মেথড হচ্ছে parseInt()। এর সাহায্যে স্ট্রিং কে ইন্টিজারে রুপান্তর করা যায়। তবে স্ট্রিং এ সব character সংখ্যা হতে হবে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">String snum = "12345";</span></p>
-<p class="rvps2"><span class="rvts22">int num = Integer.parseInt(snum);</span></p>
-<p class="rvps2"><span class="rvts22">System.out.println(num);</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Double এর একটি মেথড হচ্ছে parseDouble()। এর সাহায্যে স্ট্রিং কে double এ রুপান্তর করা যায়।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">String snum = "123.45";</span></p>
-<p class="rvps2"><span class="rvts22">double num = Double.parseDouble(snum);</span></p>
-<p class="rvps2"><span class="rvts22">System.out.println(num);</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এরকম মেথড Byte, Short, Long, Float এর জন্যেও আছে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">আবার int, short, byte, long, float, double কে স্ট্রিং এও রুপান্তর করা যায়। এর জন্য ব্যাবহার করতে হবে String ক্লাসের valueOf() মেথডকে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">int num = 12345;</span></p>
-<p class="rvps2"><span class="rvts22">String snum = String.valueOf(num);</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">double num = 123.45;</span></p>
-<p class="rvps2"><span class="rvts22">String snum = String.valueOf(num);</span></p>
-<p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
+<p class="rvps6"><span class="rvts23">Wrapper class যে কাজ টি করে টা হল primitve type কে একটি অবজেক্ট এর ভিতরে রেখে দেয়।&nbsp;</span></p>
+<p class="rvps6"><span class="rvts23">Wrapper class এর অবজেক্ট ডিক্লেয়ার করার সাধারণ নিয়ম:</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Type variable = Type(value);</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">তবে এদেরকে primitive টাইপের মত করেও ডিক্লেয়ার করা যায়। বার বার ডিক্লেয়ার করা হয় বলে প্রিমিটিভ টাইপের মত ডিক্লেয়ার এর সুযোগ দিয়েছে জাভা। যেমন :</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Type variable = value;</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Wrapper class যে কাজ টি করে টা হল primitve type কে একটি অবজেক্ট এর ভিতরে রেখে দেয়।&nbsp;</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Byte:</span></p>
+<p class="rvps6"><span class="rvts23">Byte b = new Byte(127);</span></p>
+<p class="rvps6"><span class="rvts23">এভাবে ডিক্লেয়ার করলে হয়ে যাওয়ার কথা তাই না? কিন্তু হবে না। কারন এখানে 127 কে কম্পাইলার int হিসেবে ধরে নিচ্ছে। এজন্য 127 কে type casting করতে হবে।&nbsp;</span></p>
+<p class="rvps6"><span class="rvts23">নিচে টাইপ কাস্টিং করে আগের কোডটি লিখা হল।</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Byte b = new Byte((byte) 127);</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">টাইপ কাস্টিং নিয়ে কিছু কথা বলি।</span></p>
+<p class="rvps6"><span class="rvts23">টাইপ কাস্টিং এ এক টাইপের ডাটা কে অন্য টাইপে কনভার্ট করা হয়। যে টাইপে নিতে হবে সেই টাইপকে প্রথম বন্ধনীর ভিতরে উল্লেখ করতে হবে। তবে এক্ষেত্রে দুটো ডাটার সাইজ এক হতে হবে। যেমন এখানে 127 কে Byte এ নিতে পারছি কারন 127 এর যা সাইজ তা Byte ডাটা টাইপের সাইজ 1 byte এর সমান। সহজ কথায় = এর ডান পাশে যা দিব তা যে টাইপে cast করব তার range এর ভিতরে হতে হবে। যেমন নিচের উদাহরণটি যদি দেখি।</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">double e = 10.012;</span></p>
+<p class="rvps6"><span class="rvts23">int h = (int) e;</span></p>
+<p class="rvps6"><span class="rvts23">System.out.println(h);</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">এখানে double e কে int এ cast করা সম্ভব হয়েছে। কারন 10 int এর range -2,147,483,648 থেকে 2,147,483,647 এর ভিতরে রয়েছে। যদি এমন করি&nbsp;</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">double e = 100000000000000.122222222;</span></p>
+<p class="rvps6"><span class="rvts23">int h = (int) e;</span></p>
+<p class="rvps6"><span class="rvts23">System.out.println(h);</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">এক্ষেত্রে output পাব তবে ভুল output। এখানে, = এর ডান পাশের সংখ্যার সাইজ int এর maximum সাইজ কে অতিক্রম করে ফেলেছে। তাই ভুল আউটপুট দেখাচ্ছে।</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">অনেক ক্ষেত্রে এই type casting গুলো automatically হয়ে যায়। একে বলে implicit type casting।</span></p>
+<p class="rvps6"><span class="rvts23">আমরা কিন্তু উপরের Byte এর declaration এভাবেও করতে পারতাম।</span></p>
+<p class="rvps6"><span class="rvts23">Byte b = 127;</span></p>
+<p class="rvps6"><span class="rvts23">এখানে implicit type casting হয়ে যেত।</span></p>
+<p class="rvps6"><span class="rvts23">কিছু ডাটা টাইপ প্রচুর ব্যবহার হয় বলে জাভায় Byte এর মত কয়েকটা ডাটা টাইপ কে primitve টাইপের মত করে declear করার সুযোগ দিয়েছে। Boolean, Byte, Integer, Short, Long, Double, Float, Char, String এগুলোকে primitive টাইপ এর মত করে declare করা যায়।</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">আরেকটি গুরুত্বপূর্ণ কথা বলি, জাভায় double x = 101.23 declare করার মানে এই না যে = এর ডান পাশে যা দেওয়া হবে তাকে double হিসেবে ধরা হবে। এমন টা নয়। জাভা কম্পাইলার ভগ্নাংশ পেলেই double হিসেবে ধরে নিবে। কিছু ক্ষেত্রে implicit casting হবে। short s = 10000 এখানে কম্পাইলার 10000 কে integer হিসেবেই ধরে নিচ্ছে, কিন্তু 10000 short এর range এর মধ্যে থাকায় type casting হয়ে যাচ্ছে। এখানে আমি এতাই বোঝাতে চেয়েছি যে জাভা কম্পাইলার ডাটা টাইপ দেখে ধরে নেয় না যে = এর ডান পাশে কি থাকবে।</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Integer:</span></p>
+<p class="rvps6"><span class="rvts23">এবার আসি Integer এ।</span></p>
+<p class="rvps6"><span class="rvts23">Integer x = new Integer(5);</span></p>
+<p class="rvps6"><span class="rvts23">এখানে টাইপ কাস্টিং করার প্রয়োজন হয়নি। কারন 5 কে কম্পাইলার Integer হিসেবেই ধরে নিয়েছে।</span></p>
+<p class="rvps6"><span class="rvts23">এভাবে ডিক্লেয়ার করা যায়। তবে শর্টকাট আছে। যেহেতু Integer বার বার ডিক্লেয়ার করার দরকার পরে। তাই জাভায় এটিকেও প্রিমিটিভ টাইপের মত করে ডিক্লেয়ার করার সুযোগ দিয়েছে।</span></p>
+<p class="rvps6"><span class="rvts23">এভাবে ডিক্লেয়ার করতে পারি আমরা</span></p>
+<p class="rvps6"><span class="rvts23">Integer x = 5;</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Short:</span></p>
+<p class="rvps6"><span class="rvts23">Short x = new Short((short) 5);</span></p>
+<p class="rvps6"><span class="rvts23">এভাবে ডিক্লেয়ার করলে টাইপ কাস্টিং করে নিতে হবে।</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">অত ঝামেলার দরকার নেই। নিচের মত করে ডিক্লেয়ার করব।</span></p>
+<p class="rvps6"><span class="rvts23">Short x = 5;</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Long:</span></p>
+<p class="rvps6"><span class="rvts23">Long lo = new Long(1000000000000000000L);</span></p>
+<p class="rvps6"><span class="rvts23">এভাবে ডিক্লেয়ার করা যায় তবে নিচের পদ্ধতিতে করাই বুদ্ধিমানের কাজ।</span></p>
+<p class="rvps6"><span class="rvts23">Long x = 1000000000000000000L;</span></p>
+<p class="rvps6"><span class="rvts22"></span><br/><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Double:</span></p>
+<p class="rvps6"><span class="rvts23">Double x = 1001.2345;</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Float:</span></p>
+<p class="rvps6"><span class="rvts23">Float f = 1012.345F;</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Char:</span></p>
+<p class="rvps6"><span class="rvts23">Char c = ‘A’;</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Boolean:</span></p>
+<p class="rvps6"><span class="rvts23">Boolean b = false;</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Double থেকে Boolean পর্যন্ত short declaration ই দেখালাম শুধু।</span></p>
+<p class="rvps6"><span class="rvts23">এতক্ষণ আমরা দেখলাম কিভাবে একটি প্রিমিটিভ টাইপ কে অবজেক্ট এ নিতে পারি wrapper class এর মাধ্যমে।</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Wrapper ক্লাস গুলোর কিছু মেথড আছে যা আমাদের প্রোগ্রামিংকে সহজ করে দেয়। এর মধ্যে কতগুলো নিচে দেখানো হল।</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Integer এর একটি মেথড হচ্ছে parseInt()। এর সাহায্যে স্ট্রিং কে ইন্টিজারে রুপান্তর করা যায়। তবে স্ট্রিং এ সব character সংখ্যা হতে হবে।&nbsp;</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">String snum = "12345";</span></p>
+<p class="rvps6"><span class="rvts23">int num = Integer.parseInt(snum);</span></p>
+<p class="rvps6"><span class="rvts23">System.out.println(num);</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Double এর একটি মেথড হচ্ছে parseDouble()। এর সাহায্যে স্ট্রিং কে double এ রুপান্তর করা যায়।&nbsp;</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">String snum = "123.45";</span></p>
+<p class="rvps6"><span class="rvts23">double num = Double.parseDouble(snum);</span></p>
+<p class="rvps6"><span class="rvts23">System.out.println(num);</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">এরকম মেথড Byte, Short, Long, Float এর জন্যেও আছে।&nbsp;</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">আবার int, short, byte, long, float, double কে স্ট্রিং এও রুপান্তর করা যায়। এর জন্য ব্যাবহার করতে হবে String ক্লাসের valueOf() মেথডকে।&nbsp;</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">int num = 12345;</span></p>
+<p class="rvps6"><span class="rvts23">String snum = String.valueOf(num);</span></p>
+<p class="rvps6"><span class="rvts22"><br/></span></p>
+<p class="rvps6"><span class="rvts23">double num = 123.45;</span></p>
+<p class="rvps6"><span class="rvts23">String snum = String.valueOf(num);</span></p>
+<p class="rvps6"><span class="rvts22"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/news-and-articles/2022-09-27-why-use-a-help-authoring-tool-instead-of-microsoft-word-to-produce-high-quality-documentation/">Upgrade Your Documentation Process with a Help Authoring Tool</a></p>
 
             </div>

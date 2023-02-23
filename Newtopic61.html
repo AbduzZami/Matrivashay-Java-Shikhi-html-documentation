@@ -185,76 +185,76 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts22">ওভার রাইডিং এর মানে হচ্ছে একটি মেথডের বডি কে নতুন করে লিখা। অর্থাৎ তার ফাংশনালিটি পরিবর্তন করে দেওয়া। এটিকে রান টাইম পলিমরফিজম বলা হয়। কারন এক্ষেত্রে ওভাররিডেন ফাংশন এর কল রান টাইমে সংঘটিত হয়। রান টাইম মানে হচ্ছে প্রোগ্রামটি যখন রানিং বা চলমান থাকে। এর আরেক নাম Dynamic Method Dispatch.</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Animal.java</span></p>
+<p class="rvps2"><span class="rvts23">ওভার রাইডিং এর মানে হচ্ছে একটি মেথডের বডি কে নতুন করে লিখা। অর্থাৎ তার ফাংশনালিটি পরিবর্তন করে দেওয়া। এটিকে রান টাইম পলিমরফিজম বলা হয়। কারন এক্ষেত্রে ওভাররিডেন ফাংশন এর কল রান টাইমে সংঘটিত হয়। রান টাইম মানে হচ্ছে প্রোগ্রামটি যখন রানিং বা চলমান থাকে। এর আরেক নাম Dynamic Method Dispatch.</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Animal.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts29">package com.niharon;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Animal</span><span class="rvts29"> {</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">PrintInfo</span><span class="rvts29">()</span><br/><span class="rvts29">&nbsp; {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts29">.println(</span><span class="rvts30">"Animal"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts26">package com.niharon;</span><br/><span class="rvts26"></span><br/><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Animal</span><span class="rvts26"> {</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">PrintInfo</span><span class="rvts26">()</span><br/><span class="rvts26">&nbsp; {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts26">.println(</span><span class="rvts27">"Animal"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">শুরুতে Animal নামে একটি ক্লাস তৈরি করি। এর মধ্যে একটি মেথড তৈরি করি যার নাম PrintInfo।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">শুরুতে Animal নামে একটি ক্লাস তৈরি করি। এর মধ্যে একটি মেথড তৈরি করি যার নাম PrintInfo।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Main.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">package</span><span class="rvts29"> com.niharon;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29"> {</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> void main(</span><span class="rvts28">String</span><span class="rvts29">[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Animal animal = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">Animal</span><span class="rvts29">();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; animal.PrintInfo();</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">package</span><span class="rvts26"> com.niharon;</span><br/><span class="rvts26"></span><br/><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Main</span><span class="rvts26"> {</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> void main(</span><span class="rvts28">String</span><span class="rvts26">[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; Animal animal = </span><span class="rvts28">new</span><span class="rvts26"> </span><span class="rvts27">Animal</span><span class="rvts26">();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; animal.PrintInfo();</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এখন Animal ক্লাসের অবজেক্ট তৈরি করে PrintInfo কে কল করলে Animal প্রিন্ট হবে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Dog.java</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এখন Animal ক্লাসের অবজেক্ট তৈরি করে PrintInfo কে কল করলে Animal প্রিন্ট হবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Dog.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">package</span><span class="rvts29"> com.niharon;</span><br/><span class="rvts29"></span><br/><span class="rvts29">public </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Dog</span><span class="rvts29"> </span><span class="rvts28">extends</span><span class="rvts29"> </span><span class="rvts30">Animal</span><span class="rvts29">{</span><br/><span class="rvts29">&nbsp; </span><span class="rvts46">@Override</span><br/><span class="rvts29">&nbsp; void </span><span class="rvts30">PrintInfo</span><span class="rvts29">() {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts30">System</span><span class="rvts29">.out.println(</span><span class="rvts30">"Dog"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">package</span><span class="rvts26"> com.niharon;</span><br/><span class="rvts26"></span><br/><span class="rvts26">public </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Dog</span><span class="rvts26"> </span><span class="rvts28">extends</span><span class="rvts26"> </span><span class="rvts27">Animal</span><span class="rvts26">{</span><br/><span class="rvts26">&nbsp; </span><span class="rvts38">@Override</span><br/><span class="rvts26">&nbsp; void </span><span class="rvts27">PrintInfo</span><span class="rvts26">() {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts27">System</span><span class="rvts26">.out.println(</span><span class="rvts27">"Dog"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এর পর একটি Dog ক্লাস তৈরি করলাম যা Animal ক্লাস কে ইনহেরিট করে। আর PrintInfo মেথড টি অভাররাইড করলাম। মেথড এর নাম আরগুমেন্ট এক থাকলে ইনহেরিট করলে ওই মেথডটি অভাররাইড হয়। @override এটি একটি ট্যাগ । এটি না দিলেও সমস্যা নেই। আমাদের যাতে বুঝতে সুবিধা হয় তাই দেওয়া হয়।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এর পর একটি Dog ক্লাস তৈরি করলাম যা Animal ক্লাস কে ইনহেরিট করে। আর PrintInfo মেথড টি অভাররাইড করলাম। মেথড এর নাম আরগুমেন্ট এক থাকলে ইনহেরিট করলে ওই মেথডটি অভাররাইড হয়। @override এটি একটি ট্যাগ । এটি না দিলেও সমস্যা নেই। আমাদের যাতে বুঝতে সুবিধা হয় তাই দেওয়া হয়।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Main.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">package</span><span class="rvts29"> com.niharon;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> void main(</span><span class="rvts28">String</span><span class="rvts29">[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Dog dog = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">Dog</span><span class="rvts29">();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; dog.PrintInfo();</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">package</span><span class="rvts26"> com.niharon;</span><br/><span class="rvts26"></span><br/><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Main</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> void main(</span><span class="rvts28">String</span><span class="rvts26">[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; Dog dog = </span><span class="rvts28">new</span><span class="rvts26"> </span><span class="rvts27">Dog</span><span class="rvts26">();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; dog.PrintInfo();</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Dog ক্লাসের অবজেক্ট এর জন্য PrintInfo মেথডটি Dog প্রিন্ট করবে। কারন Dog ক্লাসে PrintInfo মেথডকে অভাররাইড করে তার বডি পরিবর্তন করে দিয়েছি। অর্থাৎ System.out.println("Animal");&nbsp;</span></p>
-<p class="rvps2"><span class="rvts22">এর জায়গায় System.out.println("Dog");&nbsp; এটি দিয়েছি।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Dog.java</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Dog ক্লাসের অবজেক্ট এর জন্য PrintInfo মেথডটি Dog প্রিন্ট করবে। কারন Dog ক্লাসে PrintInfo মেথডকে অভাররাইড করে তার বডি পরিবর্তন করে দিয়েছি। অর্থাৎ System.out.println("Animal");&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23">এর জায়গায় System.out.println("Dog");&nbsp; এটি দিয়েছি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"></span><br/><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Dog.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">package</span><span class="rvts29"> com.niharon;</span><br/><span class="rvts29"></span><br/><span class="rvts29">public </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Dog</span><span class="rvts29"> </span><span class="rvts28">extends</span><span class="rvts29"> </span><span class="rvts30">Animal</span><span class="rvts29">{</span><br/><span class="rvts29">&nbsp; </span><span class="rvts46">@Override</span><br/><span class="rvts29">&nbsp; void </span><span class="rvts30">PrintInfo</span><span class="rvts29">() {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">super</span><span class="rvts29">.</span><span class="rvts30">PrintInfo</span><span class="rvts29">();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts30">System</span><span class="rvts29">.out.println(</span><span class="rvts30">"Dog"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">package</span><span class="rvts26"> com.niharon;</span><br/><span class="rvts26"></span><br/><span class="rvts26">public </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Dog</span><span class="rvts26"> </span><span class="rvts28">extends</span><span class="rvts26"> </span><span class="rvts27">Animal</span><span class="rvts26">{</span><br/><span class="rvts26">&nbsp; </span><span class="rvts38">@Override</span><br/><span class="rvts26">&nbsp; void </span><span class="rvts27">PrintInfo</span><span class="rvts26">() {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">super</span><span class="rvts26">.</span><span class="rvts27">PrintInfo</span><span class="rvts26">();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts27">System</span><span class="rvts26">.out.println(</span><span class="rvts27">"Dog"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">আমরা যদি মাতৃ ক্লাসের PrintInfo কে কল করতে চাই তাহলে super keyword ব্যবহার করতে পারি। এটি মাতৃ ক্লাসের মেথড কে কল করবে। শুধু মেথড নয়, মাতৃ ক্লাসের যেকোনো variable কেও super keyword দিয়ে কল করা যায়। উপর কোড এর আউটপুট হবে এমন।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">আমরা যদি মাতৃ ক্লাসের PrintInfo কে কল করতে চাই তাহলে super keyword ব্যবহার করতে পারি। এটি মাতৃ ক্লাসের মেথড কে কল করবে। শুধু মেথড নয়, মাতৃ ক্লাসের যেকোনো variable কেও super keyword দিয়ে কল করা যায়। উপর কোড এর আউটপুট হবে এমন।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <p class="rvps2"><img width="300" height="111" alt="" src="lib/NewItem98.png"></p>
-<p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
+<p class="rvps2"><span class="rvts22"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework">Qt Help documentation made easy</a></p>
 
             </div>

@@ -185,93 +185,93 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts22">ক্লাস আর অবজেক্ট নিয়ে কিছু বাস্তব উদাহরণ দিয়ে বোঝানোর চেষ্টা করি।</span></p>
-<p class="rvps2"><span class="rvts22">Animal যদি class হয়। মানুষ, গরু, ছাগল, হাঁস, মুরগি, কুকুর, বিড়াল সব হল animal ক্লাসের object। Object গুলোর প্রত্যেকের কিন্তু কিছু similar বৈশিষ্ট্য আছে আবার কিছু different বৈশিষ্ট্য আছে।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Java তে প্রত্যেকটি java ফাইল ই এক একটা class. অর্থাৎ প্রত্যেক জাভা ফাইলে একটি class থাকতেই হবে যার নাম আর ফাইলের নাম একই হবে। একাধিক class ও খোলা যায়। এক্ষেত্রে Main ক্লাসটি অবশ্যই public হবে। বাকি class গুলো public করা যাবেনা।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">একটি প্রোজেক্ট এ এক বা একাধিক জাভা ফাইল থাকতে পারে। তার মধ্যে একটি জাভা ফাইলে অবশ্যই একটি main মেথড থাকতে হবে। FUNCTION কে জাভায় METHOD বলে। এক ফাইলে অনেক জাভা ক্লাস খোলা গেলেও ভিন্ন ভিন্ন ফাইলে ক্লাস খোলাই শ্রেয়।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এখন আমরা উদাহরণ দেখি।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">আমরা Main.java নামে একটি জাভা ফাইল খুলি।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Main.java ফাইলের ভিতরে আমাদের একটি class নিতে হবে যার নাম Main হবে। অর্থাৎ ফাইল এর নাম এবং ক্লাস এর নাম একই হতে হবে। আরেকটি কাজ করতে হবে যা হচ্ছে একটি main method নিতে হবে। সহজ কথায়, যে ফাইলটি আমরা রান করব সেটি তে একটি main method থাকতে হবে।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Main.java</span></p>
-<p class="rvps2"><span class="rvts22">public class Main {</span></p>
-<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;public static void main(String[] args){</span></p>
-<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts22">}</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এখন Main.java ফাইলেই ClassOne নামে একটি ক্লাস খুলি</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Main.java</span></p>
-<p class="rvps2"><span class="rvts22">class ClassOne{</span></p>
-<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;int x;</span></p>
-<p class="rvps2"><span class="rvts22">}</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">public class Main {</span></p>
-<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;public static void main(String[] args){</span></p>
-<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts22">}</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">আমরা ClassOne.java নামে একটি জাভা ফাইল খুলে সেখানেও ClassOne ক্লাসটি declare করতে পারতাম।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Main.java</span></p>
-<p class="rvps2"><span class="rvts22">public class Main {</span></p>
-<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;public static void main(String[] args){</span></p>
-<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;}</span></p>
-<p class="rvps2"><span class="rvts22">}</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">ClassOne.java</span></p>
-<p class="rvps2"><span class="rvts22">class ClassOne{</span></p>
-<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;int x;</span></p>
-<p class="rvps2"><span class="rvts22">}</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">ClassOne এ main method এর প্রয়োজন নেই। কারন আমরা ClassOne.java ফাইল কে রান করব না। রান করব শুধু Main.java ফাইল। Main.java ফাইল থেকে ClassOne.java ফাইল কল হবে। কল করার জন্য আমাদের Main class এ ClassOne এর অবজেক্ট তৈরি করতে হবে। আমরা পরবর্তীতে দেখব কিভাবে অবজেক্ট তৈরি করতে হয়।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এর মানে এই যে, কোন প্রজেক্ট রান করলে সবার আগে যে মেথড টি execute হবে তাকেই main method বলে। Main method অন্য জাভা ফাইলে থাকা ক্লাস ও মেথড গুলোকে পর্যায়ক্রমে প্রয়োজন অনুসারে কল করবে।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">আরেকটা কথা বলে রাখি। JAVA IDE গুলোতে প্রোজেক্ট আকারে ওপেন করার পর অনেকের পরস্পর সম্পর্কহীন একাধিক জাভা ফাইল নিয়ে কাজ করতে হয়। বিশেষ করে যারা competitive programing এর সাথে জরিত। এক্ষেত্রে IDE গুলোতে single file হিসেবে রান করার option থাকে। এরকম কাজ করতে গেলে অবশ্যই প্রতিটি জাভা ফাইলে ক্লাসের ভিতরে একটি main method নিতেই হবে।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">প্রতিটি ক্লাসে কিছু variable এবং মেথড থাকে। আমরা একটি Car ক্লাস তৈরি যার brand, model, speed, color এই চারটি variable থাকবে এবং Repaint() নামে একটি মেথড থাকবে। package1 এর ভিতরে আমরা Car নামে একটি ক্লাস নেই।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Car.java</span></p>
+<p class="rvps2"><span class="rvts23">ক্লাস আর অবজেক্ট নিয়ে কিছু বাস্তব উদাহরণ দিয়ে বোঝানোর চেষ্টা করি।</span></p>
+<p class="rvps2"><span class="rvts23">Animal যদি class হয়। মানুষ, গরু, ছাগল, হাঁস, মুরগি, কুকুর, বিড়াল সব হল animal ক্লাসের object। Object গুলোর প্রত্যেকের কিন্তু কিছু similar বৈশিষ্ট্য আছে আবার কিছু different বৈশিষ্ট্য আছে।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Java তে প্রত্যেকটি java ফাইল ই এক একটা class. অর্থাৎ প্রত্যেক জাভা ফাইলে একটি class থাকতেই হবে যার নাম আর ফাইলের নাম একই হবে। একাধিক class ও খোলা যায়। এক্ষেত্রে Main ক্লাসটি অবশ্যই public হবে। বাকি class গুলো public করা যাবেনা।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">একটি প্রোজেক্ট এ এক বা একাধিক জাভা ফাইল থাকতে পারে। তার মধ্যে একটি জাভা ফাইলে অবশ্যই একটি main মেথড থাকতে হবে। FUNCTION কে জাভায় METHOD বলে। এক ফাইলে অনেক জাভা ক্লাস খোলা গেলেও ভিন্ন ভিন্ন ফাইলে ক্লাস খোলাই শ্রেয়।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এখন আমরা উদাহরণ দেখি।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">আমরা Main.java নামে একটি জাভা ফাইল খুলি।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Main.java ফাইলের ভিতরে আমাদের একটি class নিতে হবে যার নাম Main হবে। অর্থাৎ ফাইল এর নাম এবং ক্লাস এর নাম একই হতে হবে। আরেকটি কাজ করতে হবে যা হচ্ছে একটি main method নিতে হবে। সহজ কথায়, যে ফাইলটি আমরা রান করব সেটি তে একটি main method থাকতে হবে।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Main.java</span></p>
+<p class="rvps2"><span class="rvts23">public class Main {</span></p>
+<p class="rvps2"><span class="rvts23">&nbsp;&nbsp;&nbsp;public static void main(String[] args){</span></p>
+<p class="rvps2"><span class="rvts23">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts23">}</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এখন Main.java ফাইলেই ClassOne নামে একটি ক্লাস খুলি</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Main.java</span></p>
+<p class="rvps2"><span class="rvts23">class ClassOne{</span></p>
+<p class="rvps2"><span class="rvts23">&nbsp;&nbsp;&nbsp;int x;</span></p>
+<p class="rvps2"><span class="rvts23">}</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">public class Main {</span></p>
+<p class="rvps2"><span class="rvts23">&nbsp;&nbsp;&nbsp;public static void main(String[] args){</span></p>
+<p class="rvps2"><span class="rvts23">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts23">}</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">আমরা ClassOne.java নামে একটি জাভা ফাইল খুলে সেখানেও ClassOne ক্লাসটি declare করতে পারতাম।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Main.java</span></p>
+<p class="rvps2"><span class="rvts23">public class Main {</span></p>
+<p class="rvps2"><span class="rvts23">&nbsp;&nbsp;&nbsp;public static void main(String[] args){</span></p>
+<p class="rvps2"><span class="rvts23">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23">&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts23">}</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">ClassOne.java</span></p>
+<p class="rvps2"><span class="rvts23">class ClassOne{</span></p>
+<p class="rvps2"><span class="rvts23">&nbsp;&nbsp;&nbsp;int x;</span></p>
+<p class="rvps2"><span class="rvts23">}</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">ClassOne এ main method এর প্রয়োজন নেই। কারন আমরা ClassOne.java ফাইল কে রান করব না। রান করব শুধু Main.java ফাইল। Main.java ফাইল থেকে ClassOne.java ফাইল কল হবে। কল করার জন্য আমাদের Main class এ ClassOne এর অবজেক্ট তৈরি করতে হবে। আমরা পরবর্তীতে দেখব কিভাবে অবজেক্ট তৈরি করতে হয়।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এর মানে এই যে, কোন প্রজেক্ট রান করলে সবার আগে যে মেথড টি execute হবে তাকেই main method বলে। Main method অন্য জাভা ফাইলে থাকা ক্লাস ও মেথড গুলোকে পর্যায়ক্রমে প্রয়োজন অনুসারে কল করবে।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">আরেকটা কথা বলে রাখি। JAVA IDE গুলোতে প্রোজেক্ট আকারে ওপেন করার পর অনেকের পরস্পর সম্পর্কহীন একাধিক জাভা ফাইল নিয়ে কাজ করতে হয়। বিশেষ করে যারা competitive programing এর সাথে জরিত। এক্ষেত্রে IDE গুলোতে single file হিসেবে রান করার option থাকে। এরকম কাজ করতে গেলে অবশ্যই প্রতিটি জাভা ফাইলে ক্লাসের ভিতরে একটি main method নিতেই হবে।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">প্রতিটি ক্লাসে কিছু variable এবং মেথড থাকে। আমরা একটি Car ক্লাস তৈরি যার brand, model, speed, color এই চারটি variable থাকবে এবং Repaint() নামে একটি মেথড থাকবে। package1 এর ভিতরে আমরা Car নামে একটি ক্লাস নেই।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Car.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">package</span><span class="rvts29"> package1;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> class Car {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">String</span><span class="rvts29"> model, brand, </span><span class="rvts28">color</span><span class="rvts29">;</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">double</span><span class="rvts29"> speed;</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">void</span><span class="rvts29"> Repaint(</span><span class="rvts28">String</span><span class="rvts29"> tocolor){</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">color</span><span class="rvts29"> = tocolor;</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29"></span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">package</span><span class="rvts26"> package1;</span><br/><span class="rvts26"></span><br/><span class="rvts28">public</span><span class="rvts26"> class Car {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">String</span><span class="rvts26"> model, brand, </span><span class="rvts28">color</span><span class="rvts26">;</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">double</span><span class="rvts26"> speed;</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">void</span><span class="rvts26"> Repaint(</span><span class="rvts28">String</span><span class="rvts26"> tocolor){</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">color</span><span class="rvts26"> = tocolor;</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26"></span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এখানে দেখানো হয়েছে কিভাবে একটি ক্লাসের variable এবং method ডিক্লেয়ার করতে হয়।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এখন আমরা অবজেক্ট তৈরি করব। এর জন্য একই প্যাকেজ এ আরেকটি ক্লাস খুলি। নাম দেই test1.java।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">test1.java</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এখানে দেখানো হয়েছে কিভাবে একটি ক্লাসের variable এবং method ডিক্লেয়ার করতে হয়।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এখন আমরা অবজেক্ট তৈরি করব। এর জন্য একই প্যাকেজ এ আরেকটি ক্লাস খুলি। নাম দেই test1.java।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">test1.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">package</span><span class="rvts29"> package1;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> class test1 {</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> main(</span><span class="rvts28">String</span><span class="rvts29">[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Car car1 = </span><span class="rvts28">new</span><span class="rvts29"> Car();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; car1.model = </span><span class="rvts30">"Corola"</span><span class="rvts29">;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; car1.brand = </span><span class="rvts30">"Toyota"</span><span class="rvts29">;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; car1.speed = 150.75;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; car1.</span><span class="rvts28">color</span><span class="rvts29"> = </span><span class="rvts30">"Blue"</span><span class="rvts29">;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts29">(</span><span class="rvts30">"Color before : "</span><span class="rvts29">+car1.</span><span class="rvts28">color</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; car1.Repaint(</span><span class="rvts30">"Black"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts29">(</span><span class="rvts30">"Color after : "</span><span class="rvts29">+car1.</span><span class="rvts28">color</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">package</span><span class="rvts26"> package1;</span><br/><span class="rvts26"></span><br/><span class="rvts28">public</span><span class="rvts26"> class test1 {</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> main(</span><span class="rvts28">String</span><span class="rvts26">[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; Car car1 = </span><span class="rvts28">new</span><span class="rvts26"> Car();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; car1.model = </span><span class="rvts27">"Corola"</span><span class="rvts26">;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; car1.brand = </span><span class="rvts27">"Toyota"</span><span class="rvts26">;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; car1.speed = 150.75;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; car1.</span><span class="rvts28">color</span><span class="rvts26"> = </span><span class="rvts27">"Blue"</span><span class="rvts26">;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts26">(</span><span class="rvts27">"Color before : "</span><span class="rvts26">+car1.</span><span class="rvts28">color</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; car1.Repaint(</span><span class="rvts27">"Black"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts26">(</span><span class="rvts27">"Color after : "</span><span class="rvts26">+car1.</span><span class="rvts28">color</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এভাবে আমরা Car এর একটি অবজেক্ট তৈরি করতে পারি। এখানে car হচ্ছে reference variable। আগে বলেছিলাম class হচ্ছে একটি reference type data type। new দিয়ে Car এর অবজেক্ট declare করা হয়েছে এবং মেমোরি তে এই অবজেক্ট এর জন্য কিছু জায়গা বরাদ্দ হয়েছে। Object declaration নিয়ে কন্সট্রাক্টর অধ্যায়ে আরও বিস্তারিত বলব। কারণ অবজেক্ট তৈরি করতে কন্সট্রাক্টর এর প্রয়োজন হয়। বলে রাখি এখানে default constructor কল হয়েছে। কোন constructor তৈরি করে না দিলে default constructor টি কল হয়।</span></p>
-<p class="rvps2"><span class="rvts22">এরপরে ওই অবজেক্ট এর জন্য ক্লাসের প্রোপার্টি বা variable গুলোর মান বসিয়ে দেওয়া হয়েছে। এর জন্য প্রথমে অবজেক্ট এর নাম তার পর (.) দিয়ে variable এর নাম লিখতে হয়। এর পর = দিয়ে value লিখতে হয়।</span></p>
-<p class="rvps2"><span class="rvts22">কিভাবে variable এর মান বসাতে হয় তা এখানে দেখলাম আমরা। তারপর আমরা আমাদের তৈরি করা Repaint() মেথড কে কল করেছি। এর জন্য প্রথমে অবজেক্ট এর নাম তার পর (.) দিয়ে মেথডের নাম লিখতে হয়। এর পর () এর ভিতরে আর্গুমেন্ট গুলো পাস করতে হয়। আর্গুমেন্ট মানে হচ্ছে একটি মেথড যা গ্রহণ করে। মেথডের ভিতরে আমরা car এর color variable এর value বদলে দিয়েছি যা পরের লাইনে আউটপুটের মাধ্যমে দেখতে পারছি।</span></p>
-<p class="rvps2"><span class="rvts22">নিচের চিত্রে ক্লাস এবং অবজেক্ট এর একটি চিত্র দেখানো হল।</span></p>
+<p class="rvps2"><span class="rvts22"></span><br/><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এভাবে আমরা Car এর একটি অবজেক্ট তৈরি করতে পারি। এখানে car হচ্ছে reference variable। আগে বলেছিলাম class হচ্ছে একটি reference type data type। new দিয়ে Car এর অবজেক্ট declare করা হয়েছে এবং মেমোরি তে এই অবজেক্ট এর জন্য কিছু জায়গা বরাদ্দ হয়েছে। Object declaration নিয়ে কন্সট্রাক্টর অধ্যায়ে আরও বিস্তারিত বলব। কারণ অবজেক্ট তৈরি করতে কন্সট্রাক্টর এর প্রয়োজন হয়। বলে রাখি এখানে default constructor কল হয়েছে। কোন constructor তৈরি করে না দিলে default constructor টি কল হয়।</span></p>
+<p class="rvps2"><span class="rvts23">এরপরে ওই অবজেক্ট এর জন্য ক্লাসের প্রোপার্টি বা variable গুলোর মান বসিয়ে দেওয়া হয়েছে। এর জন্য প্রথমে অবজেক্ট এর নাম তার পর (.) দিয়ে variable এর নাম লিখতে হয়। এর পর = দিয়ে value লিখতে হয়।</span></p>
+<p class="rvps2"><span class="rvts23">কিভাবে variable এর মান বসাতে হয় তা এখানে দেখলাম আমরা। তারপর আমরা আমাদের তৈরি করা Repaint() মেথড কে কল করেছি। এর জন্য প্রথমে অবজেক্ট এর নাম তার পর (.) দিয়ে মেথডের নাম লিখতে হয়। এর পর () এর ভিতরে আর্গুমেন্ট গুলো পাস করতে হয়। আর্গুমেন্ট মানে হচ্ছে একটি মেথড যা গ্রহণ করে। মেথডের ভিতরে আমরা car এর color variable এর value বদলে দিয়েছি যা পরের লাইনে আউটপুটের মাধ্যমে দেখতে পারছি।</span></p>
+<p class="rvps2"><span class="rvts23">নিচের চিত্রে ক্লাস এবং অবজেক্ট এর একটি চিত্র দেখানো হল।</span></p>
 <p class="rvps2"><img width="463" height="347" alt="" src="lib/NewItem108.png"></p>
-<p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
+<p class="rvps2"><span class="rvts22"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/step-by-step-guides/how-to-generate-an-encrypted-password-protected-pdf-document/">Effortlessly Create Encrypted, Password-Protected PDFs</a></p>
 
             </div>

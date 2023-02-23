@@ -185,162 +185,162 @@
 
             <div class="main-content">
                 
-<p class="rvps15"><span class="rvts22">Constructor এর সাহায্যে কোন একটি ক্লাসের অবজেক্ট তৈরি করা হয়।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts22">আমরা Animal নামে একটি ক্লাস খুলি। Animal.java নামে একটি জাভা ফাইল তৈরি করে Animal class তৈরি করি।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Animal.java</span></p>
+<p class="rvps15"><span class="rvts23">Constructor এর সাহায্যে কোন একটি ক্লাসের অবজেক্ট তৈরি করা হয়।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23">আমরা Animal নামে একটি ক্লাস খুলি। Animal.java নামে একটি জাভা ফাইল তৈরি করে Animal class তৈরি করি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Animal.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> class Animal {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">String</span><span class="rvts29"> name;</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">int</span><span class="rvts29"> legs;</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">boolean</span><span class="rvts29"> tail;</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">void</span><span class="rvts29"> displayinformation()</span><br/><span class="rvts29">&nbsp; {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts29">(</span><span class="rvts30">"name : "</span><span class="rvts29">+name+</span><span class="rvts30">"\n"</span><span class="rvts29">+</span><span class="rvts30">"legs : "</span><span class="rvts29">+legs+</span><span class="rvts30">"\n"</span><span class="rvts29">+</span><span class="rvts30">"tails : "</span><span class="rvts29">+tail);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts32">//Constructor</span><br/><span class="rvts29">&nbsp; Animal(</span><span class="rvts28">String</span><span class="rvts29"> iname, </span><span class="rvts28">int</span><span class="rvts29"> ilegs, </span><span class="rvts28">boolean</span><span class="rvts29"> itail) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; name = iname;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; legs = ilegs;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; tail = itail;</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts26"> class Animal {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">String</span><span class="rvts26"> name;</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">int</span><span class="rvts26"> legs;</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">boolean</span><span class="rvts26"> tail;</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">void</span><span class="rvts26"> displayinformation()</span><br/><span class="rvts26">&nbsp; {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts26">(</span><span class="rvts27">"name : "</span><span class="rvts26">+name+</span><span class="rvts27">"\n"</span><span class="rvts26">+</span><span class="rvts27">"legs : "</span><span class="rvts26">+legs+</span><span class="rvts27">"\n"</span><span class="rvts26">+</span><span class="rvts27">"tails : "</span><span class="rvts26">+tail);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts31">//Constructor</span><br/><span class="rvts26">&nbsp; Animal(</span><span class="rvts28">String</span><span class="rvts26"> iname, </span><span class="rvts28">int</span><span class="rvts26"> ilegs, </span><span class="rvts28">boolean</span><span class="rvts26"> itail) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; name = iname;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; legs = ilegs;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; tail = itail;</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Animal class টিতে name এর জন্য একটি String, কতগুলি পা আছে টা রাখার জন্য int type একটি variable legs এবং লেজ আছে কি নেই তা রাখার জন্য boolean type একটি variable tail নিয়েছি।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এরপর একটি মেথড নিয়েছি displayinformation, যার return type void যেহেতু মেথড টি কোন কিছু return করবেনা। এই মেথড দিয়ে আমরা Animal class এর কোন অবজেক্ট এর ইনফর্মেশন গুলো প্রিন্ট করব।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">তারপর constructor declare করেছি। Constructor একটি মেথড যার কাজ হচ্ছে অবজেক্ট তৈরি করা, অবজেক্ট এর value initialize করা। Constructor এর নাম আর ক্লাসের নাম এক এ হতে হবে। এর কোন রিটার্ন টাইপ নেই। এমনকি void ও দিতে হবেনা। Constructor এ parameter হিসেবে variable এর value গুলো নিয়ে সেগুলো কে নির্দিষ্ট অবজেক্ট এর জন্য assign করে দিতে হয়। যেমনঃ parameter হিসেবে iname নিয়ে সেটিকে object এর name variable এ assign করা হয়েছে।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এখানে বলে রাখি parameter এ name নিয়ে object এর name এ assign করা যেত। তবে তার জন্য আমাদের this keyword ব্যবহার করতে হবে। আমরা যখন this keyword এর ব্যবহার শিখব তখন এভাবে করে দেখব।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এখন Main.java নামে একটি জাভা ফাইল খুলে তাতে Main নামে একটু ক্লাস খুলি</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Animal class টিতে name এর জন্য একটি String, কতগুলি পা আছে টা রাখার জন্য int type একটি variable legs এবং লেজ আছে কি নেই তা রাখার জন্য boolean type একটি variable tail নিয়েছি।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এরপর একটি মেথড নিয়েছি displayinformation, যার return type void যেহেতু মেথড টি কোন কিছু return করবেনা। এই মেথড দিয়ে আমরা Animal class এর কোন অবজেক্ট এর ইনফর্মেশন গুলো প্রিন্ট করব।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">তারপর constructor declare করেছি। Constructor একটি মেথড যার কাজ হচ্ছে অবজেক্ট তৈরি করা, অবজেক্ট এর value initialize করা। Constructor এর নাম আর ক্লাসের নাম এক এ হতে হবে। এর কোন রিটার্ন টাইপ নেই। এমনকি void ও দিতে হবেনা। Constructor এ parameter হিসেবে variable এর value গুলো নিয়ে সেগুলো কে নির্দিষ্ট অবজেক্ট এর জন্য assign করে দিতে হয়। যেমনঃ parameter হিসেবে iname নিয়ে সেটিকে object এর name variable এ assign করা হয়েছে।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এখানে বলে রাখি parameter এ name নিয়ে object এর name এ assign করা যেত। তবে তার জন্য আমাদের this keyword ব্যবহার করতে হবে। আমরা যখন this keyword এর ব্যবহার শিখব তখন এভাবে করে দেখব।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এখন Main.java নামে একটি জাভা ফাইল খুলে তাতে Main নামে একটু ক্লাস খুলি</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Main.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29">(String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Animal dog= </span><span class="rvts28">new</span><span class="rvts29"> Animal(</span><span class="rvts30">"Dog"</span><span class="rvts29">,4,</span><span class="rvts30">true</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Main</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">main</span><span class="rvts26">(String[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; Animal dog= </span><span class="rvts28">new</span><span class="rvts26"> Animal(</span><span class="rvts27">"Dog"</span><span class="rvts26">,4,</span><span class="rvts27">true</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এভাবে আমরা Animal class এর একটি অবজেক্ট dog তৈরি করে ফেললাম। আমরা চাইলে displayinformation মেথড এর সাহায্যে dog এর ইনফর্মেশন গুলো দেখতে পারি।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এভাবে আমরা Animal class এর একটি অবজেক্ট dog তৈরি করে ফেললাম। আমরা চাইলে displayinformation মেথড এর সাহায্যে dog এর ইনফর্মেশন গুলো দেখতে পারি।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Main.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29">(String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Animal dog = </span><span class="rvts28">new</span><span class="rvts29"> Animal(</span><span class="rvts30">"Dog"</span><span class="rvts29">,4,</span><span class="rvts30">true</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; dog.displayinformation();</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Main</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">main</span><span class="rvts26">(String[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; Animal dog = </span><span class="rvts28">new</span><span class="rvts26"> Animal(</span><span class="rvts27">"Dog"</span><span class="rvts26">,4,</span><span class="rvts27">true</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; dog.displayinformation();</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এভাবে অবজেক্ট এর সাহায্যে কোন ক্লাসের মেথড কল করতে হয়। Output এ আমরা যা দেখতে পারব।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এভাবে অবজেক্ট এর সাহায্যে কোন ক্লাসের মেথড কল করতে হয়। Output এ আমরা যা দেখতে পারব।</span></p>
 <p class="rvps2"><img width="153" height="80" alt="" src="lib/NewItem105.png"></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">আরও একটি অবজেক্ট তৈরি করি। এবং displayinformation মেথদের সাহায্যে ইনফর্মেশন গুলো দেখি।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">আরও একটি অবজেক্ট তৈরি করি। এবং displayinformation মেথদের সাহায্যে ইনফর্মেশন গুলো দেখি।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Main.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> void main(</span><span class="rvts28">String</span><span class="rvts29">[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Animal dog = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">Animal</span><span class="rvts29">(</span><span class="rvts30">"Dog"</span><span class="rvts29">,4,</span><span class="rvts30">true</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; dog.displayinformation();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Animal human = </span><span class="rvts28">new</span><span class="rvts29"> </span><span class="rvts30">Animal</span><span class="rvts29">(</span><span class="rvts30">"Human"</span><span class="rvts29">,2,</span><span class="rvts30">false</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; human.displayinformation();</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Main</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> void main(</span><span class="rvts28">String</span><span class="rvts26">[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; Animal dog = </span><span class="rvts28">new</span><span class="rvts26"> </span><span class="rvts27">Animal</span><span class="rvts26">(</span><span class="rvts27">"Dog"</span><span class="rvts26">,4,</span><span class="rvts27">true</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; dog.displayinformation();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; Animal human = </span><span class="rvts28">new</span><span class="rvts26"> </span><span class="rvts27">Animal</span><span class="rvts26">(</span><span class="rvts27">"Human"</span><span class="rvts26">,2,</span><span class="rvts27">false</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; human.displayinformation();</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Output এ যা দেখা যাবে</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Output এ যা দেখা যাবে</span></p>
 <p class="rvps2"><img width="135" height="144" alt="" src="lib/NewItem104.png"></p>
-<p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">সব গুলো variable initialize না নিয়েও constructor তৈরি করা যায়। আবার কোন variable initialize না করেও constructor তৈরি করা যায় যাকে default constructor বলে।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">আমরা default constructor দেখব এখন</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Animal.java</span></p>
+<p class="rvps2"><span class="rvts22"></span><br/><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">সব গুলো variable initialize না নিয়েও constructor তৈরি করা যায়। আবার কোন variable initialize না করেও constructor তৈরি করা যায় যাকে default constructor বলে।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">আমরা default constructor দেখব এখন</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Animal.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts43">public</span><span class="rvts44"> </span><span class="rvts43">class</span><span class="rvts44"> </span><span class="rvts45">Animal</span><span class="rvts44"> {</span><br/><span class="rvts44">&nbsp; String name;</span><br/><span class="rvts44">&nbsp; </span><span class="rvts43">int</span><span class="rvts44"> legs;</span><br/><span class="rvts44">&nbsp; boolean tail;</span><br/><span class="rvts44"></span><br/><span class="rvts44">&nbsp; </span><span class="rvts43">void</span><span class="rvts44"> </span><span class="rvts45">displayinformation</span><span class="rvts44">()</span><br/><span class="rvts44">&nbsp; {</span><br/><span class="rvts44">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts43">out</span><span class="rvts44">.println(</span><span class="rvts45">"name : "</span><span class="rvts44">+name+</span><span class="rvts45">"\n"</span><span class="rvts44">+</span><span class="rvts45">"legs : "</span><span class="rvts44">+legs+</span><span class="rvts45">"\n"</span><span class="rvts44">+</span><span class="rvts45">"tails : "</span><span class="rvts44">+tail);</span><br/><span class="rvts44">&nbsp; }</span><br/><span class="rvts44"></span><br/><span class="rvts44">&nbsp; Animal() {</span><br/><span class="rvts44">&nbsp; }</span><br/><span class="rvts44">}</span></p>
+   <p class="rvps2"><span class="rvts37">public</span><span class="rvts35"> </span><span class="rvts37">class</span><span class="rvts35"> </span><span class="rvts36">Animal</span><span class="rvts35"> {</span><br/><span class="rvts35">&nbsp; String name;</span><br/><span class="rvts35">&nbsp; </span><span class="rvts37">int</span><span class="rvts35"> legs;</span><br/><span class="rvts35">&nbsp; boolean tail;</span><br/><span class="rvts35"></span><br/><span class="rvts35">&nbsp; </span><span class="rvts37">void</span><span class="rvts35"> </span><span class="rvts36">displayinformation</span><span class="rvts35">()</span><br/><span class="rvts35">&nbsp; {</span><br/><span class="rvts35">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts37">out</span><span class="rvts35">.println(</span><span class="rvts36">"name : "</span><span class="rvts35">+name+</span><span class="rvts36">"\n"</span><span class="rvts35">+</span><span class="rvts36">"legs : "</span><span class="rvts35">+legs+</span><span class="rvts36">"\n"</span><span class="rvts35">+</span><span class="rvts36">"tails : "</span><span class="rvts35">+tail);</span><br/><span class="rvts35">&nbsp; }</span><br/><span class="rvts35"></span><br/><span class="rvts35">&nbsp; Animal() {</span><br/><span class="rvts35">&nbsp; }</span><br/><span class="rvts35">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এখানে Animal() হচ্ছে default constructor। আমরা যদি কোন constructor তৈরি না করি তাহলে Object তৈরি করতে গেলে default constructor তৈরি করতে হয়।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">ধরে নেই আমরা কোন constructor তৈরি করিনি</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Animal.java</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এখানে Animal() হচ্ছে default constructor। আমরা যদি কোন constructor তৈরি না করি তাহলে Object তৈরি করতে গেলে default constructor তৈরি করতে হয়।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">ধরে নেই আমরা কোন constructor তৈরি করিনি</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Animal.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Animal</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; String name;</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">int</span><span class="rvts29"> legs;</span><br/><span class="rvts29">&nbsp; boolean tail;</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">displayinformation</span><span class="rvts29">()</span><br/><span class="rvts29">&nbsp; {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts29">.println(</span><span class="rvts30">"name : "</span><span class="rvts29">+name+</span><span class="rvts30">"\n"</span><span class="rvts29">+</span><span class="rvts30">"legs : "</span><span class="rvts29">+legs+</span><span class="rvts30">"\n"</span><span class="rvts29">+</span><span class="rvts30">"tails : "</span><span class="rvts29">+tail);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Animal</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; String name;</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">int</span><span class="rvts26"> legs;</span><br/><span class="rvts26">&nbsp; boolean tail;</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">displayinformation</span><span class="rvts26">()</span><br/><span class="rvts26">&nbsp; {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts26">.println(</span><span class="rvts27">"name : "</span><span class="rvts26">+name+</span><span class="rvts27">"\n"</span><span class="rvts26">+</span><span class="rvts27">"legs : "</span><span class="rvts26">+legs+</span><span class="rvts27">"\n"</span><span class="rvts26">+</span><span class="rvts27">"tails : "</span><span class="rvts26">+tail);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এখন Main ক্লাস থেকে যদি Animal class এর একটি অবজেক্ট তৈরি করতে চাই।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এখন Main ক্লাস থেকে যদি Animal class এর একটি অবজেক্ট তৈরি করতে চাই।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Main.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29">(String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Animal dog= </span><span class="rvts28">new</span><span class="rvts29"> Animal();</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Main</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">main</span><span class="rvts26">(String[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; Animal dog= </span><span class="rvts28">new</span><span class="rvts26"> Animal();</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এক্ষেত্রে default constructor কল হবে যেহেতু আমরা Animal class এ কোন constructor তৈরি করিনি। এক্ষেত্রে কোন value initialize হবেনা। আমাদের আলাদা আলাদা ভাবে তখন value initialize করতে হবে।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Main.java</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এক্ষেত্রে default constructor কল হবে যেহেতু আমরা Animal class এ কোন constructor তৈরি করিনি। এক্ষেত্রে কোন value initialize হবেনা। আমাদের আলাদা আলাদা ভাবে তখন value initialize করতে হবে।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Main.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Main</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29">(String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Animal dog = </span><span class="rvts28">new</span><span class="rvts29"> Animal();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; dog.name=</span><span class="rvts30">"Dog"</span><span class="rvts29">;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; dog.legs=4;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; dog.tail=</span><span class="rvts30">true</span><span class="rvts29">;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; dog.displayinformation();</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Main</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">main</span><span class="rvts26">(String[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; Animal dog = </span><span class="rvts28">new</span><span class="rvts26"> Animal();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; dog.name=</span><span class="rvts27">"Dog"</span><span class="rvts26">;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; dog.legs=4;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; dog.tail=</span><span class="rvts27">true</span><span class="rvts26">;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; dog.displayinformation();</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">আমরা কয়েকটি variable নিয়েও constructor তৈরি করতে পারি</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Animal.java</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">আমরা কয়েকটি variable নিয়েও constructor তৈরি করতে পারি</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Animal.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> class Animal {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">String</span><span class="rvts29"> name;</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">int</span><span class="rvts29"> legs;</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">boolean</span><span class="rvts29"> tail;</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">void</span><span class="rvts29"> displayinformation()</span><br/><span class="rvts29">&nbsp; {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts29">(</span><span class="rvts30">"name : "</span><span class="rvts29">+name+</span><span class="rvts30">"\n"</span><span class="rvts29">+</span><span class="rvts30">"legs : "</span><span class="rvts29">+legs+</span><span class="rvts30">"\n"</span><span class="rvts29">+</span><span class="rvts30">"tails : "</span><span class="rvts29">+tail);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; Animal(</span><span class="rvts28">String</span><span class="rvts29"> iname, </span><span class="rvts28">int</span><span class="rvts29"> ilegs, </span><span class="rvts28">boolean</span><span class="rvts29"> itail) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; name = iname;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; legs = ilegs;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; tail = itail;</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> Animal(</span><span class="rvts28">String</span><span class="rvts29"> iname, </span><span class="rvts28">int</span><span class="rvts29"> ilegs) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; name = iname;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; legs = ilegs;</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> Animal(</span><span class="rvts28">String</span><span class="rvts29"> iname) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; name = iname;</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; Animal() {</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts26"> class Animal {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">String</span><span class="rvts26"> name;</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">int</span><span class="rvts26"> legs;</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">boolean</span><span class="rvts26"> tail;</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">void</span><span class="rvts26"> displayinformation()</span><br/><span class="rvts26">&nbsp; {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts26">(</span><span class="rvts27">"name : "</span><span class="rvts26">+name+</span><span class="rvts27">"\n"</span><span class="rvts26">+</span><span class="rvts27">"legs : "</span><span class="rvts26">+legs+</span><span class="rvts27">"\n"</span><span class="rvts26">+</span><span class="rvts27">"tails : "</span><span class="rvts26">+tail);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; Animal(</span><span class="rvts28">String</span><span class="rvts26"> iname, </span><span class="rvts28">int</span><span class="rvts26"> ilegs, </span><span class="rvts28">boolean</span><span class="rvts26"> itail) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; name = iname;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; legs = ilegs;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; tail = itail;</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> Animal(</span><span class="rvts28">String</span><span class="rvts26"> iname, </span><span class="rvts28">int</span><span class="rvts26"> ilegs) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; name = iname;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; legs = ilegs;</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> Animal(</span><span class="rvts28">String</span><span class="rvts26"> iname) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; name = iname;</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; Animal() {</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এমনকি একাধিক constructor ও থাকতে পারে একটি ক্লাসে।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">আমরা যদি default constructor ছাড়া বাকি constructor গুলো তৈরি করি তাহলে default constructor কিন্তু আর automatically call হবে না। সেক্ষেত্রে default constructor call করতে হলে আমাদের অবশ্যই default constructor অর্থাৎ parameterless / argumentless constructor তৈরি করে নিতেই হবে।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">This keyword এর সাহায্যে Constructor তৈরি করা আরও সুবিধাজনক।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts31">Animal.java</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এমনকি একাধিক constructor ও থাকতে পারে একটি ক্লাসে।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">আমরা যদি default constructor ছাড়া বাকি constructor গুলো তৈরি করি তাহলে default constructor কিন্তু আর automatically call হবে না। সেক্ষেত্রে default constructor call করতে হলে আমাদের অবশ্যই default constructor অর্থাৎ parameterless / argumentless constructor তৈরি করে নিতেই হবে।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">This keyword এর সাহায্যে Constructor তৈরি করা আরও সুবিধাজনক।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Animal.java</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Animal</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; String name;</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">int</span><span class="rvts29"> legs;</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">boolean</span><span class="rvts29"> tail;</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">displayinformation</span><span class="rvts29">()</span><br/><span class="rvts29">&nbsp; {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(</span><span class="rvts30">"name : "</span><span class="rvts29">+name+</span><span class="rvts30">"\n"</span><span class="rvts29">+</span><span class="rvts30">"legs : "</span><span class="rvts29">+legs+</span><span class="rvts30">"\n"</span><span class="rvts29">+</span><span class="rvts30">"tails : "</span><span class="rvts29">+tail);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts30">Animal</span><span class="rvts29">(String name, </span><span class="rvts28">int</span><span class="rvts29"> legs, </span><span class="rvts28">boolean</span><span class="rvts29"> tail) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">this</span><span class="rvts29">.name = name;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">this</span><span class="rvts29">.legs = legs;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">this</span><span class="rvts29">.tail = tail;</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; Animal() {</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Animal</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; String name;</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">int</span><span class="rvts26"> legs;</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">boolean</span><span class="rvts26"> tail;</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">displayinformation</span><span class="rvts26">()</span><br/><span class="rvts26">&nbsp; {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.println(</span><span class="rvts27">"name : "</span><span class="rvts26">+name+</span><span class="rvts27">"\n"</span><span class="rvts26">+</span><span class="rvts27">"legs : "</span><span class="rvts26">+legs+</span><span class="rvts27">"\n"</span><span class="rvts26">+</span><span class="rvts27">"tails : "</span><span class="rvts26">+tail);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts27">Animal</span><span class="rvts26">(String name, </span><span class="rvts28">int</span><span class="rvts26"> legs, </span><span class="rvts28">boolean</span><span class="rvts26"> tail) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">this</span><span class="rvts26">.name = name;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">this</span><span class="rvts26">.legs = legs;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">this</span><span class="rvts26">.tail = tail;</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; Animal() {</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এখানে this.name Animal class এর name কে নির্দেশ করে। আর = এর ডান পাশের ‘name‘ Constructor এর parameter এর name নির্দেশ করে।</span></p>
-<p class="rvps2"><span class="rvts22">This keyword নিয়ে পরবর্তীতে বিস্তারিত আলোচনা করব।</span></p>
-<p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এখানে this.name Animal class এর name কে নির্দেশ করে। আর = এর ডান পাশের ‘name‘ Constructor এর parameter এর name নির্দেশ করে।</span></p>
+<p class="rvps2"><span class="rvts23">This keyword নিয়ে পরবর্তীতে বিস্তারিত আলোচনা করব।</span></p>
+<p class="rvps2"><span class="rvts22"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com">Free EPub and documentation generator</a></p>
 
             </div>

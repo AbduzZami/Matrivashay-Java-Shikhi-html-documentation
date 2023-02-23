@@ -185,113 +185,113 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts22">PriorityQueue বোঝার আগে Queue বুঝতে হবে। Queue এমন একটি data structure যা first-in-first-out নিয়ম মেনে চলে। Queue তে যে ডাটা আগে ঢুকে সেই বের করার সময় সেই ডাটা আগে বের হয়। জেমনঃ টিকিট কেনার জন্য লাইন। যে আগে দারাবে সেই আগে টিকেট কিনে লাইন থেকে বেরিয়ে যাবে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts23">PriorityQueue বোঝার আগে Queue বুঝতে হবে। Queue এমন একটি data structure যা first-in-first-out নিয়ম মেনে চলে। Queue তে যে ডাটা আগে ঢুকে সেই বের করার সময় সেই ডাটা আগে বের হয়। জেমনঃ টিকিট কেনার জন্য লাইন। যে আগে দারাবে সেই আগে টিকেট কিনে লাইন থেকে বেরিয়ে যাবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <p class="rvps2"><img width="397" height="397" alt="" src="lib/NewItem85.png"></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">PriorityQueue তে বাড়তি যে সুবিধা পাওয়া যায় তা হল এখানে ডাটাগুলো একটা priority মেনে সজ্জিত থাকে। Priority হতে পারে যে যত বড় সে আগে থাকবে বা যে ছোট সে আগে থাকবে এরকম। অর্থাৎ এখানে ডাটাকে sorted করে রাখা যায়। আর ডাটা বের করার সময় যে top এ থাকবে সে বের হবে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">PriorityQueue এর declaration।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">PriorityQueue তে বাড়তি যে সুবিধা পাওয়া যায় তা হল এখানে ডাটাগুলো একটা priority মেনে সজ্জিত থাকে। Priority হতে পারে যে যত বড় সে আগে থাকবে বা যে ছোট সে আগে থাকবে এরকম। অর্থাৎ এখানে ডাটাকে sorted করে রাখা যায়। আর ডাটা বের করার সময় যে top এ থাকবে সে বের হবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">PriorityQueue এর declaration।&nbsp;</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts29">PriorityQueue&lt;</span><span class="rvts28">Type</span><span class="rvts29">&gt; pq = </span><span class="rvts28">new</span><span class="rvts29"> PriorityQueue&lt;&gt;();</span></p>
+   <p class="rvps2"><span class="rvts26">PriorityQueue&lt;</span><span class="rvts28">Type</span><span class="rvts26">&gt; pq = </span><span class="rvts28">new</span><span class="rvts26"> PriorityQueue&lt;&gt;();</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">PriorityQueue এর ছোট একটি কোড দেখি।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">PriorityQueue এর ছোট একটি কোড দেখি।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts29">import java.util.PriorityQueue;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">TestFile</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29">(String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; PriorityQueue&lt;String&gt; pq = </span><span class="rvts28">new</span><span class="rvts29"> PriorityQueue&lt;&gt;();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts29">(</span><span class="rvts30">"Riyadh"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts29">(</span><span class="rvts30">"Mecca"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts29">(</span><span class="rvts30">"Medina"</span><span class="rvts29">);</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts29">.println(pq);</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts26">import java.util.PriorityQueue;</span><br/><span class="rvts26"></span><br/><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">TestFile</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">main</span><span class="rvts26">(String[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; PriorityQueue&lt;String&gt; pq = </span><span class="rvts28">new</span><span class="rvts26"> PriorityQueue&lt;&gt;();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts26">(</span><span class="rvts27">"Riyadh"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts26">(</span><span class="rvts27">"Mecca"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts26">(</span><span class="rvts27">"Medina"</span><span class="rvts26">);</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts26">.println(pq);</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">&nbsp;PriorityQueue এর চারটি মেথড আমাদের জানতেই হবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">&nbsp;PriorityQueue এর চারটি মেথড আমাদের জানতেই হবে।&nbsp;</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 32px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps2"><span class="rvts49">add(E element):</span><span class="rvts22"> এটি দিয়ে priority queue তে element insert করতে হয়।</span></li>
- <li class="rvps2"><span class="rvts49">remove():</span><span class="rvts22"> এটি সবার উপরের element কে remove করে।&nbsp;</span></li>
- <li class="rvps2"><span class="rvts49">peek():</span><span class="rvts22"> এটির সাহায্যে সবার উপরের element কে retrieve করা যায়। আর যদি Priority Queue খালি থাকে তবে null রিটার্ন করে।</span></li>
- <li class="rvps2"><span class="rvts49">poll():</span><span class="rvts22"> এটির সাহায্যে সবার উপরের element কে retrieve করা যায় এবং সাথে সাথে সেই element ডিলিট ও হয়ে যায়। আর যদি Priority Queue খালি থাকে তবে null রিটার্ন করে। PriorityQueue তে remove() এবং peek() অপারেশন একসাথে করা মানেই poll() করা।&nbsp;</span></li>
+ <li class="rvps2"><span class="rvts44">add(E element):</span><span class="rvts23"> এটি দিয়ে priority queue তে element insert করতে হয়।</span></li>
+ <li class="rvps2"><span class="rvts44">remove():</span><span class="rvts23"> এটি সবার উপরের element কে remove করে।&nbsp;</span></li>
+ <li class="rvps2"><span class="rvts44">peek():</span><span class="rvts23"> এটির সাহায্যে সবার উপরের element কে retrieve করা যায়। আর যদি Priority Queue খালি থাকে তবে null রিটার্ন করে।</span></li>
+ <li class="rvps2"><span class="rvts44">poll():</span><span class="rvts23"> এটির সাহায্যে সবার উপরের element কে retrieve করা যায় এবং সাথে সাথে সেই element ডিলিট ও হয়ে যায়। আর যদি Priority Queue খালি থাকে তবে null রিটার্ন করে। PriorityQueue তে remove() এবং peek() অপারেশন একসাথে করা মানেই poll() করা।&nbsp;</span></li>
 </ul>
-<p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"></span><br/><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">remove() আর peek() অপারেশনের উদাহরণ নিচে দেওয়া হল।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22"></span><br/><span class="rvts22"></span><br/><span class="rvts22"></span><br/><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">remove() আর peek() অপারেশনের উদাহরণ নিচে দেওয়া হল।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts29">import java.util.PriorityQueue;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">TestFile</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29">(String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; PriorityQueue&lt;String&gt; pq = </span><span class="rvts28">new</span><span class="rvts29"> PriorityQueue&lt;&gt;();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts29">(</span><span class="rvts30">"Riyadh"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts29">(</span><span class="rvts30">"Mecca"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts29">(</span><span class="rvts30">"Medina"</span><span class="rvts29">);</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts29">.println(</span><span class="rvts30">"Top element before removing : "</span><span class="rvts29">+pq.peek());</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">remove</span><span class="rvts29">();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts29">.println(</span><span class="rvts30">"Top element after removing : "</span><span class="rvts29">+pq.peek());</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts26">import java.util.PriorityQueue;</span><br/><span class="rvts26"></span><br/><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">TestFile</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">main</span><span class="rvts26">(String[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; PriorityQueue&lt;String&gt; pq = </span><span class="rvts28">new</span><span class="rvts26"> PriorityQueue&lt;&gt;();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts26">(</span><span class="rvts27">"Riyadh"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts26">(</span><span class="rvts27">"Mecca"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts26">(</span><span class="rvts27">"Medina"</span><span class="rvts26">);</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts26">.println(</span><span class="rvts27">"Top element before removing : "</span><span class="rvts26">+pq.peek());</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">remove</span><span class="rvts26">();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts26">.println(</span><span class="rvts27">"Top element after removing : "</span><span class="rvts26">+pq.peek());</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">আউটপুটঃ</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">আউটপুটঃ</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts29">Top element before removing : Mecca</span><br/><span class="rvts29">Top element after removing : Medina</span></p>
+   <p class="rvps2"><span class="rvts26">Top element before removing : Mecca</span><br/><span class="rvts26">Top element after removing : Medina</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">poll() অপারেশন এর উদাহরণ নিচে দেওয়া হল।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"></span><br/><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">poll() অপারেশন এর উদাহরণ নিচে দেওয়া হল।&nbsp;</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts29">import java.util.PriorityQueue;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">TestFile</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29">(String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; PriorityQueue&lt;String&gt; pq = </span><span class="rvts28">new</span><span class="rvts29"> PriorityQueue&lt;&gt;();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts29">(</span><span class="rvts30">"Riyadh"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts29">(</span><span class="rvts30">"Mecca"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts29">(</span><span class="rvts30">"Medina"</span><span class="rvts29">);</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts29">.println(</span><span class="rvts30">"Top element that is removed : "</span><span class="rvts29">+pq.poll());</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts29">.println(</span><span class="rvts30">"Current top element : "</span><span class="rvts29">+pq.peek());</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts26">import java.util.PriorityQueue;</span><br/><span class="rvts26"></span><br/><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">TestFile</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">main</span><span class="rvts26">(String[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; PriorityQueue&lt;String&gt; pq = </span><span class="rvts28">new</span><span class="rvts26"> PriorityQueue&lt;&gt;();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts26">(</span><span class="rvts27">"Riyadh"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts26">(</span><span class="rvts27">"Mecca"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts26">(</span><span class="rvts27">"Medina"</span><span class="rvts26">);</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts26">.println(</span><span class="rvts27">"Top element that is removed : "</span><span class="rvts26">+pq.poll());</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts26">.println(</span><span class="rvts27">"Current top element : "</span><span class="rvts26">+pq.peek());</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">আউটপুটঃ</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">আউটপুটঃ</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts29">Top element that is removed : Mecca</span><br/><span class="rvts29">Current top element : Medina</span></p>
+   <p class="rvps2"><span class="rvts26">Top element that is removed : Mecca</span><br/><span class="rvts26">Current top element : Medina</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">উপরের কোডদুটি দেখলে remove(), peek() এবং poll() মেথড এর কাজ বোঝা যাবে আশা করি।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Priority Queue কে কিভাবে iterator এর সাহায্যে iterate করা যায় দেখি।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">উপরের কোডদুটি দেখলে remove(), peek() এবং poll() মেথড এর কাজ বোঝা যাবে আশা করি।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Priority Queue কে কিভাবে iterator এর সাহায্যে iterate করা যায় দেখি।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.Iterator;</span><br/><span class="rvts28">import</span><span class="rvts29"> java.util.PriorityQueue;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> class TestFile {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> main(</span><span class="rvts28">String</span><span class="rvts29">[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; PriorityQueue&lt;</span><span class="rvts28">String</span><span class="rvts29">&gt; pq = </span><span class="rvts28">new</span><span class="rvts29"> PriorityQueue&lt;&gt;();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts29">(</span><span class="rvts30">"Riyadh"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts29">(</span><span class="rvts30">"Mecca"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts29">(</span><span class="rvts30">"Medina"</span><span class="rvts29">);</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Iterator iterator = pq.iterator();</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">while</span><span class="rvts29"> (iterator.hasNext()) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">print</span><span class="rvts29">(iterator.next() + </span><span class="rvts30">" "</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts29">();</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span><br/><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts26"> java.util.Iterator;</span><br/><span class="rvts28">import</span><span class="rvts26"> java.util.PriorityQueue;</span><br/><span class="rvts26"></span><br/><span class="rvts28">public</span><span class="rvts26"> class TestFile {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> main(</span><span class="rvts28">String</span><span class="rvts26">[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; PriorityQueue&lt;</span><span class="rvts28">String</span><span class="rvts26">&gt; pq = </span><span class="rvts28">new</span><span class="rvts26"> PriorityQueue&lt;&gt;();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts26">(</span><span class="rvts27">"Riyadh"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts26">(</span><span class="rvts27">"Mecca"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts26">(</span><span class="rvts27">"Medina"</span><span class="rvts26">);</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; Iterator iterator = pq.iterator();</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">while</span><span class="rvts26"> (iterator.hasNext()) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">print</span><span class="rvts26">(iterator.next() + </span><span class="rvts27">" "</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.</span><span class="rvts28">println</span><span class="rvts26">();</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span><br/><span class="rvts26"><br/></span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts22">আমরা top element কে বার বার poll() করেও কাজটি করতে পারি। এক্ষেত্রে top element টি retrieve হতে থাকবে এবং ডিলিট হতে থাকবে। আর লুপ ততক্ষন চলবে যতক্ষণ না PriorityQueue খালি হচ্ছে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts23">আমরা top element কে বার বার poll() করেও কাজটি করতে পারি। এক্ষেত্রে top element টি retrieve হতে থাকবে এবং ডিলিট হতে থাকবে। আর লুপ ততক্ষন চলবে যতক্ষণ না PriorityQueue খালি হচ্ছে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts29">import java.util.PriorityQueue;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">TestFile</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29">(String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; PriorityQueue&lt;String&gt; pq = </span><span class="rvts28">new</span><span class="rvts29"> PriorityQueue&lt;&gt;();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts29">(</span><span class="rvts30">"Riyadh"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts29">(</span><span class="rvts30">"Mecca"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts29">(</span><span class="rvts30">"Medina"</span><span class="rvts29">);</span><br/><span class="rvts29"></span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">while</span><span class="rvts29"> (!pq.isEmpty()) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts29">.print(pq.poll() + </span><span class="rvts30">" "</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts29">.println();</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span><br/><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts26">import java.util.PriorityQueue;</span><br/><span class="rvts26"></span><br/><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">TestFile</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">main</span><span class="rvts26">(String[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; PriorityQueue&lt;String&gt; pq = </span><span class="rvts28">new</span><span class="rvts26"> PriorityQueue&lt;&gt;();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts26">(</span><span class="rvts27">"Riyadh"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts26">(</span><span class="rvts27">"Mecca"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; pq.</span><span class="rvts28">add</span><span class="rvts26">(</span><span class="rvts27">"Medina"</span><span class="rvts26">);</span><br/><span class="rvts26"></span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">while</span><span class="rvts26"> (!pq.isEmpty()) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts26">.print(pq.poll() + </span><span class="rvts27">" "</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.</span><span class="rvts28">out</span><span class="rvts26">.println();</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span><br/><span class="rvts26"><br/></span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
+<p class="rvps2"><span class="rvts22"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/create-epub-ebooks">Produce electronic books easily</a></p>
 
             </div>

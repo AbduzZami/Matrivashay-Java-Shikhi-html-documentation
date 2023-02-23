@@ -185,205 +185,205 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts22">প্রথম খণ্ডে আমরা array শিখেছি। ArrayList কে dynamic array বলতে পারি। Array পড়ার সময় দেখেছি Array এর একটি ফিক্সড সাইজ থাকে, যা পরে আর পরিবর্তন করা যায়না। ArrayList এর সাইজ নির্দিষ্ট নয় এবং যখন ইচ্ছা তখন পরিবর্তন করা যায়। অর্থাৎ dynamically এর সাইজ পরিবর্তিত হয়। এছাড়া, ArrayList এ কিছু মেথড আছে যা আমাদের ArrayList এর ডাটাগুলোর উপরে বিভিন্ন অপারেশন করতে সাহায্য করে। নিচে ArrayList এর কিছু উদাহরণ দেখি।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts23">প্রথম খণ্ডে আমরা array শিখেছি। ArrayList কে dynamic array বলতে পারি। Array পড়ার সময় দেখেছি Array এর একটি ফিক্সড সাইজ থাকে, যা পরে আর পরিবর্তন করা যায়না। ArrayList এর সাইজ নির্দিষ্ট নয় এবং যখন ইচ্ছা তখন পরিবর্তন করা যায়। অর্থাৎ dynamically এর সাইজ পরিবর্তিত হয়। এছাড়া, ArrayList এ কিছু মেথড আছে যা আমাদের ArrayList এর ডাটাগুলোর উপরে বিভিন্ন অপারেশন করতে সাহায্য করে। নিচে ArrayList এর কিছু উদাহরণ দেখি।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">import</span><span class="rvts29"> java.util.ArrayList;</span><br/><span class="rvts29"></span><br/><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">TestFile</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29">(String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; ArrayList&lt;Integer&gt; arrayList = </span><span class="rvts28">new</span><span class="rvts29"> ArrayList&lt;&gt;();</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// Appending new elements at</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// the end of the list</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">for</span><span class="rvts29"> (</span><span class="rvts28">int</span><span class="rvts29"> i = 0; i &lt; 10; i++) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; arrayList.add(i);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// Printing elements</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(arrayList);</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// Remove element at index 3</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; arrayList.remove(3);</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// Displaying the ArrayList</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// after deletion</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(arrayList);</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// Printing elements one by one</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">for</span><span class="rvts29"> (</span><span class="rvts28">int</span><span class="rvts29"> i = 0; i &lt; arrayList.size(); i++) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.print(arrayList.get(i) + </span><span class="rvts30">" "</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// Printing elements</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">// Using for each loop</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">for</span><span class="rvts29"> (Integer integer : arrayList) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.print(integer + </span><span class="rvts30">" "</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">import</span><span class="rvts26"> java.util.ArrayList;</span><br/><span class="rvts26"></span><br/><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">TestFile</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">main</span><span class="rvts26">(String[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; ArrayList&lt;Integer&gt; arrayList = </span><span class="rvts28">new</span><span class="rvts26"> ArrayList&lt;&gt;();</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts31">// Appending new elements at</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts31">// the end of the list</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">for</span><span class="rvts26"> (</span><span class="rvts28">int</span><span class="rvts26"> i = 0; i &lt; 10; i++) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; arrayList.add(i);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts31">// Printing elements</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.println(arrayList);</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts31">// Remove element at index 3</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; arrayList.remove(3);</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts31">// Displaying the ArrayList</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts31">// after deletion</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.println(arrayList);</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts31">// Printing elements one by one</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">for</span><span class="rvts26"> (</span><span class="rvts28">int</span><span class="rvts26"> i = 0; i &lt; arrayList.size(); i++) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.print(arrayList.get(i) + </span><span class="rvts27">" "</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts31">// Printing elements</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts31">// Using for each loop</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">for</span><span class="rvts26"> (Integer integer : arrayList) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.print(integer + </span><span class="rvts27">" "</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">উপরের কোডটি অবশ্যই রান করে আউটপুট দেখতে হবে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">ArrayList নিয়ে কিছু কথা বলি। যেহেতু ArrayList একটি dynamic array এবং এটি তৈরি করার সময় আমাদের সাইজ নির্দিষ্ট করতে হবে না, তাই যখন আমরা dynamically&nbsp; item যুক্ত করি এবং delete করি তখন ArrayList এর আকার স্বয়ংক্রিয়ভাবে বৃদ্ধি পায়। যদিও প্রকৃতপক্ষে আসল লাইব্রেরি বাস্তবায়ন আরও জটিল হতে পারে। জাভার ArrayList C++ এর vector এর মত। যদিও জাভায় vetor নামে আরেকটি ডাটা টাইপ আছে যার কাজ এবং ব্যাবহার ArrayList এর মতই।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">খুবই সাধারণভাবে বুঝানোর চেষ্টা করি। যখন ArrayList টি পূর্ণ হয়ে যায় এবং যদি আমরা একটি আইটেম যুক্ত করার চেষ্টা করি, তখন হিপ মেমরিতে একটি বড় আকারের মেমরি তৈরি হয় (সাইজের দ্বিগুণ আকারের)। এরপর বর্তমান মেমরির উপাদানগুলিকে নতুন মেমরিতে কপি করে। তারপর নতুন আইটেম যোগ করা হয়। কারণ এখন&nbsp; বড় মেমরি পাওয়া যাচ্ছে। সবশেষে পুরানো স্মৃতি মুছে ফেলে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">ArrayList এর ডিক্লারেশন এরকম।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">উপরের কোডটি অবশ্যই রান করে আউটপুট দেখতে হবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">ArrayList নিয়ে কিছু কথা বলি। যেহেতু ArrayList একটি dynamic array এবং এটি তৈরি করার সময় আমাদের সাইজ নির্দিষ্ট করতে হবে না, তাই যখন আমরা dynamically&nbsp; item যুক্ত করি এবং delete করি তখন ArrayList এর আকার স্বয়ংক্রিয়ভাবে বৃদ্ধি পায়। যদিও প্রকৃতপক্ষে আসল লাইব্রেরি বাস্তবায়ন আরও জটিল হতে পারে। জাভার ArrayList C++ এর vector এর মত। যদিও জাভায় vetor নামে আরেকটি ডাটা টাইপ আছে যার কাজ এবং ব্যাবহার ArrayList এর মতই।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">খুবই সাধারণভাবে বুঝানোর চেষ্টা করি। যখন ArrayList টি পূর্ণ হয়ে যায় এবং যদি আমরা একটি আইটেম যুক্ত করার চেষ্টা করি, তখন হিপ মেমরিতে একটি বড় আকারের মেমরি তৈরি হয় (সাইজের দ্বিগুণ আকারের)। এরপর বর্তমান মেমরির উপাদানগুলিকে নতুন মেমরিতে কপি করে। তারপর নতুন আইটেম যোগ করা হয়। কারণ এখন&nbsp; বড় মেমরি পাওয়া যাচ্ছে। সবশেষে পুরানো স্মৃতি মুছে ফেলে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">ArrayList এর ডিক্লারেশন এরকম।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts29">ArrayList&lt; Type &gt; arrayList&nbsp; = </span><span class="rvts28">new</span><span class="rvts29"> ArrayList&lt;&gt;();</span></p>
-   <p class="rvps2"><span class="rvts23"><br/></span></p>
+   <p class="rvps2"><span class="rvts26">ArrayList&lt; Type &gt; arrayList&nbsp; = </span><span class="rvts28">new</span><span class="rvts26"> ArrayList&lt;&gt;();</span></p>
+   <p class="rvps2"><span class="rvts22"><br/></span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts22">Type হচ্ছে ArrayList এর element গুলোর ডাটা টাইপ। Type অবশ্যই রেফারেন্স টাইপ হবে। অর্থাৎ, Integer, Double, Character, String অথবা user defined যেকোনো ক্লাস। কিন্তু, int, float, double, char এগুলো ArrayList এর Type হতে পারেনা।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">ArrayList এ ব্যবহারযোগ্য কিছু মেথড নিচে দেওয়া হল। এই মেথড গুলো ArrayList এর যেকোনো অবজেক্ট এর জন্য ব্যবহার করা যাবে। উদাহরণসরূপঃ&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">ArrayList&lt; Type &gt; arrayList&nbsp; = new ArrayList&lt;&gt;();</span></p>
-<p class="rvps2"><span class="rvts22">arrayList.add(Value);</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Type হচ্ছে ArrayList এর element গুলোর ডাটা টাইপ। Type অবশ্যই রেফারেন্স টাইপ হবে। অর্থাৎ, Integer, Double, Character, String অথবা user defined যেকোনো ক্লাস। কিন্তু, int, float, double, char এগুলো ArrayList এর Type হতে পারেনা।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">ArrayList এ ব্যবহারযোগ্য কিছু মেথড নিচে দেওয়া হল। এই মেথড গুলো ArrayList এর যেকোনো অবজেক্ট এর জন্য ব্যবহার করা যাবে। উদাহরণসরূপঃ&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">ArrayList&lt; Type &gt; arrayList&nbsp; = new ArrayList&lt;&gt;();</span></p>
+<p class="rvps2"><span class="rvts23">arrayList.add(Value);</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="12" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="middle" style="padding: 14px 10px; background-color: #d9d2e9;">
-   <p class="rvps3"><span class="rvts31">মেথড</span></p>
+   <p class="rvps3"><span class="rvts25">মেথড</span></p>
   </td>
   <td valign="middle" style="padding: 14px 10px; background-color: #d9d2e9;">
-   <p class="rvps3"><span class="rvts31">বর্ণনা</span></p>
+   <p class="rvps3"><span class="rvts25">বর্ণনা</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">add(int index, Object element)</span></p>
+   <p class="rvps2"><span class="rvts23">add(int index, Object element)</span></p>
   </td>
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">এর সাহায্যে একটি element কে লিস্টে নির্দিষ্ট ইনডেক্সে যুক্ত করা যায়।&nbsp;</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">add(Object o)</span></p>
-  </td>
-  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">এর সাহায্যে একটি element কে লিস্টে যুক্ত করা যায়।&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts23">এর সাহায্যে একটি element কে লিস্টে নির্দিষ্ট ইনডেক্সে যুক্ত করা যায়।&nbsp;</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">addAll(Collection C)</span></p>
+   <p class="rvps2"><span class="rvts23">add(Object o)</span></p>
   </td>
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">একটি লিস্টকে আরেকটি লিস্টে যুক্ত করা যায়।&nbsp;</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">addAll(int index, Collection C)</span></p>
-  </td>
-  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">একটি লিস্টকে আরেকটি লিস্টের একটি নির্দিষ্ট ইনডেক্সে যুক্ত করা যায়।&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts23">এর সাহায্যে একটি element কে লিস্টে যুক্ত করা যায়।&nbsp;</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">clear()</span></p>
+   <p class="rvps2"><span class="rvts23">addAll(Collection C)</span></p>
   </td>
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">লিস্টকে খালি করা যায়।&nbsp;</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">clone()</span></p>
-  </td>
-  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">এটি লিস্টের একটি shallow copy রিটার্ন করে।&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts23">একটি লিস্টকে আরেকটি লিস্টে যুক্ত করা যায়।&nbsp;</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">contains(Object o)</span></p>
+   <p class="rvps2"><span class="rvts23">addAll(int index, Collection C)</span></p>
   </td>
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">ঐ element কে খুঁজে পেলে true রিটার্ন করে অন্নথায় false।&nbsp;</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">get(int index)</span></p>
-  </td>
-  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">কোন ইনডেক্স এর element&nbsp; রিটার্ন করে।&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts23">একটি লিস্টকে আরেকটি লিস্টের একটি নির্দিষ্ট ইনডেক্সে যুক্ত করা যায়।&nbsp;</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">indexOf(Object O)</span></p>
+   <p class="rvps2"><span class="rvts23">clear()</span></p>
   </td>
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">কোন element এর ইনডেক্স রিটার্ন করে। যদি না পায় তাহলে -1 রিটার্ন করে।&nbsp;</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">isEmpty()</span></p>
-  </td>
-  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">লিস্ট খালি কিনা টা রিটার্ন করে।</span></p>
+   <p class="rvps2"><span class="rvts23">লিস্টকে খালি করা যায়।&nbsp;</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">lastIndexOf(Object O)</span></p>
+   <p class="rvps2"><span class="rvts23">clone()</span></p>
   </td>
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">কোন element এর শেষ ইনডেক্স রিটার্ন করে। যদি না পায় তাহলে -1 রিটার্ন করে।&nbsp;</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">remove(int index)</span></p>
-  </td>
-  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">নির্দিষ্ট ইনডেক্স এর element মুছে ফেলে।</span></p>
+   <p class="rvps2"><span class="rvts23">এটি লিস্টের একটি shallow copy রিটার্ন করে।&nbsp;</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">remove(Object o)</span></p>
+   <p class="rvps2"><span class="rvts23">contains(Object o)</span></p>
   </td>
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">কোন একটি নির্দিষ্ট&nbsp; element মুছে ফেলে।</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">removeAll?(Collection c)</span></p>
-  </td>
-  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">এখানে মুলত একটি লিস্ট পাস করতে হয়। যদি পাস করা লিস্ট মেইন লিস্টে থাকে তাহলে সেগুলো মুছে ফেলবে।&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts23">ঐ element কে খুঁজে পেলে true রিটার্ন করে অন্নথায় false।&nbsp;</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">removeRange(int fromIndex, int toIndex)</span></p>
+   <p class="rvps2"><span class="rvts23">get(int index)</span></p>
   </td>
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">একটি রেঞ্জের মধ্যের element মুছে।&nbsp;</span></p>
-  </td>
- </tr>
- <tr valign="top">
-  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">set?(int index, E element)</span></p>
-  </td>
-  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">এর সাহায্যে একটি element কে লিস্টে নির্দিষ্ট ইনডেক্সে replace করা যায়।&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts23">কোন ইনডেক্স এর element&nbsp; রিটার্ন করে।&nbsp;</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">size?()</span></p>
+   <p class="rvps2"><span class="rvts23">indexOf(Object O)</span></p>
   </td>
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">লিস্টটির element সংখ্যা রিটার্ন করে।&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts23">কোন element এর ইনডেক্স রিটার্ন করে। যদি না পায় তাহলে -1 রিটার্ন করে।&nbsp;</span></p>
   </td>
  </tr>
  <tr valign="top">
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">toArray()</span></p>
+   <p class="rvps2"><span class="rvts23">isEmpty()</span></p>
   </td>
   <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts22">লিস্ট কে array বানিয়ে সেই array রিটার্ন করে।</span></p>
+   <p class="rvps2"><span class="rvts23">লিস্ট খালি কিনা টা রিটার্ন করে।</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts23">lastIndexOf(Object O)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts23">কোন element এর শেষ ইনডেক্স রিটার্ন করে। যদি না পায় তাহলে -1 রিটার্ন করে।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts23">remove(int index)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts23">নির্দিষ্ট ইনডেক্স এর element মুছে ফেলে।</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts23">remove(Object o)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts23">কোন একটি নির্দিষ্ট&nbsp; element মুছে ফেলে।</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts23">removeAll?(Collection c)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts23">এখানে মুলত একটি লিস্ট পাস করতে হয়। যদি পাস করা লিস্ট মেইন লিস্টে থাকে তাহলে সেগুলো মুছে ফেলবে।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts23">removeRange(int fromIndex, int toIndex)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts23">একটি রেঞ্জের মধ্যের element মুছে।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts23">set?(int index, E element)</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts23">এর সাহায্যে একটি element কে লিস্টে নির্দিষ্ট ইনডেক্সে replace করা যায়।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts23">size?()</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts23">লিস্টটির element সংখ্যা রিটার্ন করে।&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts23">toArray()</span></p>
+  </td>
+  <td valign="middle" style="padding: 14px 10px; background-color: #ffffff;">
+   <p class="rvps2"><span class="rvts23">লিস্ট কে array বানিয়ে সেই array রিটার্ন করে।</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts26">ArrayList iterate করা পদ্ধতি</span></p>
-<p class="rvps2"><span class="rvts22">১। For loop</span></p>
-<p class="rvps2"><span class="rvts22">২। For Each loop</span></p>
-<p class="rvps2"><span class="rvts22">এই দুটি পদ্ধতিই উপরের কোডে উদাহরণ হিসেবে দেখানো হয়েছে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">ArrayList iterate করা পদ্ধতি</span></p>
+<p class="rvps2"><span class="rvts23">১। For loop</span></p>
+<p class="rvps2"><span class="rvts23">২। For Each loop</span></p>
+<p class="rvps2"><span class="rvts23">এই দুটি পদ্ধতিই উপরের কোডে উদাহরণ হিসেবে দেখানো হয়েছে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com/feature-tour">Easily create PDF Help documents</a></p>
 
             </div>

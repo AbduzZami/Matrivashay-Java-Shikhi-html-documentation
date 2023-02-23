@@ -185,112 +185,112 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts22">Abstract Class এ Abstract ও non-abstract দুই ধরনের মেথডই ছিল। কিন্তু ইন্টারফেস এ সব মেথডই abstract হবে। তার সাথে ইন্টারফেস এ যত ভেরিএবল declare করা হবে সবই হবে public static final ভেরিএবল (by default)।&nbsp; By default এ কারনে বলা হচ্ছে যে এই ভেরিএবল গুলোকে declare করার সময় public static final লিখতে হয়না। এরার নিজে থেকেই public static final এর মত আচরণ করে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">যেমন: int x = 5; আর public static final int x = 5; ইন্টারফেস এর জন্য একই কাজ করে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">তেমনিভাবে, মেথড গুলোর খেত্রেও বলে দিতে হয়না এটি abstract method. কারন এখানে সব মেথডই by default abstract।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">আরেকটি গুরুত্বপূর্ণ বিষয় হচ্ছে, ইন্টারফেস এ সব ভেরিএবল ও মেথড public। এখানে এদেরকে private বা protected করার সুযোগ নেই।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">নিচে একটি ইন্টারফেস এর কোড দেওয়া হল।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Abstract Class এ Abstract ও non-abstract দুই ধরনের মেথডই ছিল। কিন্তু ইন্টারফেস এ সব মেথডই abstract হবে। তার সাথে ইন্টারফেস এ যত ভেরিএবল declare করা হবে সবই হবে public static final ভেরিএবল (by default)।&nbsp; By default এ কারনে বলা হচ্ছে যে এই ভেরিএবল গুলোকে declare করার সময় public static final লিখতে হয়না। এরার নিজে থেকেই public static final এর মত আচরণ করে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">যেমন: int x = 5; আর public static final int x = 5; ইন্টারফেস এর জন্য একই কাজ করে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">তেমনিভাবে, মেথড গুলোর খেত্রেও বলে দিতে হয়না এটি abstract method. কারন এখানে সব মেথডই by default abstract।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">আরেকটি গুরুত্বপূর্ণ বিষয় হচ্ছে, ইন্টারফেস এ সব ভেরিএবল ও মেথড public। এখানে এদেরকে private বা protected করার সুযোগ নেই।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">নিচে একটি ইন্টারফেস এর কোড দেওয়া হল।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">interface</span><span class="rvts29"> </span><span class="rvts30">Dogs</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">int</span><span class="rvts29"> a = 10;</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">Display</span><span class="rvts29">();</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">interface</span><span class="rvts26"> </span><span class="rvts27">Dogs</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">int</span><span class="rvts26"> a = 10;</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">Display</span><span class="rvts26">();</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এখানে a ভিতরে ভিতরে public static final। static এর জন্য এর সকল অবজেক্ট এ একই মান থাকবে। আর final এর জন্য এর মান পরিবর্তন করা যাবেনা।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts22">আর Display() মেথডটিও public abstract ই হবে একই ভাবে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">ইন্টারফেস এর অবজেক্ট তৈরি করা যায়না। অবজেক্ট তৈরি করার জন্য অবশ্যই কোন একটি ক্লাস থেকে ইনহেরিট করে সেই ক্লাসের অবজেক্ট তৈরি করতে হবে। Anonymous class ও ব্যবহার করা যাবে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এবার একটি ক্লাস থেকে উপরের ইন্টারফেসটি ইনহেরিট করি।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এখানে a ভিতরে ভিতরে public static final। static এর জন্য এর সকল অবজেক্ট এ একই মান থাকবে। আর final এর জন্য এর মান পরিবর্তন করা যাবেনা।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts23">আর Display() মেথডটিও public abstract ই হবে একই ভাবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">ইন্টারফেস এর অবজেক্ট তৈরি করা যায়না। অবজেক্ট তৈরি করার জন্য অবশ্যই কোন একটি ক্লাস থেকে ইনহেরিট করে সেই ক্লাসের অবজেক্ট তৈরি করতে হবে। Anonymous class ও ব্যবহার করা যাবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এবার একটি ক্লাস থেকে উপরের ইন্টারফেসটি ইনহেরিট করি।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Tommy</span><span class="rvts29"> </span><span class="rvts28">implements</span><span class="rvts29"> </span><span class="rvts30">Dogs</span><span class="rvts29">{</span><br/><span class="rvts29">&nbsp; </span><span class="rvts46">@Override</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">Display</span><span class="rvts29">() {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(</span><span class="rvts30">"Tommy"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Tommy</span><span class="rvts26"> </span><span class="rvts28">implements</span><span class="rvts26"> </span><span class="rvts27">Dogs</span><span class="rvts26">{</span><br/><span class="rvts26">&nbsp; </span><span class="rvts38">@Override</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">Display</span><span class="rvts26">() {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.println(</span><span class="rvts27">"Tommy"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts22">এখানে সবকিছুই পরিচিত শুধুমাত্র implements কি ওয়ার্ডটি নতুন লাগছে। এটি নিয়ে পরের অধ্যায়েই বিস্তারিত বলব। আপাতত জেনে রাখলেই হবে যে interface কে যদি কোন class ইনহেরিট করে তাহলে implement ব্যবহার করতে হবে।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এখন আরেকটি ক্লাস থেকে Tommy এর অবজেক্ট তৈরি করতে পারি আমরা।</span></p>
+<p class="rvps2"><span class="rvts23">এখানে সবকিছুই পরিচিত শুধুমাত্র implements কি ওয়ার্ডটি নতুন লাগছে। এটি নিয়ে পরের অধ্যায়েই বিস্তারিত বলব। আপাতত জেনে রাখলেই হবে যে interface কে যদি কোন class ইনহেরিট করে তাহলে implement ব্যবহার করতে হবে।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এখন আরেকটি ক্লাস থেকে Tommy এর অবজেক্ট তৈরি করতে পারি আমরা।</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts23"><br/></span></p>
-   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">HojoBorolo</span><span class="rvts29">{</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">static</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">main</span><span class="rvts29">(String[] args) {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; Tommy t = </span><span class="rvts28">new</span><span class="rvts29"> Tommy();</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; t.Display();</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts22"><br/></span></p>
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">HojoBorolo</span><span class="rvts26">{</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">static</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">main</span><span class="rvts26">(String[] args) {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; Tommy t = </span><span class="rvts28">new</span><span class="rvts26"> Tommy();</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; t.Display();</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">আউটপুট</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">আউটপুট</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts29">Tommy</span></p>
+   <p class="rvps2"><span class="rvts26">Tommy</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">ইন্টারফেস মাল্টিপল ইনহেরিটেন্স সাপোর্ট করে। অর্থাৎ একটি ইন্টারফেস বা ক্লাস একাধিক ইন্টারফেস কে ইনহেরিট করতে পারি। একই ক্লাস কিন্তু একাধিক ক্লাসকে ইনহেরিট করতে পারেনা। যার জন্য জাভায়।&nbsp; ক্লাস মাল্টিপল ইনহেরিটেন্স সাপোর্ট করেনা। নিচে মাল্টিপল ইনহেরিটেন্স এর একটি উদাহরণ দেখি।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এবার আরও একটি ইন্টারফেস তৈরি করি।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">public interface Elephant {</span></p>
-<p class="rvps2"><span class="rvts22">&nbsp;&nbsp;&nbsp;void Display();</span></p>
-<p class="rvps2"><span class="rvts22">}</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এখন একটি ক্লাস কে দুইটি ইন্টারফেস থেকেই ইনহেরিট করি।&nbsp;</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">ইন্টারফেস মাল্টিপল ইনহেরিটেন্স সাপোর্ট করে। অর্থাৎ একটি ইন্টারফেস বা ক্লাস একাধিক ইন্টারফেস কে ইনহেরিট করতে পারি। একই ক্লাস কিন্তু একাধিক ক্লাসকে ইনহেরিট করতে পারেনা। যার জন্য জাভায়।&nbsp; ক্লাস মাল্টিপল ইনহেরিটেন্স সাপোর্ট করেনা। নিচে মাল্টিপল ইনহেরিটেন্স এর একটি উদাহরণ দেখি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এবার আরও একটি ইন্টারফেস তৈরি করি।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">public interface Elephant {</span></p>
+<p class="rvps2"><span class="rvts23">&nbsp;&nbsp;&nbsp;void Display();</span></p>
+<p class="rvps2"><span class="rvts23">}</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এখন একটি ক্লাস কে দুইটি ইন্টারফেস থেকেই ইনহেরিট করি।&nbsp;</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">Tommy</span><span class="rvts29"> </span><span class="rvts28">implements</span><span class="rvts29"> </span><span class="rvts30">Dogs</span><span class="rvts29">,</span><span class="rvts30">Elephant</span><span class="rvts29">{</span><br/><span class="rvts29">&nbsp; </span><span class="rvts46">@Override</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">Display</span><span class="rvts29">() {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; System.out.println(</span><span class="rvts30">"Tommy"</span><span class="rvts29">);</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">Tommy</span><span class="rvts26"> </span><span class="rvts28">implements</span><span class="rvts26"> </span><span class="rvts27">Dogs</span><span class="rvts26">,</span><span class="rvts27">Elephant</span><span class="rvts26">{</span><br/><span class="rvts26">&nbsp; </span><span class="rvts38">@Override</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">Display</span><span class="rvts26">() {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; System.out.println(</span><span class="rvts27">"Tommy"</span><span class="rvts26">);</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">আউটপুট</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">আউটপুট</span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts29">Tommy</span></p>
+   <p class="rvps2"><span class="rvts26">Tommy</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">এবার একটি ইন্টারফেসে আমরা দুইটি ইন্টারফেস কে ইনহেরিট করি।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">এবার একটি ইন্টারফেসে আমরা দুইটি ইন্টারফেস কে ইনহেরিট করি।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts35">public</span><span class="rvts34"> interface </span><span class="rvts35">Tommy extends Dogs,Elephant{</span><br/><span class="rvts35">&nbsp; void Show();</span><br/><span class="rvts35">}</span></p>
+   <p class="rvps2"><span class="rvts26">public</span><span class="rvts28"> interface </span><span class="rvts26">Tommy extends Dogs,Elephant{</span><br/><span class="rvts26">&nbsp; void Show();</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">Tommy যেহেতু একটি ইন্টারফেস, সেহেতু Dogs আর Elephant এর মেথডগুলি আর অভাররাইড করার প্রয়োজন হয়নি। আর এখানে extend কি ওয়ার্ড ব্যবহার করা হয়েছে। কারন interface কে interface inherit করলে extend কি ওয়ার্ড ব্যবহার করতে হয়।</span></p>
-<p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Tommy যেহেতু একটি ইন্টারফেস, সেহেতু Dogs আর Elephant এর মেথডগুলি আর অভাররাইড করার প্রয়োজন হয়নি। আর এখানে extend কি ওয়ার্ড ব্যবহার করা হয়েছে। কারন interface কে interface inherit করলে extend কি ওয়ার্ড ব্যবহার করতে হয়।</span></p>
+<p class="rvps2"><span class="rvts22"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpndoc.com">Free CHM Help documentation generator</a></p>
 
             </div>

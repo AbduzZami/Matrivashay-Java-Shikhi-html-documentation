@@ -185,31 +185,31 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts22">ফাইনাল ভেরিএবল এমন একটি ভেরিএবল যার value আর পরিবর্তন করা যায় না।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts23">ফাইনাল ভেরিএবল এমন একটি ভেরিএবল যার value আর পরিবর্তন করা যায় না।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">FinalTest</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">final</span><span class="rvts29"> </span><span class="rvts28">int</span><span class="rvts29"> cnt = 0;</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">void</span><span class="rvts29"> </span><span class="rvts30">changeFinal</span><span class="rvts29">(){</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">//we can not do the line below</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; cnt = 100;</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">FinalTest</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">final</span><span class="rvts26"> </span><span class="rvts28">int</span><span class="rvts26"> cnt = 0;</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">void</span><span class="rvts26"> </span><span class="rvts27">changeFinal</span><span class="rvts26">(){</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts31">//we can not do the line below</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; cnt = 100;</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"></span><br/><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts22">ফাইনাল ভেরিএবলকে ডিক্লেয়ারেশন এর সময় বা কন্সট্রাক্টর এর ভিতরে initialize করা যায়।</span></p>
-<p class="rvps2"><span class="rvts22">ফাইনাল ভেরিএবলকে ডিক্লেয়ারেশন এর সময় initialize না করলে তাকে blank final variable বলে। blank final variable কে কন্সট্রাক্টরের ভিতরে initailize করতে হয়।</span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts22"></span><br/><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts23">ফাইনাল ভেরিএবলকে ডিক্লেয়ারেশন এর সময় বা কন্সট্রাক্টর এর ভিতরে initialize করা যায়।</span></p>
+<p class="rvps2"><span class="rvts23">ফাইনাল ভেরিএবলকে ডিক্লেয়ারেশন এর সময় initialize না করলে তাকে blank final variable বলে। blank final variable কে কন্সট্রাক্টরের ভিতরে initailize করতে হয়।</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
 <div class="rvps2">
 <table border="0" cellpadding="6" cellspacing="-1" style="border-width: 0px; border-collapse: collapse;">
  <tr valign="top">
   <td valign="top" style="padding: 6px; background-color: #ffffff;">
-   <p class="rvps2"><span class="rvts28">class</span><span class="rvts29"> </span><span class="rvts30">FinalTest</span><span class="rvts29"> {</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">final</span><span class="rvts29"> </span><span class="rvts28">int</span><span class="rvts29"> cnt = 0;&nbsp; </span><span class="rvts32">// initialized in declaration</span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">final</span><span class="rvts29"> </span><span class="rvts28">int</span><span class="rvts29"> pts;</span><br/><span class="rvts29"></span><br/><span class="rvts29">&nbsp; </span><span class="rvts28">public</span><span class="rvts29"> </span><span class="rvts30">FinalTest</span><span class="rvts29">() {</span><br/><span class="rvts29">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">this</span><span class="rvts29">.pts = 0; </span><span class="rvts32">//initialized in constructor</span><br/><span class="rvts29">&nbsp; }</span><br/><span class="rvts29">}</span></p>
+   <p class="rvps2"><span class="rvts28">class</span><span class="rvts26"> </span><span class="rvts27">FinalTest</span><span class="rvts26"> {</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">final</span><span class="rvts26"> </span><span class="rvts28">int</span><span class="rvts26"> cnt = 0;&nbsp; </span><span class="rvts31">// initialized in declaration</span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">final</span><span class="rvts26"> </span><span class="rvts28">int</span><span class="rvts26"> pts;</span><br/><span class="rvts26"></span><br/><span class="rvts26">&nbsp; </span><span class="rvts28">public</span><span class="rvts26"> </span><span class="rvts27">FinalTest</span><span class="rvts26">() {</span><br/><span class="rvts26">&nbsp; &nbsp; &nbsp; </span><span class="rvts28">this</span><span class="rvts26">.pts = 0; </span><span class="rvts31">//initialized in constructor</span><br/><span class="rvts26">&nbsp; }</span><br/><span class="rvts26">}</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts23"></span><span class="rvts6"></span></p>
+<p class="rvps2"><span class="rvts22"></span><span class="rvts6"></span></p>
 <p class="rvps7" style="clear: both;"><span class="rvts20">Created with the Personal Edition of HelpNDoc: </span><a class="rvts21" href="https://www.helpauthoringsoftware.com">Maximize Your Documentation Capabilities with a Help Authoring Tool</a></p>
 
             </div>
